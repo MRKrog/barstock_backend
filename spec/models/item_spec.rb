@@ -25,20 +25,30 @@ RSpec.describe Item, type: :model do
 
   describe 'class methods' do
     it '#distributor_items' do
-      distributor_id = 1
-      items = Item.distributor_items(distributor_id)
+
+      distributor_1 = Distributor.create!(name: "RNDC",
+                                        address: "3319 Arapahoe st, Denver, CO",
+                                        distributor_code: "CODE1234",
+                                        api_key: "jgn983hy48thw9begh98h4539h4",
+                                        password: "password"
+                                        )
+      Distributor.create!(name: "Other",
+                                        address: "other",
+                                        distributor_code: "other",
+                                        api_key: "other",
+                                        password: "other"
+                                        )
+
+      create(:item, distributor: distributor_1)
+      create(:item, distributor: distributor_1)
+
+      items = Item.distributor_items(distributor_1.id)
 
       expect(items.count).to eq(2)
-      expect(items[0]).to have_key('id')
-      expect(items[0]).to have_key('name')
-      expect(items[0]).to have_key('alc_type')
-      expect(items[0]).to have_key('alc_category')
-      expect(items[0]).to have_key('price')
-      expect(items[0]).to have_key('ounces')
-      expect(items[0]).to have_key('unit')
-      expect(items[0]).to have_key('thumbnail')
-      expect(items[0]).to have_key('quantity')
-      expect(items[0]['distributor_id']).to eq(distributor_id)
+      expect(items[0]).to be_an_instance_of(Item)
+      expect(items[1]).to be_an_instance_of(Item)
+      expect(items[0].distributor_id).to eq(distributor_1.id)
+      expect(items[1].distributor_id).to eq(distributor_1.id)
     end
   end
 end
