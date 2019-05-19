@@ -1,27 +1,22 @@
 # README
 ## Description
 
-BarStock is an 11-day, four-person project during Mod 3 of 4, for Turing School's Back-End Engineering Program.
+BarStock is an 13-day, four-person project during Mod 4 of 4, for Turing School's Back-End Engineering Program. Our team consists of two Front-End Developers and two Back-End Developers.
 
-Our challenge was to create a web application from idea to inception. Project requirements included: authentication with a third-party service, consuming an API, and solving a real-world problem.
+Our challenge was to create a web application from idea to inception by integrating our skills as Front-End and Back-End Developers to solve a real-world problem.
 
-Thus, BarStock was born. BarStock is a web application designed to solve the problem of one person being in charge of the music at a party and being unable to take into account all of the music preferences of their fellow party-goers. BarStock enables users to create a collaborative music experience by logging into the app and inviting their friends via a text message. From there, BarStock aggregates the favorite songs of all session party users and cultivates a playlist with all user preferences in mind.
+Thus, BarStock was born. BarStock is a web application designed to solve the communication challenges between bar owners and distributors when placing inventory orders. In the bar industry, it is currently common practice to place weekly inventory orders via via text message communication with a distributor representative. Bar owners are not provided with pricing sheets and frequently do not know pricing, nor available inventory until several text message inquiries later. BarStock is intended to alleviate this headache by providing a user interface for bar owners to view distributor inventory, analyze profit margins, and automate text message ordering.
 
-BarStock utilizes the languages of Ruby, HTML, CSS, the web framework of Rails, and authentication via Spotify OAuth. The Spotify API is utilized to consume user playlist preference data.
+BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL database. The [BarStock User Interface](https://github.com/MRKrog/barstock-ui) and BarStock Back-End communicate via API requests/responses.
 
-#### [**_View BarStock in Production_**](https://barstock-backend.herokuapp.com)
-
-
-
-FRONT END LINK
-
+#### [**_Utilizes BarStock Back-End in Production_**](https://barstock-backend.herokuapp.com)
 
 ## Schema
-[image](https://user-images.githubusercontent.com/42525195/56476372-d6c7eb00-6453-11e9-8a53-eedc34bafe28.png)
+![Alt text](./public/images/schema.png?raw=true "Database Schema")
 
 ## Getting Started
 
-To run BarStock on a local machine, navigate to the directory in which you would like the project to be located, then execute the following commands:
+To run BarStock Back-End on a local machine, navigate to the directory in which you would like the project to be located, then execute the following commands:
 
 ```
 $ git clone git@github.com:MRKrog/barstock_backend.git
@@ -54,11 +49,9 @@ $ rails s -e production
 ```
 
 ## Endpoints
-
+<!--  INSERT ENDPOINT DOCUMENTATION HERE -->
 
 ## Tools Utilized:
-
-<!-- * <Continuous Integration> -->
 * Faraday
 * RSpec
 * Capybara
@@ -70,10 +63,11 @@ $ rails s -e production
 * SimpleCov
 * Postman
 * Circle CI
-<!-- * <insert background workers> -->
+* Twilio
+<!-- INSERT ADDITIONAL TOOLS -->
 
 ## Known Issues
-
+<!-- INSERT KNOWN ISSUES HERE -->
 
 ## How to Contribute
 
@@ -96,12 +90,12 @@ $ rails s -e production
 ### Authors
 * [Michael Krog](https://github.com/MRKrog)
 * [Julia Marco](https://github.com/juliamarco)
-* [Gabriel ](https://github.com/Inzurriaga)
+* [Gabriel Inzurriaga](https://github.com/Inzurriaga)
 * [Mackenzie Frey](https://github.com/Mackenzie-Frey)
 
 
 ### Acknowledgments
 * [Dione Wilson](https://github.com/dionew1)
 * [Cory Westerfield](https://github.com/corywest)
-* [David Whitaker]()
-* [Will Mitchell]()
+* [David Whitaker](https://github.com/damwhit)
+* [Will Mitchell](https://github.com/wvmitchell)
