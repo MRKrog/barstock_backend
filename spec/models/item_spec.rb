@@ -27,17 +27,17 @@ RSpec.describe Item, type: :model do
     it '#distributor_items' do
 
       distributor_1 = Distributor.create!(name: "RNDC",
-                                        address: "3319 Arapahoe st, Denver, CO",
-                                        distributor_code: "CODE1234",
-                                        api_key: "jgn983hy48thw9begh98h4539h4",
-                                        password: "password"
-                                        )
+                                          address: "3319 Arapahoe st, Denver, CO",
+                                          distributor_code: "CODE1234",
+                                          api_key: "jgn983hy48thw9begh98h4539h4",
+                                          password: "password"
+                                          )
       distributor_2 = Distributor.create!(name: "Other",
-                                        address: "other",
-                                        distributor_code: "other",
-                                        api_key: "other",
-                                        password: "other"
-                                        )
+                                          address: "other",
+                                          distributor_code: "other",
+                                          api_key: "other",
+                                          password: "other"
+                                          )
 
       item_1 = create(:item, distributor: distributor_1)
       item_2 = create(:item, distributor: distributor_1)
