@@ -17,4 +17,16 @@ class Business < ApplicationRecord
     only_integer: true,
     greater_than_or_equal_to: 1
   }
+
+  def self.create_new(params, code)
+    business = Business.new(params)
+    business.api_key = self.get_key
+    business.distributor = Distributor.find_by(code: code)
+    return business
+  end
+
+  def self.get_key
+    SecureRandom.urlsafe_base64
+  end
+
 end

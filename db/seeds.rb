@@ -10,11 +10,11 @@ BusinessItem.destroy_all
 Order.destroy_all
 OrderItem.destroy_all
 
-distributor = Distributor.create!(name: "RNDC",
-                                  address: "3319 Arapahoe st, Denver, CO",
-                                  distributor_code: "CODE1234",
-                                  api_key: "jgn983hy48thw9begh98h4539h4",
-                                  password: "password"
+distributor = Distributor.create!(name: 'RNDC',
+                                  address: '3319 Arapahoe st, Denver, CO',
+                                  code: 'CODE1234',
+                                  api_key: 'jgn983hy48thw9begh98h4539h4',
+                                  password: 'password'
                                   )
 
 business = create(:business, distributor: distributor)
