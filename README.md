@@ -1,7 +1,7 @@
 # README
 ## Description
 
-BarStock is an 13-day, four-person project during Mod 4 of 4, for Turing School's Back-End Engineering Program. Our team consists of two Front-End Developers and two Back-End Developers.
+BarStock is a 13-days, four-person project during Mod 4 of 4, for Turing School's Back-End Engineering Program. Our team consists of two Front-End Developers and two Back-End Developers.
 
 Our challenge was to create a web application from idea to inception by integrating our skills as Front-End and Back-End Developers to solve a real-world problem.
 
@@ -64,7 +64,6 @@ $ rails s -e production
 * Pry
 * Shoulda-Matchers
 * Factory Bot
-* Faker
 * Trello
 * SimpleCov
 * Postman
