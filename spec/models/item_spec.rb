@@ -32,21 +32,24 @@ RSpec.describe Item, type: :model do
                                         api_key: "jgn983hy48thw9begh98h4539h4",
                                         password: "password"
                                         )
-      Distributor.create!(name: "Other",
+      distributor_2 = Distributor.create!(name: "Other",
                                         address: "other",
                                         distributor_code: "other",
                                         api_key: "other",
                                         password: "other"
                                         )
 
-      create(:item, distributor: distributor_1)
-      create(:item, distributor: distributor_1)
+      item_1 = create(:item, distributor: distributor_1)
+      item_2 = create(:item, distributor: distributor_1)
+      create(:item, distributor: distributor_2)
 
       items = Item.distributor_items(distributor_1.id)
 
       expect(items.count).to eq(2)
       expect(items[0]).to be_an_instance_of(Item)
       expect(items[1]).to be_an_instance_of(Item)
+      expect(items[0].id).to eq(item_1.id)
+      expect(items[1].id).to eq(item_2.id)
       expect(items[0].distributor_id).to eq(distributor_1.id)
       expect(items[1].distributor_id).to eq(distributor_1.id)
     end
