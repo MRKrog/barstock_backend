@@ -51,7 +51,7 @@ $ rake assets:precompile
 $ rails s -e production
 ```
 
-## Endpoints
+## Available Endpoints
 <!--  INSERT ENDPOINT DOCUMENTATION HERE -->
 
 ## Tools Utilized:
