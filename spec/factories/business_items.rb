@@ -1,9 +1,9 @@
 FactoryBot.define do
   factory :business_item do
-    business { nil }
-    item { nil }
-    price_sold { 1.5 }
-    quantity { 1 }
-    serving_size { 1.5 }
+    business
+    item
+    sequence(:price_sold) { |n| ("#{n}".to_i+1)*4.5 }
+    sequence(:quantity) { |n| ("#{n}".to_i+1) }
+    sequence(:serving_size) { |n| ("#{n}".to_i+1)*2 }
   end
 end
