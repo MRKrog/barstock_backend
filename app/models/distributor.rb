@@ -6,6 +6,7 @@ class Distributor < ApplicationRecord
   has_many :businesses
 
   validates_presence_of :name
+  validates_uniqueness_of :name
   validates_presence_of :address
   validates_presence_of :code
   validates_uniqueness_of :code
