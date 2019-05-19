@@ -17,7 +17,7 @@ distributor = Distributor.create!(name: "RNDC",
                                   password: "password"
                                   )
 
-business = create(:business, distributor: distributor)
+business = create(:business, api_key: '444444444', distributor: distributor)
 representative = create(:representative, distributor: distributor)
 
 item_1 = create(:item, distributor: distributor)
