@@ -1,13 +1,9 @@
 class Api::V1::ItemsController < ApplicationController
 
   def index
-    business = find_business(look_up_params['api_key'])
-    if business == false
-      unauthorized
-    else
-      items = Item.distributor_items(business.distributor_id)
-      render json: ItemSerializer.new(items)
-    end
+    business = Business.find_by!(api_key: look_up_params[:api_key])
+    items = Item.distributor_items(business.distributor_id)
+    render json: ItemSerializer.new(items)
   end
 
   private
