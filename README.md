@@ -28,6 +28,9 @@ $ rails db:migrate
 $ rails db:seed
 ```
 
+<!-- INSERT HERE IF WE IMPLEMENT A RAKE TASK FOR CSV UPLOADS. REFERENCE THE RAILS ENGINE README FOR DOCUMENTATION   -->
+
+
 ### Running Tests
 
 To run the test suite, execute the following command:
@@ -52,8 +55,11 @@ $ rails s -e production
 <!--  INSERT ENDPOINT DOCUMENTATION HERE -->
 
 ## Tools Utilized:
-* Faraday
+
+* Fast JSON API
 * RSpec
+* Faraday
+<!-- Take Faraday out if we don't actually use it -->
 * Capybara
 * Pry
 * Shoulda-Matchers
