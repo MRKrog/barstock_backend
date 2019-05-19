@@ -6,7 +6,6 @@ class Api::V1::ItemsController < ApplicationController
       unauthorized
     else
       items = Item.distributor_items(business.distributor_id)
-      # We need to sort this by type somehow
       render json: ItemSerializer.new(items)
     end
   end
