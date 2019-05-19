@@ -11,4 +11,12 @@ class ApplicationController < ActionController::API
     render json: { error: exception.message }, status: :not_found
   end
 
+  def do_authentication(user, password)
+    if user.authenticate(password)
+      render json: { api_key: user.api_key }
+    else
+      render json: { unauth: 'Incorrect Password' }, status: 401
+    end
+  end
+
 end
