@@ -4,17 +4,17 @@ describe 'Items API', :type => :request do
   context 'with a correct API key' do
     it 'sends a list of items for a successful request' do
       distributor_1 = Distributor.create!(name: 'RNDC',
-                                        address: '3319 Arapahoe st, Denver, CO',
-                                        distributor_code: 'CODE12345',
-                                        api_key: 'jgn983hy48thw9begh98h4539h41',
-                                        password: 'password'
-                                        )
+                                          address: '3319 Arapahoe st, Denver, CO',
+                                          distributor_code: 'CODE12345',
+                                          api_key: 'jgn983hy48thw9begh98h4539h41',
+                                          password: 'password'
+                                          )
       distributor_2 = Distributor.create!(name: 'Other',
-                                        address: 'other',
-                                        distributor_code: 'other',
-                                        api_key: 'other',
-                                        password: 'other'
-                                        )
+                                          address: 'other',
+                                          distributor_code: 'other',
+                                          api_key: 'other',
+                                          password: 'other'
+                                          )
 
       business_1 = create(:business, api_key: '111111111', distributor: distributor_1)
       create(:business, api_key: '999999', distributor: distributor_2)
@@ -48,11 +48,11 @@ describe 'Items API', :type => :request do
   end
 
   context 'with an incorrect API key' do
-    it 'responds with a 401 unauthorized status' do
+    it 'responds with a 404 not found status' do
 
       get '/api/v1/items', :params => {'api_key': 'incorrect_key'}
 
-      expect(response.status).to eq(401)
+      expect(response.status).to eq(404)
     end
   end
 end
