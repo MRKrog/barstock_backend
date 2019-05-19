@@ -7,17 +7,17 @@ describe 'Items API', :type => :request do
 
       get '/api/v1/items', params: body
 
-      # result = JSON.parse(response.body)
+      result = JSON.parse(response.body)
 
       expect(response.status).to eq(200)
-      expect(response.body['data']['attributes']['alc_type'][0]).to have_key('beer')
-      expect(response.body['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('name')
-      expect(response.body['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('price')
-      expect(response.body['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('ounces')
-      expect(response.body['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('unit')
-      expect(response.body['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('thumbnail')
-      expect(response.body['data']['attributes']['alc_type'][1]).to have_key('liquor')
-      expect(response.body['data']['attributes']['alc_type'][2]).to have_key('wine')
+      expect(result['data']['attributes']['alc_type'][0]).to have_key('beer')
+      expect(result['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('name')
+      expect(result['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('price')
+      expect(result['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('ounces')
+      expect(result['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('unit')
+      expect(result['data']['attributes']['alc_type'][0]['beer']['alc_category'][0]['porter']).to have_key('thumbnail')
+      expect(result['data']['attributes']['alc_type'][1]).to have_key('liquor')
+      expect(result['data']['attributes']['alc_type'][2]).to have_key('wine')
     end
   end
 
