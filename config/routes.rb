@@ -6,6 +6,9 @@ Rails.application.routes.draw do
         post '/register', to: 'registration#create'
         post '/login', to: 'login#create'
       end
+      namespace :distributors do
+        post '/login', to: 'login#create'
+      end
     end
   end
 end
