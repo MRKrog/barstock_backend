@@ -22,4 +22,23 @@ RSpec.describe Item, type: :model do
     it { should have_many :business_items }
     it { should have_many(:business).through(:business_items) }
   end
+
+  describe 'class methods' do
+    it '#distributor_items' do
+      distributor_id = 1
+      items = Item.distributor_items(distributor_id)
+
+      expect(items.count).to eq(2)
+      expect(items[0]).to have_key('id')
+      expect(items[0]).to have_key('name')
+      expect(items[0]).to have_key('alc_type')
+      expect(items[0]).to have_key('alc_category')
+      expect(items[0]).to have_key('price')
+      expect(items[0]).to have_key('ounces')
+      expect(items[0]).to have_key('unit')
+      expect(items[0]).to have_key('thumbnail')
+      expect(items[0]).to have_key('quantity')
+      expect(items[0]['distributor_id']).to eq(distributor_id)
+    end
+  end
 end
