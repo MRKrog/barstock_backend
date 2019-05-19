@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      post '/businesses', to: 'businesses#create'
+      namespace :businesses do
+        post '/register', to: 'registration#create'
+        post '/login', to: 'login#create'
+      end
     end
   end
 end

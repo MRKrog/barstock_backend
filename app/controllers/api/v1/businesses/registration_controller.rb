@@ -1,4 +1,4 @@
-class Api::V1::BusinessesController < ApplicationController
+class Api::V1::Businesses::RegistrationController < ApplicationController
 
   def create
     business = Business.create_new(business_params, code_params[:distributor_code])
