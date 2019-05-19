@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_19_142409) do
+ActiveRecord::Schema.define(version: 2019_05_19_152940) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 2019_05_19_142409) do
     t.text "api_key"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
   create_table "items", force: :cascade do |t|
@@ -56,7 +57,7 @@ ActiveRecord::Schema.define(version: 2019_05_19_142409) do
     t.string "alc_category"
     t.float "price"
     t.float "ounces"
-    t.integer "unit"
+    t.string "unit"
     t.string "thumbnail"
     t.integer "quantity"
     t.datetime "created_at", null: false

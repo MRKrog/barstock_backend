@@ -7,7 +7,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.string :alc_category
       t.float :price
       t.float :ounces
-      t.integer :unit
+      t.string :unit
       t.string :thumbnail
       t.integer :quantity
 
