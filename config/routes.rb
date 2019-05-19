@@ -5,6 +5,7 @@ Rails.application.routes.draw do
         post '/register', to: 'registration#create'
         post '/login', to: 'login#create'
       end
+      post '/businesses', to: 'businesses#create'
     end
   end
 end
