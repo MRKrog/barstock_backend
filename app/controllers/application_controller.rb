@@ -18,5 +18,4 @@ class ApplicationController < ActionController::API
       render json: { unauth: 'Incorrect Password' }, status: 401
     end
   end
-
 end

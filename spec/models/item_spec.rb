@@ -22,4 +22,36 @@ RSpec.describe Item, type: :model do
     it { should have_many :business_items }
     it { should have_many(:business).through(:business_items) }
   end
+
+  describe 'class methods' do
+    it '#distributor_items' do
+
+      distributor_1 = Distributor.create!(name: "RNDC",
+                                          address: "3319 Arapahoe st, Denver, CO",
+                                          distributor_code: "CODE1234",
+                                          api_key: "jgn983hy48thw9begh98h4539h4",
+                                          password: "password"
+                                          )
+      distributor_2 = Distributor.create!(name: "Other",
+                                          address: "other",
+                                          distributor_code: "other",
+                                          api_key: "other",
+                                          password: "other"
+                                          )
+
+      item_1 = create(:item, distributor: distributor_1)
+      item_2 = create(:item, distributor: distributor_1)
+      create(:item, distributor: distributor_2)
+
+      items = Item.distributor_items(distributor_1.id)
+
+      expect(items.count).to eq(2)
+      expect(items[0]).to be_an_instance_of(Item)
+      expect(items[1]).to be_an_instance_of(Item)
+      expect(items[0].id).to eq(item_1.id)
+      expect(items[1].id).to eq(item_2.id)
+      expect(items[0].distributor_id).to eq(distributor_1.id)
+      expect(items[1].distributor_id).to eq(distributor_1.id)
+    end
+  end
 end

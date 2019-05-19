@@ -22,4 +22,8 @@ class Item < ApplicationRecord
     only_integer: true,
     greater_than_or_equal_to: 1
   }
+
+  def self.distributor_items(distributor_id)
+    Item.where(distributor_id: distributor_id)
+  end
 end
