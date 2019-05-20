@@ -5,13 +5,13 @@ describe 'Items API', :type => :request do
     it 'sends a list of items for a successful request' do
       distributor_1 = Distributor.create!(name: 'RNDC',
                                           address: '3319 Arapahoe st, Denver, CO',
-                                          distributor_code: 'CODE12345',
+                                          code: 'CODE12345',
                                           api_key: 'jgn983hy48thw9begh98h4539h41',
                                           password: 'password'
                                           )
       distributor_2 = Distributor.create!(name: 'Other',
                                           address: 'other',
-                                          distributor_code: 'other',
+                                          code: 'other',
                                           api_key: 'other',
                                           password: 'other'
                                           )
