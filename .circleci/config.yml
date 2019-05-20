@@ -1,9 +1,9 @@
 version: 2 # use CircleCI 2.0
 jobs: # a collection of steps
   build: # runs not using Workflows must have a `build` job as entry point
-    parallelism: 3 # run three instances of this job in parallel
+    parallelism: 1 # run three instances of this job in parallel
     docker: # run the steps with Docker
-      - image: circleci/ruby:2.4.2-jessie-node # ...with this image as the primary container; this is where all `steps` will run
+      - image: circleci/ruby:2.4.1-jessie-node # ...with this image as the primary container; this is where all `steps` will run
         environment: # environment variables for primary container
           BUNDLE_JOBS: 3
           BUNDLE_RETRY: 3
@@ -14,7 +14,7 @@ jobs: # a collection of steps
       - image: circleci/postgres:9.5-alpine # database image
         environment: # environment variables for database
           POSTGRES_USER: postgres
-          POSTGRES_DB: postgres_test
+          POSTGRES_DB: BarStock_test
           POSTGRES_PASSWORD: ""
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
@@ -32,35 +32,21 @@ jobs: # a collection of steps
             - rails-demo-bundle-v2-
 
       - run:
-        name: Configure Bundler
-        command: |
-          echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
-          source $BASH_ENV
-          gem install bundler
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
+
       - run: # Install Ruby dependencies
           name: Bundle Install
           command: bundle check || bundle install
+
       # Store bundle cache for Ruby dependencies
       - save_cache:
           key: rails-demo-bundle-v2-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
-
-      # Only necessary if app uses webpacker or yarn in some other way
-      - restore_cache:
-          keys:
-            - rails-demo-yarn-{{ checksum "yarn.lock" }}
-            - rails-demo-yarn-
-
-      - run:
-          name: Yarn Install
-          command: yarn install --cache-folder ~/.cache/yarn
-
-      # Store yarn / webpacker cache
-      - save_cache:
-          key: rails-demo-yarn-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
 
       - run:
           name: Wait for DB
@@ -74,7 +60,6 @@ jobs: # a collection of steps
           name: Run rspec in parallel
           command: |
             bundle exec rspec --profile 10 \
-                              --format RspecJunitFormatter \
                               --out test_results/rspec.xml \
                               --format progress \
                               $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
@@ -82,8 +67,8 @@ jobs: # a collection of steps
       # Save test results for timing analysis
       - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
           path: test_results
-      # See https://circleci.com/docs/2.0/deployment-integrations/ for example deploy configs
-deploy:
+
+  deploy:
     docker:
       - image: buildpack-deps:trusty
     steps:
@@ -91,7 +76,7 @@ deploy:
       - run:
           name: Deploy Master to Heroku
           command: |
-              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/peaceful-bayou-52715.git master
 
 workflows:
   version: 2
