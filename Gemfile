@@ -25,7 +25,6 @@ gem 'puma', '~> 3.11'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-gem 'fast_jsonapi'
 gem 'figaro'
 gem 'bcrypt'
 gem 'faker'
@@ -41,6 +40,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
   gem 'simplecov'
+  gem 'awesome_print'
   gem 'pry'
 end
 
