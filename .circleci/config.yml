@@ -34,9 +34,9 @@ jobs: # a collection of steps
       - run:
         name: Configure Bundler
         command: |
-        echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
-        source $BASH_ENV
-        gem install bundler
+          echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+          source $BASH_ENV
+          gem install bundler
       - run: # Install Ruby dependencies
           name: Bundle Install
           command: bundle check || bundle install
