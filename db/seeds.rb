@@ -1,4 +1,5 @@
 require 'factory_bot_rails'
+FactoryBot.find_definitions
 
 include FactoryBot::Syntax::Methods
 
