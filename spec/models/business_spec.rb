@@ -17,6 +17,7 @@ RSpec.describe Business, type: :model do
 
   describe 'relationships' do
     it { should belong_to :distributor }
+    it { should belong_to :representative }
     it { should have_many :orders }
     it { should have_many :business_items }
     it { should have_many(:order_items).through(:orders) }

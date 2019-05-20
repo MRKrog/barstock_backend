@@ -8,7 +8,8 @@ describe 'Business Account API' do
       api_key: 'jgn983hy48thw9begh98h4539h4',
       password: 'password'
     )
-    @business = create(:business, distributor: @distributor)
+    @rep = create(:representative, distributor: @distributor)
+    @business = create(:business, distributor: @distributor, representative: @rep)
   end
 
   it 'sends back the business information' do
@@ -17,8 +18,10 @@ describe 'Business Account API' do
     expect(response).to be_successful
     expect(response.status).to eq(200)
     result = JSON.parse(response.body)
-
-
+    expect(result).to have_key("business")
+    expect(result).to have_key("distributor")
+    expect(result).to have_key("rep")
+    expect(result["business"]["data"]["attributes"]["name"]).to eq(@business.name)
   end
 
 

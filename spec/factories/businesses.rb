@@ -1,6 +1,7 @@
 FactoryBot.define do
   factory :business do
     distributor
+    representative
     sequence(:name) { |n| "Business #{n}" }
     sequence(:address) { |n| "Address #{n}" }
     sequence(:email) { |n| "business_#{n}@gmail.com" }

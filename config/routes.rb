@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       namespace :businesses do
         post '/register', to: 'registration#create'
         post '/login', to: 'login#create'
+        get '/account', to: 'account#show'
       end
       namespace :distributors do
         post '/login', to: 'login#create'

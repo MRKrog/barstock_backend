@@ -2,6 +2,7 @@ class Business < ApplicationRecord
   has_secure_password
 
   belongs_to :distributor
+  belongs_to :representative
   has_many :orders
   has_many :order_items, through: :orders
   has_many :business_items
