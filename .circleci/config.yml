@@ -40,7 +40,7 @@ jobs: # a collection of steps
 
       - run: # Install Ruby dependencies
           name: Bundle Install
-          command: bundle check || bundle install
+          command: bundle install
 
       # Store bundle cache for Ruby dependencies
       - save_cache:
