@@ -10,4 +10,10 @@ class BusinessItem < ApplicationRecord
     only_integer: false,
     greater_than_or_equal_to: 0
   }
+
+  def self.get_items(business)
+    business.business_items.map do |bi|
+      BusinessItemInfo.new(bi, bi.item)
+    end
+  end
 end
