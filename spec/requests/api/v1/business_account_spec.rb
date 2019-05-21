@@ -18,10 +18,9 @@ describe 'Business Account API' do
     expect(response).to be_successful
     expect(response.status).to eq(200)
     result = JSON.parse(response.body)
-    expect(result).to have_key("business")
-    expect(result).to have_key("distributor")
-    expect(result).to have_key("rep")
     expect(result["business"]["data"]["attributes"]["name"]).to eq(@business.name)
+    expect(result["business"]["data"]["attributes"]["distributor"]["distributor_name"]).to eq(@distributor.name)
+    expect(result["business"]["data"]["attributes"]["representative"]["rep_name"]).to eq(@rep.name)
   end
 
   it 'sends back 404 if invalid api key' do

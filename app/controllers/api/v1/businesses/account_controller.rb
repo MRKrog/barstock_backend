@@ -1,15 +1,9 @@
 class Api::V1::Businesses::AccountController < ApplicationController
 
   def show
-    business = get_business(account_params[:api_key])
-    bus = BusinessAccount.new(business)
-    dis = BusinessDistributor.new(business.distributor)
-    rep = BusinessRepresentative.new(business.representative)
-    render json: {
-                  business: BusinessSerializer.new(bus),
-                  distributor: DistributorSerializer.new(dis),
-                  rep: RepresentativeSerializer.new(rep)
-                 }
+    bus = get_business(account_params[:api_key])
+    bus_data = BusinessAccount.new(bus, bus.distributor, bus.representative)
+    render json: { business: BusinessSerializer.new(bus_data) }
   end
 
   private
