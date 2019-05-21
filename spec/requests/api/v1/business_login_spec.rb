@@ -8,7 +8,8 @@ describe 'Business login API' do
       api_key: 'jgn983hy48thw9begh98h4539h4',
       password: 'password'
     )
-    @business = create(:business, distributor: @distributor)
+    @rep = create(:representative, distributor: @distributor)
+    @business = create(:business, distributor: @distributor, representative: @rep)
   end
   it 'sends back the api key for the business' do
 

@@ -19,10 +19,11 @@ class Business < ApplicationRecord
     greater_than_or_equal_to: 1
   }
 
-  def self.create_new(params, code)
-    business = Business.new(params)
+  def self.create_new(b_params, code_rep_params)
+    business = Business.new(b_params)
     business.api_key = self.get_key
-    business.distributor = Distributor.find_by(code: code)
+    business.distributor = Distributor.find_by(code: code_rep_params["distributor_code"])
+    business.representative = Representative.find_by(name: code_rep_params["rep"])
     return business
   end
 

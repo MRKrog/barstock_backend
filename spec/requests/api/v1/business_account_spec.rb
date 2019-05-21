@@ -24,5 +24,14 @@ describe 'Business Account API' do
     expect(result["business"]["data"]["attributes"]["name"]).to eq(@business.name)
   end
 
+  it 'sends back 404 if invalid api key' do
+    get '/api/v1/businesses/account', params: {api_key: "invalid_api_key"}
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(404)
+    result = JSON.parse(response.body)
+    expect(result["error"]).to eq("Couldn't find Business")
+  end
+
 
 end
