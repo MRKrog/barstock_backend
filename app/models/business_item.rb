@@ -18,6 +18,7 @@ class BusinessItem < ApplicationRecord
   end
 
   def self.create_new(params, business)
+    # binding.pry
     item = Item.find(params[:item_id])
     BusinessItem.new(business: business,
                      item: item,
