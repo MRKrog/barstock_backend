@@ -16,4 +16,14 @@ class BusinessItem < ApplicationRecord
       BusinessItemInfo.new(bi, bi.item)
     end
   end
+
+  def self.create_new(params, business)
+    item = Item.find(params[:item_id])
+    BusinessItem.new(business: business,
+                     item: item,
+                     price_sold: params[:price_sold],
+                     quantity: params[:quantity],
+                     serving_size: params[:serving_size]
+                    )
+  end
 end

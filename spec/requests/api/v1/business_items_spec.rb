@@ -15,6 +15,7 @@ describe 'Business Items API' do
     @item_3 = create(:item, distributor: @distributor)
     @item_4 = create(:item, distributor: @distributor)
     @item_5 = create(:item, distributor: @distributor)
+    @item_6 = create(:item, distributor: @distributor)
     @business_item_1 = create(:business_item, business: @business, item: @item_1)
     @business_item_2 = create(:business_item, business: @business, item: @item_2)
     @business_item_3 = create(:business_item, business: @business, item: @item_3)
@@ -32,7 +33,7 @@ describe 'Business Items API' do
     expect(result["data"][-1]["attributes"]["price_sold"]).to eq(@business_item_5.price_sold)
   end
 
-  it 'sends back 404 if invalid api key' do
+  it 'sends back 404 if invalid api key with get' do
     get '/api/v1/businesses/account', params: {api_key: "invalid_api_key"}
 
     expect(response).to_not be_successful
@@ -40,4 +41,50 @@ describe 'Business Items API' do
     result = JSON.parse(response.body)
     expect(result["error"]).to eq("Couldn't find Business")
   end
+
+  it 'creates a new business item attached to an item' do
+    post '/api/v1/business_items', params: {
+                                            api_key: @business.api_key,
+                                            price_sold: 22.5,
+                                            quantity: nil,
+                                            serving_size: 2,
+                                            item_id: @item_6.id
+                                           }
+    expect(response).to be_successful
+    expect(response.status).to eq(201)
+    bi = BusinessItem.last
+    expect(bi.business).to eq(@business)
+    expect(bi.item).to eq(@item_6)
+  end
+
+  it 'sends back 404 if invalid api key with post' do
+    post '/api/v1/business_items', params: {
+                                            api_key: 'invalid',
+                                            price_sold: 22.5,
+                                            quantity: nil,
+                                            serving_size: 2,
+                                            item_id: @item_6.id
+                                           }
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(404)
+    result = JSON.parse(response.body)
+    expect(result["error"]).to eq("Couldn't find Business")
+  end
+
+  it 'sends back a 422 status if missing information when creating it' do
+    post '/api/v1/business_items', params: {
+                                            api_key: @business.api_key,
+                                            quantity: nil,
+                                            serving_size: 2,
+                                            item_id: @item_6.id
+                                           }
+
+    expect(response).to_not be_successful
+    message = JSON.parse(response.body)
+    expect(message).to eq({"price_sold"=>["can't be blank", "is not a number"]})
+    expect(response.status).to eq(422)
+  end
+
+
 end
