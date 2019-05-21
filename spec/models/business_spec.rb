@@ -26,11 +26,11 @@ RSpec.describe Business, type: :model do
   describe 'class methods' do
     it '.create_new' do
       params = {
-                "name"=>"Cool Bar",
-                "address"=>"1 st",
-                "email"=>"whatever@example.com",
-                "password"=>"password",
-                "phone_number"=>"1234"
+                name: "Cool Bar",
+                address: "1 st",
+                email: "whatever@example.com",
+                password: "password",
+                phone_number: "1234" 
                }
       code = "CODE1234"
       business = Business.create_new(params, code)
