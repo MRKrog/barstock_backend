@@ -1,6 +1,8 @@
 require 'csv'
 
 DatabaseCleaner.clean_with(:truncation)
+DatabaseCleaner.allow_production = true
+DatabaseCleaner.allow_remote_database_url = true
 
 Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
                     name: 'RNDC',
