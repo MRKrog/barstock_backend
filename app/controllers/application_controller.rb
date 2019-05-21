@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::API
-
   rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
   rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
 
@@ -17,5 +16,9 @@ class ApplicationController < ActionController::API
     else
       render json: { unauth: 'Incorrect Password' }, status: 401
     end
+  end
+
+  def find_business(api_key)
+    Business.find_by!(api_key: api_key)
   end
 end
