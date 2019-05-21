@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_20_222643) do
+ActiveRecord::Schema.define(version: 2019_05_21_225837) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,12 +32,12 @@ ActiveRecord::Schema.define(version: 2019_05_20_222643) do
     t.string "name"
     t.text "address"
     t.string "email"
-    t.integer "phone_number"
     t.string "password_digest"
     t.text "api_key"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "representative_id"
+    t.bigint "phone_number"
     t.index ["distributor_id"], name: "index_businesses_on_distributor_id"
     t.index ["representative_id"], name: "index_businesses_on_representative_id"
   end
@@ -91,10 +91,10 @@ ActiveRecord::Schema.define(version: 2019_05_20_222643) do
   create_table "representatives", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.integer "phone_number"
     t.bigint "distributor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "phone_number"
     t.index ["distributor_id"], name: "index_representatives_on_distributor_id"
   end
 

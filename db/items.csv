@@ -1,0 +1,35 @@
+distributor_id,name,alc_type,alc_category,price,ounces,unit,thumbnail,quantity
+1,Fireball,liquor,whiskey,18.78,33.80,ounces,https://products2.imgix.drizly.com/ci-fireball-cinnamon-whisky-355ddd0b8b3a2c55.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Jim Beam,liquor,whiskey,16.99,25.30,ounces,https://products1.imgix.drizly.com/ci-jim-beam-bourbon-whiskey-28f7c73c8e0e8223.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Jack Daniels,liquor,whiskey,28.80,33.80,ounces,https://products3.imgix.drizly.com/ci-jack-daniels-old-no-7-92707d5e737cf4ac.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Bulleit,liquor,whiskey,30.30,33.80,ounces,https://products2.imgix.drizly.com/ci-bulleit-bourbon-07be0e5c0084bc44.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Jameson,liquor,whiskey,31.88,33.80,ounces,https://products2.imgix.drizly.com/ci-jameson-irish-whiskey-c31f346b1bd3ac77.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Leopold,liquor,whiskey,28.57,33.80,ounces,https://products1.imgix.drizly.com/ci-leopold-bros-whiskey-0fa69eb91023959b.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Makers Mark,liquor,whiskey,36.71,33.80,ounces,https://products0.imgix.drizly.com/ci-makers-mark-bourbon-whisky-8993a9352bde4e36.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Tincup,liquor,whiskey,23.70,33.80,ounces,https://products2.imgix.drizly.com/ci-tincup-colorado-whiskey-9817e364c7922b59.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Kentucky Deluxe,liquor,whiskey,8.21,33.80,ounces,https://products0.imgix.drizly.com/ci-kentucky-deluxe-bourbon-9715562ac7be0a4e.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,McCormicks Vodka,liquor,vodka,8.21,33.80,ounces,https://products3.imgix.drizly.com/ci-mccormick-vodka-adf483458412d8b9.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Deep Eddy,liquor,vodka,16.88,33.80,ounces,https://products1.imgix.drizly.com/ci-deep-eddy-vodka-218a33ff0e28cf2b.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Titos,liquor,vodka,26.80,25.30,ounces,https://products1.imgix.drizly.com/ci-titos-handmade-vodka-35af185a6e862599.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Conquistador,liquor,tequila,26.80,33.80,ounces,https://products2.imgix.drizly.com/default_product_liquor.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Espolon,liquor,tequila,40.72,33.80,ounces,https://products2.imgix.drizly.com/ci-espolon-blanco-eff46b985fac5cc9.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Sauza,liquor,tequila,11.79,33.80,ounces,https://products3.imgix.drizly.com/ci-sauza-silver-tequila-bb3ccdc27102a9f3.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Patron Silver,liquor,tequila,41.95,25.30,ounces,https://products3.imgix.drizly.com/ci-patron-silver-25fa130a809ea038.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Castillo,liquor,rum,7.87,33.80,ounces,https://products1.imgix.drizly.com/ci-castillo-silver-rum-9d2628c234a3a621.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Malibu,liquor,rum,19.65,33.80,ounces,https://products0.imgix.drizly.com/ci-malibu-original-coconut-rum-8b33affb1f261a62.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Captain Morgan,liquor,rum,26.54,33.80,ounces,https://products3.imgix.drizly.com/ci-captain-morgan-original-spiced-rum-849c37dcdbe2b639.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,McCormicks Gin,liquor,gin,7.29,33.80,ounces,https://products1.imgix.drizly.com/ci-mccormick-gin-07dcfaa32fc4a207.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Bombay,liquor,gin,31.26,25.30,ounces,https://products1.imgix.drizly.com/ci-bombay-dry-gin-3979b678d5783057.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,PBR,beer,lager,21.25,288,case,https://products3.imgix.drizly.com/ci-pabst-blue-ribbon-16cdc21d4cdd2998.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Montucky,beer,lager,21.00,288,case,https://products1.imgix.drizly.com/ci-montucky-cold-snack-7f6acc5d0d547412.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Budweiser,beer,lager,24.35,288,case,https://products0.imgix.drizly.com/ci-budweiser-9cda9582631c8c77.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Bud Light,beer,lager,24.35,288,case,https://products0.imgix.drizly.com/ci-bud-light-19699dcd3e7591e3.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Coors Banquet,beer,lager,25.35,288,case,https://products2.imgix.drizly.com/ci-coors-banquet-2377c317e74b4b3c.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Coors Light,beer,lager,24.60,288,case,https://products0.imgix.drizly.com/ci-coors-light-9373e1becba78338.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Miller Light,beer,lager,24.22,288,case,https://products1.imgix.drizly.com/ci-miller-high-life-light-7ac8b97f74c7a1af.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Modelo,beer,lager,27.05,288,case,https://products0.imgix.drizly.com/ci-modelo-especial-440cbc07250fd500.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Oskar Blues Pinner,beer,indian pale ale,28,288,case,https://products2.imgix.drizly.com/ci-oskar-blues-pinner-throwback-ipa-2f6a9be86b42e5ad.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Lagunitas IPA,beer,indian pale ale,32.12,288,case,https://products0.imgix.drizly.com/ci-lagunitas-ipa-394199b9f8ab7840.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Oskar Blues Dales,beer,indian pale ale,28.2,288,case,https://products0.imgix.drizly.com/ci-oskar-blues-dales-pale-ale-e4b17bc3cab9d60d.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,10 Barrel Cucumber,beer,sour,32.12,288,case,https://products0.imgix.drizly.com/ci-10-barrel-cucumber-sour-crush-4014d5cc2309042f.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,10 Barrel Raspberry,beer,sour,32.12,288,case,https://products1.imgix.drizly.com/ci-10-barrel-raspberry-sour-crush-33f9f04ef23bb55f.png?auto=format%2Ccompress&fm=jpeg&q=20,100
