@@ -7,4 +7,12 @@ class BusinessSerializer
              :email,
              :phone_number
 
+  attribute :distributor do |object|
+    object.distributor
+  end
+
+  attribute :representative do |object|
+    object.rep
+  end
+
 end
