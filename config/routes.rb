@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/items', to: 'items#index'
       get '/business_items', to: 'business_items#index'
+      post '/business_items', to: 'business_items#create'
       namespace :businesses do
         post '/register', to: 'registration#create'
         post '/login', to: 'login#create'
