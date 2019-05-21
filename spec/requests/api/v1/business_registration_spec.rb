@@ -8,6 +8,7 @@ require 'rails_helper'
         api_key: 'jgn983hy48thw9begh98h4539h4',
         password: 'password'
       )
+			@rep = create(:representative, distributor: @distributor)
     end
 	  it 'sends back an api key' do
 	    post '/api/v1/businesses/register', params: {
@@ -16,13 +17,15 @@ require 'rails_helper'
 						                                        password: 'password',
 					                                          phone_number: '1234',
 					                                          distributor_code: @distributor.code,
-					                                          address: '1 st'
+					                                          address: '1 st',
+																										rep: @rep.name
 						                                       }
 
 	    expect(response).to be_successful
       expect(response.status).to eq(201)
       business = Business.last
       expect(business.distributor).to eq(@distributor)
+      expect(business.representative).to eq(@rep)
       key = JSON.parse(response.body)["api_key"]
       expect(key).to eq(business.api_key)
 	  end
@@ -39,19 +42,21 @@ require 'rails_helper'
 
       expect(response).to_not be_successful
       message = JSON.parse(response.body)
-      expect(message).to eq({"name"=>["can't be blank"]})
+      expect(message["name"]).to eq(["can't be blank"])
+      expect(message["representative"]).to eq(["must exist"])
       expect(response.status).to eq(422)
     end
 
     it 'sends back a 422 status if email already taken' do
-      business = create(:business, distributor: @distributor)
+	    business = create(:business, distributor: @distributor, representative: @rep)
       post '/api/v1/businesses/register', params: {
 					                                          name: 'Cool Bar',
 					                                          email: business.email,
 					                                          password: 'password',
 					                                          phone_number: '1234',
 					                                          distributor_code: @distributor.code,
-					                                          address: '1 st'
+					                                          address: '1 st',
+																										rep: @rep.name
 					                                         }
 
       expect(response).to_not be_successful

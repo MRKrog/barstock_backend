@@ -18,4 +18,8 @@ class ApplicationController < ActionController::API
       render json: { unauth: 'Incorrect Password' }, status: 401
     end
   end
+
+  def get_business(api_key)
+    @business ||= Business.find_by!(api_key: api_key)
+  end
 end

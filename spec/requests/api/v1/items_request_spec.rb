@@ -16,8 +16,10 @@ describe 'Items API', :type => :request do
                                           password: 'other'
                                           )
 
-      business_1 = create(:business, api_key: '111111111', distributor: distributor_1)
-      create(:business, api_key: '999999', distributor: distributor_2)
+      rep = create(:representative, distributor: distributor_1)
+
+      business_1 = create(:business, api_key: '111111111', distributor: distributor_1, representative: rep)
+      create(:business, api_key: '999999', distributor: distributor_2, representative: rep)
 
       item_1 = create(:item, distributor: distributor_1)
       item_2 = create(:item, distributor: distributor_1)
