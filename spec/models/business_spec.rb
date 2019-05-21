@@ -30,15 +30,15 @@ RSpec.describe Business, type: :model do
                 address: "1 st",
                 email: "whatever@example.com",
                 password: "password",
-                phone_number: "1234" 
+                phone_number: "1234"
                }
       code = "CODE1234"
       business = Business.create_new(params, code)
       expect(business).to be_a(Business)
-      expect(business.name).to eq(params["name"])
-      expect(business.address).to eq(params["address"])
-      expect(business.email).to eq(params["email"])
-      expect(business.phone_number.to_s).to eq(params["phone_number"])
+      expect(business.name).to eq(params[:name])
+      expect(business.address).to eq(params[:address])
+      expect(business.email).to eq(params[:email])
+      expect(business.phone_number.to_s).to eq(params[:phone_number])
     end
 
     it '.get_key' do
