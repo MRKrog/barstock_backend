@@ -4,6 +4,7 @@ class ItemSerializer
               :alc_category,
               :name,
               :price,
+              :quantity,
               :ounces,
               :unit,
               :thumbnail
