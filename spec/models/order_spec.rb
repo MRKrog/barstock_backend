@@ -20,8 +20,9 @@ RSpec.describe Order, type: :model do
                                         api_key: 'jgn983hy48thw9begh98h4539h4',
                                         password: 'password'
                                         )
-# THIS TEST WILL FAIL UPON MERGING TO MASTER DUE TO Business needing a representative.
-      business = create(:business, api_key: '444444444', distributor: distributor)
+
+      rep = create(:representative, distributor: distributor)
+      business = create(:business, distributor: distributor, representative: rep)
       item = create(:item, distributor: distributor)
 
       order = create(:order, business: business)
