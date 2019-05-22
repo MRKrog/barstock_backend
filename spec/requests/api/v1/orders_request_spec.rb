@@ -19,33 +19,35 @@ describe 'Orders API', :type => :request do
   context 'with a correct API key' do
     it 'creates an order for a successful request' do
 
-      params = {'api_key': @business.api_key,
-                'total_cost': '200',
-                'total_revenue': '40',
-                'items': [{
-                   'id': "#{@item_1.id}",
-                   'quantity': '4',
-                   'price': '25'
-                 },
-                 {
-                    'id': "#{@item_2.id}",
-                    'quantity': '2',
-                    'price': '50'
-                  }
-               ]
-               }
+      body = {
+              "api_key": @business.api_key,
+              "total_cost": "200",
+              "total_revenue": "4",
+              "items": [
+                {
+                  "id": @item_1.id,
+                  "quantity": "4",
+                  "price": "5.8"
+                },
+                {
+                  "id": @item_2.id,
+                  "quantity": "2",
+                  "price": "20"
+                }
+              ]
+            }
 
       expect(Order.all.count).to eq(0)
 
-      post '/api/v1/orders', params: params
-
+      # headers = { CONTENT_TYPE: 'application/json', ACCEPT: 'application/json' }
+      post '/api/v1/orders', params: body
       result = JSON.parse(response.body)['data']
 
       expect(response.status).to eq(201)
       expect(result).to eq(nil)
       expect(Order.all.count).to eq(1)
-      expect(Order.all[0].total_cost).to eq(200.0)
-      expect(Order.all[0].total_revenue).to eq(40)
+      expect(Order.all[0].total_cost).to eq(body[:total_cost].to_f)
+      expect(Order.all[0].total_revenue).to eq(body[:total_revenue].to_f)
       expect(Order.all[0].items[0].id).to eq(@item_1.id)
       expect(Order.all[0].items[1].id).to eq(@item_2.id)
       expect(Order.all[0].business_id).to eq(@business.id)
@@ -56,8 +58,8 @@ describe 'Orders API', :type => :request do
       expect(OrderItem.all[1].item_id).to eq(@item_2.id)
       expect(OrderItem.all[0].quantity).to eq(4)
       expect(OrderItem.all[1].quantity).to eq(2)
-      expect(OrderItem.all[0].price).to eq(25)
-      expect(OrderItem.all[1].price).to eq(50)
+      expect(OrderItem.all[0].price).to eq(5.8)
+      expect(OrderItem.all[1].price).to eq(20.0)
     end
 
     it 'responds with a 422 status for bad request due to missing total_cost and total_revenue' do
