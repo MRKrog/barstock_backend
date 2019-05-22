@@ -18,8 +18,8 @@ describe 'Items API', :type => :request do
 
       rep = create(:representative, distributor: distributor_1)
 
-      business_1 = create(:business, api_key: '111111111', distributor: distributor_1, representative: rep)
-      create(:business, api_key: '999999', distributor: distributor_2, representative: rep)
+      business_1 = create(:business, distributor: distributor_1, representative: rep)
+      create(:business, distributor: distributor_2, representative: rep)
 
       item_1 = create(:item, distributor: distributor_1)
       item_2 = create(:item, distributor: distributor_1)
@@ -43,7 +43,7 @@ describe 'Items API', :type => :request do
       expect(result[0]['attributes']['alc_category']).to eq(item_1.alc_category)
       expect(result[0]['attributes']['name']).to eq(item_1.name)
       expect(result[0]['attributes']['price']).to eq(item_1.price)
-      expect(result[0]['attributes']['ounces']).to eq(item_1.ounces)
+      expect(result[0]['attributes']['ounces']).to eq(item_1.ounces.round(1))
       expect(result[0]['attributes']['unit']).to eq(item_1.unit)
       expect(result[0]['attributes']['thumbnail']).to eq(item_1.thumbnail)
     end
