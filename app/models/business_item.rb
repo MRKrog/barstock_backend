@@ -10,4 +10,20 @@ class BusinessItem < ApplicationRecord
     only_integer: false,
     greater_than_or_equal_to: 0
   }
+
+  def self.get_items(business)
+    business.business_items.map do |bi|
+      BusinessItemInfo.new(bi, bi.item)
+    end
+  end
+
+  def self.create_new(params, business)
+    item = Item.find(params[:item_id])
+    BusinessItem.new(business: business,
+                     item: item,
+                     price_sold: params[:price_sold],
+                     quantity: params[:quantity],
+                     serving_size: params[:serving_size]
+                    )
+  end
 end

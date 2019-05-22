@@ -12,7 +12,7 @@ BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL 
 #### [**_Utilizes BarStock Back-End in Production_**](https://barstock-backend.herokuapp.com)
 
 ## Schema
-![Alt text](./public/schema.png?raw=true "Database Schema")
+![Alt text](./public/images/schema.png?raw=true "Database Schema")
 
 ## Getting Started
 

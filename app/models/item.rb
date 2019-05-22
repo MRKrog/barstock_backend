@@ -26,4 +26,5 @@ class Item < ApplicationRecord
   def self.distributor_items(distributor_id)
     Item.where(distributor_id: distributor_id)
   end
+
 end

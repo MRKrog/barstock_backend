@@ -11,5 +11,6 @@ RSpec.describe Representative, type: :model do
 
   describe 'relationships' do
     it { should belong_to :distributor }
+    it { should have_many :businesses }
   end
 end

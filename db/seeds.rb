@@ -1,46 +1,38 @@
-require 'factory_bot_rails'
-FactoryBot.find_definitions
+require 'csv'
 
-include FactoryBot::Syntax::Methods
+Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
+                    name: 'RNDC',
+                    api_key: 'f01zdxN0RGWufApdZQxwUg',
+                    password: 'password',
+                    code: 'RNDC1234'
+                    )
 
-Item.destroy_all
-Distributor.destroy_all
-Representative.destroy_all
-Business.destroy_all
-BusinessItem.destroy_all
-Order.destroy_all
-OrderItem.destroy_all
+Representative.create!(name: 'Paul',
+                       email: 'paul@gmail.com',
+                       phone_number: 7205038001,
+                       distributor: Distributor.first
+                      )
 
-distributor = Distributor.create!(name: 'RNDC',
-                                  address: '3319 Arapahoe st, Denver, CO',
-                                  code: 'CODE1234',
-                                  api_key: 'jgn983hy48thw9begh98h4539h4',
-                                  password: 'password'
-                                  )
+Business.create!(distributor: Distributor.first,
+                 representative: Representative.first,
+                 name: 'The Basement',
+                 address: '78295 US Highway 40 Winter Park, CO',
+                 email: 'michaelryankrog@gmail.com',
+                 phone_number: 9703637280,
+                 password: 'password',
+                 api_key: '0yWwUm5CZ8CGR8MhT7FL9w')
 
-business = create(:business, api_key: '444444444', distributor: distributor)
-representative = create(:representative, distributor: distributor)
+items = CSV.new(File.open('./db/items.csv'), headers: true, header_converters: :symbol).read
+items.each do |line|
+  line = line.to_h
+  Item.create!(line)
+end
 
-item_1 = create(:item, distributor: distributor)
-item_2 = create(:item, distributor: distributor)
-item_3 = create(:item, distributor: distributor)
-item_4 = create(:item, distributor: distributor)
-create_list(:item, 20, distributor: distributor)
-
-business_item_1 = create(:business_item, business: business, item: item_1)
-business_item_2 = create(:business_item, business: business, item: item_2)
-business_item_3 = create(:business_item, business: business, item: item_3)
-business_item_4 = create(:business_item, business: business, item: item_4)
-
-order = create(:order, business: business)
-
-rng = Random.new
-
-create(:order_item, order: order, item: item_1, created_at: (rng.rand(23)+1).hour.ago, updated_at: rng.rand(59).minutes.ago)
-create(:order_item, order: order, item: item_2, created_at: (rng.rand(23)+1).hour.ago, updated_at: rng.rand(59).minutes.ago)
-create(:order_item, order: order, item: item_3, created_at: (rng.rand(23)+1).hour.ago, updated_at: rng.rand(59).minutes.ago)
-create(:order_item, order: order, item: item_3, created_at: (rng.rand(23)+1).hour.ago, updated_at: rng.rand(59).minutes.ago)
-create(:order_item, order: order, item: item_4, created_at: (rng.rand(23)+1).hour.ago, updated_at: rng.rand(59).minutes.ago)
+bi = CSV.new(File.open('./db/business-items.csv'), headers: true, header_converters: :symbol).read
+bi.each do |line|
+  line = line.to_h
+  BusinessItem.create!(line)
+end
 
 puts 'seed data finished'
 puts "Business created: #{Business.count.to_i}"
