@@ -10,5 +10,4 @@ class Api::V1::Businesses::LoginController < ApplicationController
   def login_params
     params.permit(:email, :password)
   end
-
 end

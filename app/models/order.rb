@@ -7,4 +7,17 @@ class Order < ApplicationRecord
     only_integer: false,
     greater_than_or_equal_to: 0
   }
+  validates :total_revenue, presence: true, numericality: {
+    only_integer: false
+  }
+
+  def create_order_items(items, order_id)
+    items.each do |item|
+      oi = OrderItem.create!(quantity: item[:quantity],
+                             price: item[:price],
+                             order_id: order_id,
+                             item_id: item[:id],
+                             unit: 1)
+    end
+  end
 end
