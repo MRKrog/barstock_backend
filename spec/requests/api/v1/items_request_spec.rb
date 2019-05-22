@@ -229,10 +229,11 @@ describe 'Items UPDATE API', :type => :request do
                   'unit': '3',
                   'thumbnail': 'url'
                 }
-
-      patch "/api/v1/items/99999999999", params: params
+      id = 99999999999
+      patch "/api/v1/items/#{id}", params: params
 
       expect(response.status).to eq(404)
+      expect(JSON.parse(response.body)['error']).to eq("Couldn't find Item with 'id'=#{id}")
     end
   end
 
