@@ -131,24 +131,84 @@ describe 'Items POST API', :type => :request do
     end
   end
 
-    context 'with an invalid API key' do
-      it 'sends a 404 response' do
-        params = {
-                    'api_key': 'incorrect key',
-                    'name': 'name',
-                    'alc_type': 'type',
-                    'alc_category': 'category',
-                    'price': '3',
-                    'quantity': '4',
-                    'ounces': '3.3',
-                    'unit': '3',
-                    'thumbnail': 'url'
-                  }
+  context 'with an invalid API key' do
+    it 'sends a 404 response' do
+      params = {
+                  'api_key': 'incorrect key',
+                  'name': 'name',
+                  'alc_type': 'type',
+                  'alc_category': 'category',
+                  'price': '3',
+                  'quantity': '4',
+                  'ounces': '3.3',
+                  'unit': '3',
+                  'thumbnail': 'url'
+                }
 
-        post '/api/v1/items', params: params
+      post '/api/v1/items', params: params
 
-        expect(response.status).to eq(404)
-        expect(JSON.parse(response.body)['error']).to eq("Couldn't find Distributor")
-      end
+      expect(response.status).to eq(404)
+      expect(JSON.parse(response.body)['error']).to eq("Couldn't find Distributor")
     end
+  end
+end
+
+describe 'Items UPDATE API', :type => :request do
+  context 'with a correct API key' do
+    it 'update an item in the database and returns a 200 status with a successful request' do
+      distributor = Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
+                          name: 'RNDC',
+                          api_key: 'f01zdxN0RGWufApdZQxwUg',
+                          password: 'password',
+                          code: 'RNDC1234'
+                          )
+      item = create(:item, distributor: distributor)
+
+      name = 'update name'
+      type = 'update type'
+      category = 'update category'
+      price = '300'
+      quantity = '400'
+      ounces = '27.3'
+      unit = '500'
+      thumbnail = 'url updated'
+
+      params = {
+                  'api_key': distributor.api_key,
+                  'name': name,
+                  'alc_type': type,
+                  'alc_category': category,
+                  'price': '300',
+                  'quantity': '400',
+                  'ounces': '27.3',
+                  'unit': '500',
+                  'thumbnail': 'url updated'
+                }
+
+      patch "/api/v1/items/#{item.id}", params: params
+
+      result = JSON.parse(response.body)['data']
+
+      expect(response.status).to eq(200)
+      expect(result['id']).to eq(item.id.to_s)
+      expect(result['type']).to eq('item')
+      expect(result['attributes']['name']).to eq(name)
+      expect(result['attributes']['alc_type']).to eq('update type')
+      expect(result['attributes']['alc_category']).to eq('update category')
+      expect(result['attributes']['price']).to eq(300)
+      expect(result['attributes']['quantity']).to eq(400)
+      expect(result['attributes']['ounces']).to eq(27.3)
+      expect(result['attributes']['unit']).to eq('500')
+      expect(result['attributes']['thumbnail']).to eq('url updated')
+
+      expect(Item.find(item.id).name).to eq(name)
+      expect(Item.find(item.id).alc_type).to eq(type)
+      expect(Item.find(item.id).alc_category).to eq(category)
+      expect(Item.find(item.id).price).to eq(price.to_f)
+      expect(Item.find(item.id).quantity).to eq(quantity.to_i)
+      expect(Item.find(item.id).ounces).to eq(ounces.to_f)
+      expect(Item.find(item.id).unit).to eq(unit)
+      expect(Item.find(item.id).thumbnail).to eq(thumbnail)
+    end
+  end
 end
