@@ -12,15 +12,41 @@ describe 'Orders API', :type => :request do
     @item_1 = create(:item, distributor: @distributor)
     @item_2 = create(:item, distributor: @distributor)
     @rep = create(:representative, distributor: @distributor)
-
     @business = create(:business, distributor: @distributor, representative: @rep)
-
+    @business_2 = create(:business, distributor: @distributor, representative: @rep)
+    @order_1 = create(:order, business: @business)
+    @order_2 = create(:order, business: @business)
   end
+
   context 'with a correct API key' do
+    it 'sends a list of orders for a successful request' do
+
+      get '/api/v1/orders', params: {'api_key': @business.api_key}
+
+      result = JSON.parse(response.body)['data']
+      expect(response.status).to eq(200)
+      expect(result.count).to eq(2)
+      expect(result[0]['id']).to eq(@order_1.id.to_s)
+      expect(result[0]['type']).to eq('order')
+      expect(result[0]['attributes']['id']).to eq(@order_1.id)
+      expect(result[0]['attributes']['total_cost']).to eq(@order_1.total_cost)
+      expect(result[0]['attributes']['total_revenue']).to eq(@order_1.total_revenue)
+    end
+
+    it 'sends a message for successful request, but there are no orders in the database' do
+
+      get '/api/v1/orders', params: {'api_key': @business_2.api_key}
+
+      result = JSON.parse(response.body)
+
+      expect(response.status).to eq(200)
+      expect(result['data']).to eq([])
+    end
+
     it 'creates an order for a successful request' do
 
       body = {
-              "api_key": @business.api_key,
+              "api_key": @business_2.api_key,
               "total_cost": "200",
               "total_revenue": "4",
               "items": [
@@ -37,29 +63,28 @@ describe 'Orders API', :type => :request do
               ]
             }
 
-      expect(Order.all.count).to eq(0)
+      expect(@business_2.orders.count).to eq(0)
 
-      # headers = { CONTENT_TYPE: 'application/json', ACCEPT: 'application/json' }
       post '/api/v1/orders', params: body
       result = JSON.parse(response.body)['data']
 
       expect(response.status).to eq(201)
       expect(result).to eq(nil)
-      expect(Order.all.count).to eq(1)
-      expect(Order.all[0].total_cost).to eq(body[:total_cost].to_f)
-      expect(Order.all[0].total_revenue).to eq(body[:total_revenue].to_f)
-      expect(Order.all[0].items[0].id).to eq(@item_1.id)
-      expect(Order.all[0].items[1].id).to eq(@item_2.id)
-      expect(Order.all[0].business_id).to eq(@business.id)
+      expect(@business_2.orders.count).to eq(1)
+      expect(@business_2.orders[0].total_cost).to eq(body[:total_cost].to_f)
+      expect(@business_2.orders[0].total_revenue).to eq(body[:total_revenue].to_f)
+      expect(@business_2.orders[0].items[0].id).to eq(@item_1.id)
+      expect(@business_2.orders[0].items[1].id).to eq(@item_2.id)
+      expect(@business_2.orders[0].business_id).to eq(@business_2.id)
       expect(OrderItem.all.count).to eq(2)
-      expect(OrderItem.all[0].order_id).to eq(Order.all[0].id)
-      expect(OrderItem.all[1].order_id).to eq(Order.all[0].id)
-      expect(OrderItem.all[0].item_id).to eq(@item_1.id)
-      expect(OrderItem.all[1].item_id).to eq(@item_2.id)
-      expect(OrderItem.all[0].quantity).to eq(4)
-      expect(OrderItem.all[1].quantity).to eq(2)
-      expect(OrderItem.all[0].price).to eq(5.8)
-      expect(OrderItem.all[1].price).to eq(20.0)
+      expect(@business_2.order_items[0].order_id).to eq(@business_2.orders[0].id)
+      expect(@business_2.order_items[1].order_id).to eq(@business_2.orders[0].id)
+      expect(@business_2.order_items[0].item_id).to eq(@item_1.id)
+      expect(@business_2.order_items[1].item_id).to eq(@item_2.id)
+      expect(@business_2.order_items[0].quantity).to eq(4)
+      expect(@business_2.order_items[1].quantity).to eq(2)
+      expect(@business_2.order_items[0].price).to eq(5.8)
+      expect(@business_2.order_items[1].price).to eq(20.0)
     end
 
     it 'responds with a 422 status for bad request due to missing total_cost and total_revenue' do
@@ -105,9 +130,7 @@ describe 'Orders API', :type => :request do
       expect(JSON.parse(response.body)['price']).to eq(["can't be blank", "is not a number"])
       expect(JSON.parse(response.body)['quantity']).to eq(["can't be blank", "is not a number"])
     end
-  end
 
-  context 'with an incorrect API key' do
     it 'responds with a 404 status' do
       params = {'api_key': 'incorrect_key',
                 'total_cost': '200',
@@ -126,6 +149,13 @@ describe 'Orders API', :type => :request do
                }
 
       post '/api/v1/orders', :params => params
+    end
+  end
+
+  context 'with an incorrect API key' do
+    it 'responds with a 404 not found status' do
+
+      get '/api/v1/orders', :params => {'api_key': 'incorrect_key'}
 
       expect(response.status).to eq(404)
       expect(JSON.parse(response.body)['error']).to eq("Couldn't find Business")
