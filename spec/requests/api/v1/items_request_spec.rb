@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Items API', :type => :request do
+describe 'Items GET API', :type => :request do
   context 'with a correct API key' do
     it 'sends a list of items for a successful request' do
       distributor_1 = Distributor.create!(name: 'RNDC',
@@ -55,6 +55,47 @@ describe 'Items API', :type => :request do
       get '/api/v1/items', :params => {'api_key': 'incorrect_key'}
 
       expect(response.status).to eq(404)
+    end
+  end
+end
+
+describe 'Items POST API', :type => :request do
+  context 'with a correct API key' do
+    it 'create an item in the database and returns a 201 status with a successful request' do
+      distributor = Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
+                          name: 'RNDC',
+                          api_key: 'f01zdxN0RGWufApdZQxwUg',
+                          password: 'password',
+                          code: 'RNDC1234'
+                          )
+
+      params = {
+                  'api_key': distributor.api_key,
+                  'name': 'name',
+                  'alc_type': 'type',
+                  'alc_category': 'category',
+                  'price': '3',
+                  'quantity': '4',
+                  'ounces': '3.3',
+                  'unit': '3',
+                  'thumbnail': 'url'
+                }
+
+      expect(Item.all.count).to eq(0)
+
+      post '/api/v1/items', params: params
+
+      expect(Item.all.count).to eq(1)
+      expect(Item.all[0].name).to eq('name')
+      expect(Item.all[0].alc_type).to eq('type')
+      expect(Item.all[0].alc_category).to eq('category')
+      expect(Item.all[0].price).to eq(3)
+      expect(Item.all[0].quantity).to eq(4)
+      expect(Item.all[0].ounces).to eq(3.3)
+      expect(Item.all[0].unit).to eq("3")
+      expect(Item.all[0].thumbnail).to eq('url')
+
+      expect(response.status).to eq(201)
     end
   end
 end
