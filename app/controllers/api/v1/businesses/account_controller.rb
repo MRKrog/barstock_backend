@@ -7,9 +7,7 @@ class Api::V1::Businesses::AccountController < ApplicationController
   end
 
   private
-
   def account_params
     params.permit(:api_key)
   end
-
 end
