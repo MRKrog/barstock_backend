@@ -210,5 +210,50 @@ describe 'Items UPDATE API', :type => :request do
       expect(Item.find(item.id).unit).to eq(unit)
       expect(Item.find(item.id).thumbnail).to eq(thumbnail)
     end
+
+    it 'returns a 404 response with invalid item id' do
+      distributor = Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
+                          name: 'RNDC',
+                          api_key: 'f01zdxN0RGWufApdZQxwUg',
+                          password: 'password',
+                          code: 'RNDC1234'
+                          )
+      params = {
+                  'api_key': "#{distributor.api_key}",
+                  'name': 'name',
+                  'alc_type': 'type',
+                  'alc_category': 'category',
+                  'price': '3',
+                  'quantity': '4',
+                  'ounces': '3.3',
+                  'unit': '3',
+                  'thumbnail': 'url'
+                }
+
+      patch "/api/v1/items/99999999999", params: params
+
+      expect(response.status).to eq(404)
+    end
+  end
+
+  context 'with an invalid API key' do
+    it 'sends a 404 response' do
+      distributor = Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
+                          name: 'RNDC',
+                          api_key: 'f01zdxN0RGWufApdZQxwUg',
+                          password: 'password',
+                          code: 'RNDC1234'
+                          )
+      item = create(:item, distributor: distributor)
+
+      params = {
+                  'api_key': 'incorrect key'
+                }
+
+      patch "/api/v1/items/#{item.id}", params: params
+
+      expect(response.status).to eq(404)
+      expect(JSON.parse(response.body)['error']).to eq("Couldn't find Distributor")
+    end
   end
 end
