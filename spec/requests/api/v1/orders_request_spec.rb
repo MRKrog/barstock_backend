@@ -11,22 +11,43 @@ describe 'Orders API', :type => :request do
                                           )
 
       rep = create(:representative, distributor: distributor)
-      business = create(:business, api_key: '111111111', distributor: distributor, representative: rep)
+      business_1 = create(:business, api_key: '111111111', distributor: distributor, representative: rep)
 
-      create(:business, api_key: '999999', distributor: distributor, representative: rep)
+      business_2 = create(:business, api_key: '999999', distributor: distributor, representative: rep)
 
-      order = create(:order, business: business)
+      order_1 = create(:order, business: business_1)
+      create(:order, business: business_2)
 
-      get '/api/v1/orders', params: {'api_key': business.api_key}
+      get '/api/v1/orders', params: {'api_key': business_1.api_key}
 
       result = JSON.parse(response.body)['data']
 
       expect(response.status).to eq(200)
-      expect(result['id']).to eq(order.id.to_s)
-      expect(result['type']).to eq('order')
-      expect(result['attributes']['id']).to eq(order.id)
-      expect(result['attributes']['total_cost']).to eq(order.total_cost)
-      expect(result['attributes']['total_revenue']).to eq(order.total_revenue)
+      expect(result.count).to eq(1)
+      expect(result[0]['id']).to eq(order_1.id.to_s)
+      expect(result[0]['type']).to eq('order')
+      expect(result[0]['attributes']['id']).to eq(order_1.id)
+      expect(result[0]['attributes']['total_cost']).to eq(order_1.total_cost)
+      expect(result[0]['attributes']['total_revenue']).to eq(order_1.total_revenue)
+    end
+
+    it 'sends a message for successful request, but there are no orders in the databse' do
+      distributor = Distributor.create!(name: 'RNDC',
+                                          address: '3319 Arapahoe st, Denver, CO',
+                                          code: 'CODE12345',
+                                          api_key: 'jgn983hy48thw9begh98h4539h41',
+                                          password: 'password'
+                                          )
+
+      rep = create(:representative, distributor: distributor)
+      business = create(:business, api_key: '111111111', distributor: distributor, representative: rep)
+
+      get '/api/v1/orders', params: {'api_key': business.api_key}
+
+      result = JSON.parse(response.body)
+
+      expect(response.status).to eq(200)
+      expect(result['data']).to eq([])
     end
   end
 
