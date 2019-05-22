@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get '/items', to: 'items#index'
+      get '/orders', to: 'orders#index'
       get '/business_items', to: 'business_items#index'
       post '/business_items', to: 'business_items#create'
       namespace :businesses do
