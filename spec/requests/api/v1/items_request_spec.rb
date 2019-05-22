@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'Items API', :type => :request do
+describe 'Items GET API', :type => :request do
   context 'with a correct API key' do
     it 'sends a list of items for a successful request' do
       distributor_1 = Distributor.create!(name: 'RNDC',
@@ -57,4 +57,98 @@ describe 'Items API', :type => :request do
       expect(response.status).to eq(404)
     end
   end
+end
+
+describe 'Items POST API', :type => :request do
+  context 'with a correct API key' do
+    it 'create an item in the database and returns a 201 status with a successful request' do
+      distributor = Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
+                          name: 'RNDC',
+                          api_key: 'f01zdxN0RGWufApdZQxwUg',
+                          password: 'password',
+                          code: 'RNDC1234'
+                          )
+
+      params = {
+                  'api_key': distributor.api_key,
+                  'name': 'name',
+                  'alc_type': 'type',
+                  'alc_category': 'category',
+                  'price': '3',
+                  'quantity': '4',
+                  'ounces': '3.3',
+                  'unit': '3',
+                  'thumbnail': 'url'
+                }
+
+      expect(Item.all.count).to eq(0)
+
+      post '/api/v1/items', params: params
+
+      expect(Item.all.count).to eq(1)
+      expect(Item.all[0].name).to eq('name')
+      expect(Item.all[0].alc_type).to eq('type')
+      expect(Item.all[0].alc_category).to eq('category')
+      expect(Item.all[0].price).to eq(3)
+      expect(Item.all[0].quantity).to eq(4)
+      expect(Item.all[0].ounces).to eq(3.3)
+      expect(Item.all[0].unit).to eq("3")
+      expect(Item.all[0].thumbnail).to eq('url')
+
+      expect(response.status).to eq(201)
+    end
+
+    it 'returns a 422 status if the params are missing fields to create the item' do
+      distributor = Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
+                          name: 'RNDC',
+                          api_key: 'f01zdxN0RGWufApdZQxwUg',
+                          password: 'password',
+                          code: 'RNDC1234'
+                          )
+
+      params = {
+                  'api_key': distributor.api_key,
+                }
+
+      expect(Item.all.count).to eq(0)
+
+      post '/api/v1/items', params: params
+
+      expect(Item.all.count).to eq(0)
+
+      expect(response.status).to eq(422)
+
+      message_1 = ["can't be blank"]
+      message_2 = ["can't be blank", "is not a number"]
+
+      expect(JSON.parse(response.body)['name']).to eq(message_1)
+      expect(JSON.parse(response.body)['alc_type']).to eq(message_1)
+      expect(JSON.parse(response.body)['alc_category']).to eq(message_1)
+      expect(JSON.parse(response.body)['price']).to eq(message_2)
+      expect(JSON.parse(response.body)['ounces']).to eq(message_2)
+      expect(JSON.parse(response.body)['unit']).to eq(message_1)
+      expect(JSON.parse(response.body)['quantity']).to eq(message_2)
+    end
+  end
+
+    context 'with an invalid API key' do
+      it 'sends a 404 response' do
+        params = {
+                    'api_key': 'incorrect key',
+                    'name': 'name',
+                    'alc_type': 'type',
+                    'alc_category': 'category',
+                    'price': '3',
+                    'quantity': '4',
+                    'ounces': '3.3',
+                    'unit': '3',
+                    'thumbnail': 'url'
+                  }
+
+        post '/api/v1/items', params: params
+
+        expect(response.status).to eq(404)
+        expect(JSON.parse(response.body)['error']).to eq("Couldn't find Distributor")
+      end
+    end
 end

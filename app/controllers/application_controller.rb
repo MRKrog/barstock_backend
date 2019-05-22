@@ -21,4 +21,8 @@ class ApplicationController < ActionController::API
   def get_business(api_key)
     @business ||= Business.find_by!(api_key: api_key)
   end
+
+  def get_distributor(api_key)
+    @distributor ||= Distributor.find_by!(api_key: api_key)
+  end
 end
