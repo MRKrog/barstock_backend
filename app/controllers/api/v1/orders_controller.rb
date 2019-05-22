@@ -1,7 +1,6 @@
 class Api::V1::OrdersController < ApplicationController
   def index
-    business = get_business(request_body[:api_key])
-    orders = Order.where(business_id: business.id)
+    orders = Order.where(business: get_business(request_body[:api_key]))
     render json: OrderSerializer.new(orders), status: 200
   end
 
