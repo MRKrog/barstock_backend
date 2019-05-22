@@ -16,8 +16,7 @@ class Order < ApplicationRecord
       oi = OrderItem.create!(quantity: item[:quantity],
                              price: item[:price],
                              order_id: order_id,
-                             item_id: item[:id],
-                             unit: 1)
+                             item_id: item[:id])
     end
   end
 end
