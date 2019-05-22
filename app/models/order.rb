@@ -11,12 +11,13 @@ class Order < ApplicationRecord
     only_integer: false
   }
 
-  def create_order_items(order_items_params, order_id)
-    count = 0
-    order_items_params.each do |item|
-      #unit below will need to be changed. Model validation will also need to be deleted, likely along with a model test.
-      OrderItem.create!(quantity: order_items_params[count][:quantity], price: order_items_params[count][:price], order_id: order_id, item_id: order_items_params[count][:id].to_i, unit: 1)
-      count += 1
+  def create_order_items(items, order_id)
+    items.each do |item|
+      oi = OrderItem.create!(quantity: item[:quantity],
+                             price: item[:price],
+                             order_id: order_id,
+                             item_id: item[:id],
+                             unit: 1)
     end
   end
 end
