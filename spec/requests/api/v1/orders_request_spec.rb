@@ -28,13 +28,13 @@ describe 'Orders API', :type => :request do
       result = JSON.parse(response.body)['data']
       expect(response.status).to eq(200)
       expect(result.count).to eq(2)
-      expect(result[0]['id']).to eq(@order_1.id.to_s)
+      expect(result[0]['id']).to eq(@order_2.id.to_s)
       expect(result[0]['type']).to eq('order')
       expect(result[0]['attributes']['items']).to be_a(Array)
-      expect(result[0]['attributes']['items'].length).to eq(2)
-      expect(result[0]['attributes']['id']).to eq(@order_1.id)
-      expect(result[0]['attributes']['total_cost']).to eq(@order_1.total_cost)
-      expect(result[0]['attributes']['total_revenue']).to eq(@order_1.total_revenue)
+      expect(result[0]['attributes']['items'].length).to eq(@order_2.items.count)
+      expect(result[0]['attributes']['id']).to eq(@order_2.id)
+      expect(result[0]['attributes']['total_cost']).to eq(@order_2.total_cost)
+      expect(result[0]['attributes']['total_revenue']).to eq(@order_2.total_revenue)
     end
 
     it 'sends a message for successful request, but there are no orders in the database' do

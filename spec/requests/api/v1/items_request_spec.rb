@@ -155,7 +155,7 @@ end
 
 describe 'Items UPDATE API', :type => :request do
   context 'with a correct API key' do
-    it 'update an item in the database and returns a 200 status with a successful request' do
+    it 'updates an item in the database and returns a 200 status with a successful request' do
       distributor = Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
                           name: 'RNDC',
                           api_key: 'f01zdxN0RGWufApdZQxwUg',
@@ -188,7 +188,6 @@ describe 'Items UPDATE API', :type => :request do
       patch "/api/v1/items/#{item.id}", params: params
 
       result = JSON.parse(response.body)['data']
-
       expect(response.status).to eq(200)
       expect(result['id']).to eq(item.id.to_s)
       expect(result['type']).to eq('item')

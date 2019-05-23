@@ -17,13 +17,18 @@ class BusinessItem < ApplicationRecord
     end
   end
 
+  def self.does_not_exist?(item_id)
+    BusinessItem.find_by(item_id: item_id).nil?
+  end
+
   def self.create_new(params, business)
-    item = Item.find(params[:item_id])
-    BusinessItem.new(business: business,
-                     item: item,
-                     price_sold: params[:price_sold],
-                     quantity: params[:quantity],
-                     serving_size: params[:serving_size]
-                    )
+    if BusinessItem.does_not_exist?(params[:item_id])
+      BusinessItem.new(business: business,
+                       item: Item.find(params[:item_id]),
+                       price_sold: params[:price_sold],
+                       quantity: params[:quantity],
+                       serving_size: params[:serving_size]
+                      )
+    end
   end
 end
