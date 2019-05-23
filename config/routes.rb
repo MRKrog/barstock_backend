@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       post '/orders', to: 'orders#create'
       post '/items', to: 'items#create'
       patch '/items/:id', to: 'items#update'
+      patch '/business_items/:id', to: 'business_items#update'
       get '/business_items', to: 'business_items#index'
       post '/business_items', to: 'business_items#create'
       namespace :businesses do

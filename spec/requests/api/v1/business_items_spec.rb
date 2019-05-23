@@ -86,5 +86,70 @@ describe 'Business Items API' do
     expect(response.status).to eq(422)
   end
 
+  it 'updates a business item in the database' do
+
+    price_sold = 34
+    quantity = 4
+    serving_size = 2
+
+    patch "/api/v1/business_items/#{@business_item_1.id}", params: {
+                                                                    api_key: @business.api_key,
+                                                                    price_sold: price_sold,
+                                                                    quantity: quantity,
+                                                                    serving_size: serving_size
+                                                                   }
+
+    result = JSON.parse(response.body)['data']
+
+    expect(response.status).to eq(200)
+    expect(result['id']).to eq(@business_item_1.id.to_s)
+    expect(result['attributes']['price_sold']).to eq(price_sold)
+    expect(result['attributes']['quantity']).to eq(quantity)
+    expect(result['attributes']['serving_size']).to eq(serving_size)
+
+    bi = BusinessItem.find(@business_item_1.id)
+    expect(bi.price_sold).to eq(price_sold)
+    expect(bi.quantity).to eq(quantity)
+    expect(bi.serving_size).to eq(serving_size)
+  end
+
+  it 'returns 404 if invalid api key' do
+
+    price_sold = 34
+    quantity = 4
+    serving_size = 2
+
+    patch "/api/v1/business_items/#{@business_item_1.id}", params: {
+                                                                    api_key: 'invalid',
+                                                                    price_sold: price_sold,
+                                                                    quantity: quantity,
+                                                                    serving_size: serving_size
+                                                                   }
+
+    result = JSON.parse(response.body)['data']
+
+    expect(response.status).to eq(404)
+    expect(JSON.parse(response.body)['error']).to eq("Couldn't find Business")
+  end
+
+  it 'returns 404 if invalid business item id' do
+
+    price_sold = 34
+    quantity = 4
+    serving_size = 2
+
+    patch "/api/v1/business_items/0", params: {
+                                                                    api_key: @business.api_key,
+                                                                    price_sold: price_sold,
+                                                                    quantity: quantity,
+                                                                    serving_size: serving_size
+                                                                   }
+
+    expect(response).to_not be_successful
+    result = JSON.parse(response.body)
+    expect(result).to eq({"error"=>"Couldn't find BusinessItem with 'id'=0"})
+    expect(response.status).to eq(404)
+  end
+
 
 end
