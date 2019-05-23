@@ -25,4 +25,17 @@ class ApplicationController < ActionController::API
   def get_distributor(api_key)
     @distributor ||= Distributor.find_by!(api_key: api_key)
   end
+
+  def business_or_distributor?(api_key)
+    if Business.find_by(api_key: api_key)
+      get_business(api_key)
+    else
+      get_distributor(api_key)
+    end
+  end
+
+  def get_distributor_id(api_key)
+    user = business_or_distributor?(api_key)
+    user.class == Distributor ? user.id : user.distributor_id
+  end
 end
