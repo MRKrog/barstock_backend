@@ -46,6 +46,10 @@ describe 'Items GET API', :type => :request do
       expect(result[0]['attributes']['ounces']).to eq(item_1.ounces.round(1))
       expect(result[0]['attributes']['unit']).to eq(item_1.unit)
       expect(result[0]['attributes']['thumbnail']).to eq(item_1.thumbnail)
+
+      get '/api/v1/items', params: {'api_key': distributor_1.api_key}
+      result = JSON.parse(response.body)['data']
+      expect(response.status).to eq(200)
     end
   end
 
