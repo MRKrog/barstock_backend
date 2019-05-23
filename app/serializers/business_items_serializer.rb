@@ -2,6 +2,7 @@ class BusinessItemsSerializer
   include FastJsonapi::ObjectSerializer
 
   attributes :id,
+             :item_name,
              :alc_type,
              :alc_category,
              :thumbnail,
