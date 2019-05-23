@@ -16,18 +16,22 @@ describe 'Orders API', :type => :request do
     @business_2 = create(:business, distributor: @distributor, representative: @rep)
     @order_1 = create(:order, business: @business)
     @order_2 = create(:order, business: @business)
+    @order_item_1 = create(:order_item, order: @order_1, item: @item_1)
+    @order_item_2 = create(:order_item, order: @order_1, item: @item_2)
+    @order_item_3 = create(:order_item, order: @order_2, item: @item_2)
   end
 
   context 'with a correct API key' do
-    it 'sends a list of orders for a successful request' do
+    it 'sends a list of orders and their items for a successful request' do
 
       get '/api/v1/orders', params: {'api_key': @business.api_key}
-
       result = JSON.parse(response.body)['data']
       expect(response.status).to eq(200)
       expect(result.count).to eq(2)
       expect(result[0]['id']).to eq(@order_1.id.to_s)
       expect(result[0]['type']).to eq('order')
+      expect(result[0]['attributes']['items']).to be_a(Array)
+      expect(result[0]['attributes']['items'].length).to eq(2)
       expect(result[0]['attributes']['id']).to eq(@order_1.id)
       expect(result[0]['attributes']['total_cost']).to eq(@order_1.total_cost)
       expect(result[0]['attributes']['total_revenue']).to eq(@order_1.total_revenue)
@@ -76,7 +80,6 @@ describe 'Orders API', :type => :request do
       expect(@business_2.orders[0].items[0].id).to eq(@item_1.id)
       expect(@business_2.orders[0].items[1].id).to eq(@item_2.id)
       expect(@business_2.orders[0].business_id).to eq(@business_2.id)
-      expect(OrderItem.all.count).to eq(2)
       expect(@business_2.order_items[0].order_id).to eq(@business_2.orders[0].id)
       expect(@business_2.order_items[1].order_id).to eq(@business_2.orders[0].id)
       expect(@business_2.order_items[0].item_id).to eq(@item_1.id)
