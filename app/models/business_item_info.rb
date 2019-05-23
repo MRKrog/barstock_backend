@@ -1,5 +1,6 @@
 class BusinessItemInfo
   attr_reader :alc_type,
+              :item_name,
               :id,
               :alc_category,
               :thumbnail,
@@ -8,6 +9,7 @@ class BusinessItemInfo
               :quantity
 
   def initialize(business_item, item)
+    @item_name = item.name
     @alc_type = item.alc_type
     @alc_category = item.alc_category
     @thumbnail = item.thumbnail
