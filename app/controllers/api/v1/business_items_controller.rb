@@ -7,8 +7,7 @@ class Api::V1::BusinessItemsController < ApplicationController
 
   def create
     bi = BusinessItem.create_new(bi_params, get_business(api_key_params[:api_key]))
-    bi.save!
-    render json: {}, status: 201
+    bi.nil? ? error_message : try_saving(bi)
   end
 
   def update
@@ -25,5 +24,14 @@ class Api::V1::BusinessItemsController < ApplicationController
 
   def api_key_params
     params.permit(:api_key)
+  end
+
+  def error_message
+    render json: { error: 'Already a business item in DB with that item id' }, status: 400
+  end
+
+  def try_saving(bi)
+    bi.save!
+    render json: {}, status: 201
   end
 end
