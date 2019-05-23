@@ -28,7 +28,6 @@ describe 'Business Items API' do
     expect(response).to be_successful
     expect(response.status).to eq(200)
     result = JSON.parse(response.body)
-    binding.pry
     expect(result["data"][0]["attributes"]["id"]).to eq(@business_item_1.id)
     expect(result["data"][0]["attributes"]["price_sold"]).to eq(@business_item_1.price_sold)
     expect(result["data"][-1]["attributes"]["price_sold"]).to eq(@business_item_5.price_sold)
