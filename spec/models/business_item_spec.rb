@@ -24,6 +24,7 @@ RSpec.describe BusinessItem, type: :model do
       @rep = create(:representative, distributor: @distributor)
       @business = create(:business, distributor: @distributor, representative: @rep)
       @item_6 = create(:item, distributor: @distributor)
+      @item_2 = create(:item, distributor: @distributor)
       @business_item_6 = create(:business_item, business: @business, item: @item_6)
     end
 
@@ -40,13 +41,13 @@ RSpec.describe BusinessItem, type: :model do
                 price_sold: "22.5",
                 quantity: nil,
                 serving_size: "2",
-                item_id: @item_6.id
+                item_id: @item_2.id
                 }
       bi = BusinessItem.create_new(params, @business)
       bi.save!
       expect(bi).to be_a(BusinessItem)
       expect(bi.business).to be(@business)
-      expect(bi.item).to eq(@item_6)
+      expect(bi.item).to eq(@item_2)
     end
   end
 end

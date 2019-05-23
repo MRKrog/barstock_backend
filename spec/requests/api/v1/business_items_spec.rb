@@ -55,6 +55,16 @@ describe 'Business Items API' do
     bi = BusinessItem.last
     expect(bi.business).to eq(@business)
     expect(bi.item).to eq(@item_6)
+
+    post '/api/v1/business_items', params: {
+                                            api_key: @business.api_key,
+                                            price_sold: 22.5,
+                                            quantity: nil,
+                                            serving_size: 3,
+                                            item_id: @item_6.id
+                                           }
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
   end
 
   it 'sends back 404 if invalid api key with post' do
