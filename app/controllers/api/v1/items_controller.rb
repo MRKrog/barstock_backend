@@ -7,6 +7,7 @@ class Api::V1::ItemsController < ApplicationController
 
   def create
     distributor = get_distributor(api_key_param[:api_key])
+
     Item.create!(name: item_params[:name],
                  alc_type: item_params[:alc_type],
                  alc_category: item_params[:alc_category],

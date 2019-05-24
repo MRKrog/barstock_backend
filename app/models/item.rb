@@ -7,6 +7,8 @@ class Item < ApplicationRecord
 
 
   validates_presence_of :name
+  validates_uniqueness_of :name
+
   validates_presence_of :alc_type
   validates_presence_of :alc_category
   validates :price, presence: true, numericality: {
