@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2019_05_23_014750) do
 
   # These are extensions that must be enabled in order to support this database
+  enable_extension "citext"
   enable_extension "plpgsql"
 
   create_table "business_items", force: :cascade do |t|
@@ -31,7 +32,7 @@ ActiveRecord::Schema.define(version: 2019_05_23_014750) do
     t.bigint "distributor_id"
     t.string "name"
     t.text "address"
-    t.string "email"
+    t.citext "email"
     t.string "password_digest"
     t.text "api_key"
     t.datetime "created_at", null: false
@@ -44,17 +45,17 @@ ActiveRecord::Schema.define(version: 2019_05_23_014750) do
 
   create_table "distributors", force: :cascade do |t|
     t.text "address"
-    t.string "name"
+    t.citext "name"
     t.text "api_key"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
-    t.string "code"
+    t.citext "code"
   end
 
   create_table "items", force: :cascade do |t|
     t.bigint "distributor_id"
-    t.string "name"
+    t.citext "name"
     t.string "alc_type"
     t.string "alc_category"
     t.float "price"
@@ -89,7 +90,7 @@ ActiveRecord::Schema.define(version: 2019_05_23_014750) do
 
   create_table "representatives", force: :cascade do |t|
     t.string "name"
-    t.string "email"
+    t.citext "email"
     t.bigint "distributor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
