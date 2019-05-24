@@ -1,8 +1,7 @@
 class Api::V1::ItemsController < ApplicationController
 
   def index
-    business = get_business(api_key_param[:api_key])
-    items = Item.distributor_items(business.distributor_id)
+    items = Item.distributor_items(get_distributor_id(api_key_param[:api_key]))
     render json: ItemSerializer.new(items)
   end
 

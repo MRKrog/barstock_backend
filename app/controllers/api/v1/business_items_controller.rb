@@ -15,14 +15,6 @@ class Api::V1::BusinessItemsController < ApplicationController
     bi = BusinessItem.update(bi_params[:id],
                              bi_params)
     render json: BusinessItemSerializer.new(bi)
-
-  end
-
-  def update
-    business = get_business(api_key_params[:api_key])
-    bi = BusinessItem.update(bi_params[:id],
-                             bi_params)
-    render json: BusinessItemSerializer.new(bi)
   end
 
   private
