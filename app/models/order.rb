@@ -19,4 +19,12 @@ class Order < ApplicationRecord
                              item_id: item[:id])
     end
   end
+
+  def message(business, items)
+    data = {}
+    data[:distributor] = business.distributor
+    data[:items] = Item.get_items(items)
+    data[:phone_number] = business.phone_number
+    data
+  end
 end

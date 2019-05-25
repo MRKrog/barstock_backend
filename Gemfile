@@ -27,7 +27,9 @@ gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'figaro'
 gem 'bcrypt'
+gem 'twilio-ruby'
 gem 'faker'
+gem 'figaro'
 gem 'fast_jsonapi'
 gem 'database_cleaner'
 

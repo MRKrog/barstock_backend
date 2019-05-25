@@ -24,34 +24,43 @@ RSpec.describe Item, type: :model do
   end
 
   describe 'class methods' do
-    it '#distributor_items' do
-
-      distributor_1 = Distributor.create!(name: "RNDC",
+    before :each do
+      @distributor_1 = Distributor.create!(name: "RNDC",
                                           address: "3319 Arapahoe st, Denver, CO",
                                           code: "CODE1234",
                                           api_key: "jgn983hy48thw9begh98h4539h4",
                                           password: "password"
                                           )
-      distributor_2 = Distributor.create!(name: "Other",
+      @distributor_2 = Distributor.create!(name: "Other",
                                           address: "other",
                                           code: "other",
                                           api_key: "other",
                                           password: "other"
                                           )
 
-      item_1 = create(:item, distributor: distributor_1)
-      item_2 = create(:item, distributor: distributor_1)
-      create(:item, distributor: distributor_2)
+      @item_1 = create(:item, distributor: @distributor_1)
+      @item_2 = create(:item, distributor: @distributor_1)
+      create(:item, distributor: @distributor_2)
+    end
+    it '.distributor_items' do
 
-      items = Item.distributor_items(distributor_1.id)
+
+
+      items = Item.distributor_items(@distributor_1.id)
 
       expect(items.count).to eq(2)
       expect(items[0]).to be_an_instance_of(Item)
       expect(items[1]).to be_an_instance_of(Item)
-      expect(items[0].id).to eq(item_1.id)
-      expect(items[1].id).to eq(item_2.id)
-      expect(items[0].distributor_id).to eq(distributor_1.id)
-      expect(items[1].distributor_id).to eq(distributor_1.id)
+      expect(items[0].id).to eq(@item_1.id)
+      expect(items[1].id).to eq(@item_2.id)
+      expect(items[0].distributor_id).to eq(@distributor_1.id)
+      expect(items[1].distributor_id).to eq(@distributor_1.id)
+    end
+
+    it '.get_items' do
+      items = [{id: @item_1.id, quantity: 4, price: 5.8}, {id: @item_2.id, quantity: 2, price: 20}]
+      message = Item.get_items(items)
+      expect(message).to eq("4 #{@item_1.name}s, 2 #{@item_2.name}s")
     end
   end
 end
