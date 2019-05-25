@@ -1,4 +1,5 @@
 class Item < ApplicationRecord
+
   belongs_to :distributor
   has_many :order_items
   has_many :orders, through: :order_items
@@ -27,6 +28,14 @@ class Item < ApplicationRecord
 
   def self.distributor_items(distributor_id)
     Item.where(distributor_id: distributor_id)
+  end
+
+  def self.get_items(items)
+    message = items.map do |item|
+      i = Item.find(item[:id])
+      ActionController::Base.helpers.pluralize(item[:quantity], i.name)
+    end
+    message.join(", ")
   end
 
 end
