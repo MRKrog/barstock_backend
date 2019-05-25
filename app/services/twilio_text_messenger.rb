@@ -12,7 +12,7 @@ class TwilioTextMessenger
     response = client.messages.create(
       from: ENV['TWILIO_PHONE_NUMBER'],
       to: '+17205038000',
-      body: message
+      body: @phone_number
     )
   end
 
