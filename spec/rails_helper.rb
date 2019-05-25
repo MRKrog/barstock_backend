@@ -49,6 +49,7 @@ SimpleCov.start("rails") do
   add_filter("/app/mailer")
   add_filter("/app/controllers")
   add_filter("/app/serializers")
+
 end
 SimpleCov.minimum_coverage(90)
 SimpleCov.use_merging(false)
