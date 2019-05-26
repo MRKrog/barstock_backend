@@ -46,6 +46,7 @@ group :development, :test do
   gem 'awesome_print'
   gem 'webmock'
   gem 'pry'
+  gem 'vcr'
 end
 
 group :development do

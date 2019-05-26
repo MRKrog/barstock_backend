@@ -1,0 +1,2107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:48:58 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d895e371ae49e2235683c55fa755226491558900138; expires=Mon, 25-May-20
+        19:48:58 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd2450b29ec4fe5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"strDrink":"''57 Chevy with a White License Plate","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyyvtu1468878544.jpg","idDrink":"14029"},{"strDrink":"155
+        Belmont","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yqvvqs1475667388.jpg","idDrink":"15346"},{"strDrink":"501
+        Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1461867097.jpg","idDrink":"17105"},{"strDrink":"A
+        Gilligan''s Island","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wysqut1461867176.jpg","idDrink":"16943"},{"strDrink":"A
+        midsummernight dream","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ysqvqp1461867292.jpg","idDrink":"15675"},{"strDrink":"A.D.M.
+        (After Dinner Mint)","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ruxuvp1472669600.jpg","idDrink":"14560"},{"strDrink":"Absinthe
+        #2","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uxxtrt1472667197.jpg","idDrink":"12790"},{"strDrink":"Absolutely
+        Fabulous","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/abcpwr1504817734.jpg","idDrink":"17224"},{"strDrink":"Adam
+        Bomb","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpxurs1454513016.jpg","idDrink":"16333"},{"strDrink":"Adam
+        Sunrise","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vtuyvu1472812112.jpg","idDrink":"15567"},{"strDrink":"Addison
+        Special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4vo5651493068493.jpg","idDrink":"14272"},{"strDrink":"After
+        sex","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xrl66i1493068702.jpg","idDrink":"15182"},{"strDrink":"Apricot
+        punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuxxtp1472668667.jpg","idDrink":"15849"},{"strDrink":"Arctic
+        Fish","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttsvwy1472668781.jpg","idDrink":"14622"},{"strDrink":"Arizona
+        Antifreeze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dbtylp1493067262.jpg","idDrink":"16354"},{"strDrink":"Arizona
+        Twister","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ido1j01493068134.jpg","idDrink":"17074"},{"strDrink":"Army
+        special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/55muhh1493068062.jpg","idDrink":"17066"},{"strDrink":"Atlantic
+        Sun","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/doyxqb1493067556.jpg","idDrink":"13423"},{"strDrink":"Atomic
+        Lokade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n3zfrh1493067412.jpg","idDrink":"13086"},{"strDrink":"Autodaf\u00e9","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7dkf0i1487602928.jpg","idDrink":"12756"},{"strDrink":"Avalon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3k9qic1493068931.jpg","idDrink":"15266"},{"strDrink":"Aztec
+        Punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uqwuyp1454514591.jpg","idDrink":"14364"},{"strDrink":"Belgian
+        Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rttsxw1441245419.jpg","idDrink":"14071"},{"strDrink":"Bellini
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3h9wv51504389379.jpg","idDrink":"16176"},{"strDrink":"Black
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2k5gbb1504367689.jpg","idDrink":"11102"},{"strDrink":"Bloody
+        Mary","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uyquuu1439906954.jpg","idDrink":"11113"},{"strDrink":"Blue
+        Lagoon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vak0e51504389504.jpg","idDrink":"11117"},{"strDrink":"Blue
+        Mountain","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsxssp1441209853.jpg","idDrink":"11119"},{"strDrink":"Brain
+        Fart","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rz5aun1504389701.jpg","idDrink":"17120"},{"strDrink":"Bruised
+        Heart","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7if5kq1503564209.jpg","idDrink":"16998"},{"strDrink":"Bubble
+        Gum","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/spuurv1468878783.jpg","idDrink":"14730"},{"strDrink":"Caribbean
+        Orange Liqueur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qwxuwy1472667570.jpg","idDrink":"12796"},{"strDrink":"Cherry
+        Electric Lemonade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tquyyt1451299548.jpg","idDrink":"17174"},{"strDrink":"Chocolate
+        Black Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yyvywx1472720879.jpg","idDrink":"11243"},{"strDrink":"Cosmopolitan
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/upxxpq1439907580.jpg","idDrink":"14133"},{"strDrink":"Dirty
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vcyvpq1485083300.jpg","idDrink":"17181"},{"strDrink":"Espresso
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n0sx531504372951.jpg","idDrink":"17212"},{"strDrink":"Flaming
+        Dr. Pepper","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/d30z931503565384.jpg","idDrink":"13202"},{"strDrink":"Freddy
+        Kruger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuppuq1461866798.jpg","idDrink":"14688"},{"strDrink":"French
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/clth721504373134.jpg","idDrink":"17213"},{"strDrink":"Gideon''s
+        Green Dinosaur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/p5r0tr1503564636.jpg","idDrink":"17002"},{"strDrink":"Godchild","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/m5nhtr1504820829.jpg","idDrink":"11422"},{"strDrink":"Godmother","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4889up1504368984.jpg","idDrink":"11424"},{"strDrink":"Greyhound","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/g5upn41513706732.jpg","idDrink":"17252"},{"strDrink":"Harvey
+        Wallbanger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vg4bva1504369725.jpg","idDrink":"11462"},{"strDrink":"Ice
+        Pick #1","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ypsrqp1469091726.jpg","idDrink":"13539"},{"strDrink":"Irish
+        Curdling Cow","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yrhutv1503563730.jpg","idDrink":"16987"},{"strDrink":"Irish
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/swqurw1454512730.jpg","idDrink":"17015"},{"strDrink":"Jello
+        shots","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/l0smzo1504884904.jpg","idDrink":"14956"},{"strDrink":"Jitterbug","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wwqvrq1441245318.jpg","idDrink":"16178"},{"strDrink":"Kamikaze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xa58bb1504373204.jpg","idDrink":"11600"},{"strDrink":"Kool-Aid
+        Shot","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/fegm621503564966.jpg","idDrink":"13190"},{"strDrink":"Kool-Aid
+        Slammer","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/kugu2m1504735473.jpg","idDrink":"14446"},{"strDrink":"Long
+        Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wx7hsg1504370510.jpg","idDrink":"17204"},{"strDrink":"Long
+        Island Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1439906072.jpg","idDrink":"11002"},{"strDrink":"Long
+        vodka","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/9179i01503565212.jpg","idDrink":"13196"},{"strDrink":"Moscow
+        Mule","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3pylqc1504370988.jpg","idDrink":"11009"},{"strDrink":"National
+        Aquarium","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dlw0om1503565021.jpg","idDrink":"13192"},{"strDrink":"Orange
+        Crush","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/zvoics1504885926.jpg","idDrink":"15330"},{"strDrink":"Orange
+        Whip","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttyrxr1454514759.jpg","idDrink":"16995"},{"strDrink":"Oreo
+        Mudslide","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpwwut1468925017.jpg","idDrink":"13499"},{"strDrink":"Pink
+        Panty Pulldowns","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/squsuy1468926657.jpg","idDrink":"13535"},{"strDrink":"Pink
+        Penocha","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/6vigjx1503564007.jpg","idDrink":"16992"},{"strDrink":"Popped
+        cherry","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/sxvrwv1473344825.jpg","idDrink":"13072"},{"strDrink":"Radioactive
+        Long Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","idDrink":"16984"},{"strDrink":"Russian
+        Spring Punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ctt20s1504373488.jpg","idDrink":"17214"},{"strDrink":"San
+        Francisco","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/szmj2d1504889961.jpg","idDrink":"15184"},{"strDrink":"Screaming
+        Orgasm","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/x894cs1504388670.jpg","idDrink":"13625"},{"strDrink":"Screwdriver","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/8xnyke1504352207.jpg","idDrink":"12162"},{"strDrink":"Sea
+        breeze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7rfuks1504371562.jpg","idDrink":"13377"},{"strDrink":"Sex
+        on the Beach","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lijtw51551455287.jpg","idDrink":"12754"},{"strDrink":"Shark
+        Attack","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uv96zr1504793256.jpg","idDrink":"16273"},{"strDrink":"Vesper","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/mtdxpa1504374514.jpg","idDrink":"17218"},{"strDrink":"Victory
+        Collins","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lx0lvs1492976619.jpg","idDrink":"12452"},{"strDrink":"Vodka
+        And Tonic","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lmj2yt1504820500.jpg","idDrink":"12460"},{"strDrink":"Vodka
+        Fizz","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xwxyux1441254243.jpg","idDrink":"16967"},{"strDrink":"Vodka
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyxrqw1439906528.jpg","idDrink":"14167"},{"strDrink":"Vodka
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rpttur1454515129.jpg","idDrink":"15403"},{"strDrink":"White
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsrupw1472405732.jpg","idDrink":"12528"},{"strDrink":"Zipperhead","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/r2qzhu1485620235.jpg","idDrink":"16942"},{"strDrink":"Zorbatini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wtkqgb1485621155.jpg","idDrink":"16963"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:48:59 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Screwdriver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:48:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d60fe191f67fa16aa190cf177cd0472161558900139; expires=Mon, 25-May-20
+        19:48:59 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd2450d1e124fd9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"12162","strDrink":"Screwdriver","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA","strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":"Unforgettables","strAlcoholic":"Alcoholic","strGlass":"Highball
+        glass","strInstructions":"Mix in a highball glass with ice. Garnish and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/8xnyke1504352207.jpg","strIngredient1":"Vodka","strIngredient2":"Orange
+        juice","strIngredient3":"","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"2
+        oz ","strMeasure2":"","strMeasure3":"","strMeasure4":"","strMeasure5":"","strMeasure6":"","strMeasure7":"","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        12:36:47"},{"idDrink":"12091","strDrink":"Rum Screwdriver","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Highball glass","strInstructions":"Pour
+        rum into a highball glass over ice cubes. Add orange juice, stir, and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4c85zq1511782093.jpg","strIngredient1":"Light
+        rum","strIngredient2":"Orange juice","strIngredient3":"","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"5 oz ","strMeasure3":" ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-11-27
+        11:28:14"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:48:59 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:48:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de09e4b1985167b3b02fb5d41db8193571558900139; expires=Mon, 25-May-20
+        19:48:59 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd2450f0c1e4fd3-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"strDrink":"''57 Chevy with a White License Plate","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyyvtu1468878544.jpg","idDrink":"14029"},{"strDrink":"155
+        Belmont","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yqvvqs1475667388.jpg","idDrink":"15346"},{"strDrink":"501
+        Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1461867097.jpg","idDrink":"17105"},{"strDrink":"A
+        Gilligan''s Island","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wysqut1461867176.jpg","idDrink":"16943"},{"strDrink":"A
+        midsummernight dream","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ysqvqp1461867292.jpg","idDrink":"15675"},{"strDrink":"A.D.M.
+        (After Dinner Mint)","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ruxuvp1472669600.jpg","idDrink":"14560"},{"strDrink":"Absinthe
+        #2","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uxxtrt1472667197.jpg","idDrink":"12790"},{"strDrink":"Absolutely
+        Fabulous","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/abcpwr1504817734.jpg","idDrink":"17224"},{"strDrink":"Adam
+        Bomb","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpxurs1454513016.jpg","idDrink":"16333"},{"strDrink":"Adam
+        Sunrise","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vtuyvu1472812112.jpg","idDrink":"15567"},{"strDrink":"Addison
+        Special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4vo5651493068493.jpg","idDrink":"14272"},{"strDrink":"After
+        sex","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xrl66i1493068702.jpg","idDrink":"15182"},{"strDrink":"Apricot
+        punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuxxtp1472668667.jpg","idDrink":"15849"},{"strDrink":"Arctic
+        Fish","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttsvwy1472668781.jpg","idDrink":"14622"},{"strDrink":"Arizona
+        Antifreeze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dbtylp1493067262.jpg","idDrink":"16354"},{"strDrink":"Arizona
+        Twister","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ido1j01493068134.jpg","idDrink":"17074"},{"strDrink":"Army
+        special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/55muhh1493068062.jpg","idDrink":"17066"},{"strDrink":"Atlantic
+        Sun","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/doyxqb1493067556.jpg","idDrink":"13423"},{"strDrink":"Atomic
+        Lokade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n3zfrh1493067412.jpg","idDrink":"13086"},{"strDrink":"Autodaf\u00e9","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7dkf0i1487602928.jpg","idDrink":"12756"},{"strDrink":"Avalon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3k9qic1493068931.jpg","idDrink":"15266"},{"strDrink":"Aztec
+        Punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uqwuyp1454514591.jpg","idDrink":"14364"},{"strDrink":"Belgian
+        Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rttsxw1441245419.jpg","idDrink":"14071"},{"strDrink":"Bellini
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3h9wv51504389379.jpg","idDrink":"16176"},{"strDrink":"Black
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2k5gbb1504367689.jpg","idDrink":"11102"},{"strDrink":"Bloody
+        Mary","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uyquuu1439906954.jpg","idDrink":"11113"},{"strDrink":"Blue
+        Lagoon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vak0e51504389504.jpg","idDrink":"11117"},{"strDrink":"Blue
+        Mountain","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsxssp1441209853.jpg","idDrink":"11119"},{"strDrink":"Brain
+        Fart","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rz5aun1504389701.jpg","idDrink":"17120"},{"strDrink":"Bruised
+        Heart","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7if5kq1503564209.jpg","idDrink":"16998"},{"strDrink":"Bubble
+        Gum","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/spuurv1468878783.jpg","idDrink":"14730"},{"strDrink":"Caribbean
+        Orange Liqueur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qwxuwy1472667570.jpg","idDrink":"12796"},{"strDrink":"Cherry
+        Electric Lemonade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tquyyt1451299548.jpg","idDrink":"17174"},{"strDrink":"Chocolate
+        Black Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yyvywx1472720879.jpg","idDrink":"11243"},{"strDrink":"Cosmopolitan
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/upxxpq1439907580.jpg","idDrink":"14133"},{"strDrink":"Dirty
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vcyvpq1485083300.jpg","idDrink":"17181"},{"strDrink":"Espresso
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n0sx531504372951.jpg","idDrink":"17212"},{"strDrink":"Flaming
+        Dr. Pepper","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/d30z931503565384.jpg","idDrink":"13202"},{"strDrink":"Freddy
+        Kruger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuppuq1461866798.jpg","idDrink":"14688"},{"strDrink":"French
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/clth721504373134.jpg","idDrink":"17213"},{"strDrink":"Gideon''s
+        Green Dinosaur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/p5r0tr1503564636.jpg","idDrink":"17002"},{"strDrink":"Godchild","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/m5nhtr1504820829.jpg","idDrink":"11422"},{"strDrink":"Godmother","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4889up1504368984.jpg","idDrink":"11424"},{"strDrink":"Greyhound","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/g5upn41513706732.jpg","idDrink":"17252"},{"strDrink":"Harvey
+        Wallbanger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vg4bva1504369725.jpg","idDrink":"11462"},{"strDrink":"Ice
+        Pick #1","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ypsrqp1469091726.jpg","idDrink":"13539"},{"strDrink":"Irish
+        Curdling Cow","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yrhutv1503563730.jpg","idDrink":"16987"},{"strDrink":"Irish
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/swqurw1454512730.jpg","idDrink":"17015"},{"strDrink":"Jello
+        shots","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/l0smzo1504884904.jpg","idDrink":"14956"},{"strDrink":"Jitterbug","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wwqvrq1441245318.jpg","idDrink":"16178"},{"strDrink":"Kamikaze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xa58bb1504373204.jpg","idDrink":"11600"},{"strDrink":"Kool-Aid
+        Shot","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/fegm621503564966.jpg","idDrink":"13190"},{"strDrink":"Kool-Aid
+        Slammer","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/kugu2m1504735473.jpg","idDrink":"14446"},{"strDrink":"Long
+        Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wx7hsg1504370510.jpg","idDrink":"17204"},{"strDrink":"Long
+        Island Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1439906072.jpg","idDrink":"11002"},{"strDrink":"Long
+        vodka","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/9179i01503565212.jpg","idDrink":"13196"},{"strDrink":"Moscow
+        Mule","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3pylqc1504370988.jpg","idDrink":"11009"},{"strDrink":"National
+        Aquarium","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dlw0om1503565021.jpg","idDrink":"13192"},{"strDrink":"Orange
+        Crush","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/zvoics1504885926.jpg","idDrink":"15330"},{"strDrink":"Orange
+        Whip","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttyrxr1454514759.jpg","idDrink":"16995"},{"strDrink":"Oreo
+        Mudslide","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpwwut1468925017.jpg","idDrink":"13499"},{"strDrink":"Pink
+        Panty Pulldowns","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/squsuy1468926657.jpg","idDrink":"13535"},{"strDrink":"Pink
+        Penocha","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/6vigjx1503564007.jpg","idDrink":"16992"},{"strDrink":"Popped
+        cherry","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/sxvrwv1473344825.jpg","idDrink":"13072"},{"strDrink":"Radioactive
+        Long Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","idDrink":"16984"},{"strDrink":"Russian
+        Spring Punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ctt20s1504373488.jpg","idDrink":"17214"},{"strDrink":"San
+        Francisco","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/szmj2d1504889961.jpg","idDrink":"15184"},{"strDrink":"Screaming
+        Orgasm","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/x894cs1504388670.jpg","idDrink":"13625"},{"strDrink":"Screwdriver","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/8xnyke1504352207.jpg","idDrink":"12162"},{"strDrink":"Sea
+        breeze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7rfuks1504371562.jpg","idDrink":"13377"},{"strDrink":"Sex
+        on the Beach","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lijtw51551455287.jpg","idDrink":"12754"},{"strDrink":"Shark
+        Attack","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uv96zr1504793256.jpg","idDrink":"16273"},{"strDrink":"Vesper","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/mtdxpa1504374514.jpg","idDrink":"17218"},{"strDrink":"Victory
+        Collins","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lx0lvs1492976619.jpg","idDrink":"12452"},{"strDrink":"Vodka
+        And Tonic","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lmj2yt1504820500.jpg","idDrink":"12460"},{"strDrink":"Vodka
+        Fizz","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xwxyux1441254243.jpg","idDrink":"16967"},{"strDrink":"Vodka
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyxrqw1439906528.jpg","idDrink":"14167"},{"strDrink":"Vodka
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rpttur1454515129.jpg","idDrink":"15403"},{"strDrink":"White
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsrupw1472405732.jpg","idDrink":"12528"},{"strDrink":"Zipperhead","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/r2qzhu1485620235.jpg","idDrink":"16942"},{"strDrink":"Zorbatini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wtkqgb1485621155.jpg","idDrink":"16963"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:48:59 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Godchild
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:48:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da1407e5193be5864dc13b3c7ab6da89c1558900139; expires=Mon, 25-May-20
+        19:48:59 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24510fda1c7c1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11422","strDrink":"Godchild","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Champagne flute","strInstructions":"Shake
+        all ingredients well with cracked ice, strain into a champagne flute, and
+        serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/m5nhtr1504820829.jpg","strIngredient1":"Vodka","strIngredient2":"Amaretto","strIngredient3":"Heavy
+        cream","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-07
+        22:47:09"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:48:59 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:49:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dfff9dc8f76834b7a38eb073447106f0e1558900139; expires=Mon, 25-May-20
+        19:48:59 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24512cf7f4ff1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"strDrink":"''57 Chevy with a White License Plate","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyyvtu1468878544.jpg","idDrink":"14029"},{"strDrink":"155
+        Belmont","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yqvvqs1475667388.jpg","idDrink":"15346"},{"strDrink":"501
+        Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1461867097.jpg","idDrink":"17105"},{"strDrink":"A
+        Gilligan''s Island","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wysqut1461867176.jpg","idDrink":"16943"},{"strDrink":"A
+        midsummernight dream","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ysqvqp1461867292.jpg","idDrink":"15675"},{"strDrink":"A.D.M.
+        (After Dinner Mint)","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ruxuvp1472669600.jpg","idDrink":"14560"},{"strDrink":"Absinthe
+        #2","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uxxtrt1472667197.jpg","idDrink":"12790"},{"strDrink":"Absolutely
+        Fabulous","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/abcpwr1504817734.jpg","idDrink":"17224"},{"strDrink":"Adam
+        Bomb","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpxurs1454513016.jpg","idDrink":"16333"},{"strDrink":"Adam
+        Sunrise","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vtuyvu1472812112.jpg","idDrink":"15567"},{"strDrink":"Addison
+        Special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4vo5651493068493.jpg","idDrink":"14272"},{"strDrink":"After
+        sex","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xrl66i1493068702.jpg","idDrink":"15182"},{"strDrink":"Apricot
+        punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuxxtp1472668667.jpg","idDrink":"15849"},{"strDrink":"Arctic
+        Fish","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttsvwy1472668781.jpg","idDrink":"14622"},{"strDrink":"Arizona
+        Antifreeze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dbtylp1493067262.jpg","idDrink":"16354"},{"strDrink":"Arizona
+        Twister","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ido1j01493068134.jpg","idDrink":"17074"},{"strDrink":"Army
+        special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/55muhh1493068062.jpg","idDrink":"17066"},{"strDrink":"Atlantic
+        Sun","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/doyxqb1493067556.jpg","idDrink":"13423"},{"strDrink":"Atomic
+        Lokade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n3zfrh1493067412.jpg","idDrink":"13086"},{"strDrink":"Autodaf\u00e9","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7dkf0i1487602928.jpg","idDrink":"12756"},{"strDrink":"Avalon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3k9qic1493068931.jpg","idDrink":"15266"},{"strDrink":"Aztec
+        Punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uqwuyp1454514591.jpg","idDrink":"14364"},{"strDrink":"Belgian
+        Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rttsxw1441245419.jpg","idDrink":"14071"},{"strDrink":"Bellini
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3h9wv51504389379.jpg","idDrink":"16176"},{"strDrink":"Black
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2k5gbb1504367689.jpg","idDrink":"11102"},{"strDrink":"Bloody
+        Mary","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uyquuu1439906954.jpg","idDrink":"11113"},{"strDrink":"Blue
+        Lagoon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vak0e51504389504.jpg","idDrink":"11117"},{"strDrink":"Blue
+        Mountain","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsxssp1441209853.jpg","idDrink":"11119"},{"strDrink":"Brain
+        Fart","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rz5aun1504389701.jpg","idDrink":"17120"},{"strDrink":"Bruised
+        Heart","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7if5kq1503564209.jpg","idDrink":"16998"},{"strDrink":"Bubble
+        Gum","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/spuurv1468878783.jpg","idDrink":"14730"},{"strDrink":"Caribbean
+        Orange Liqueur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qwxuwy1472667570.jpg","idDrink":"12796"},{"strDrink":"Cherry
+        Electric Lemonade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tquyyt1451299548.jpg","idDrink":"17174"},{"strDrink":"Chocolate
+        Black Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yyvywx1472720879.jpg","idDrink":"11243"},{"strDrink":"Cosmopolitan
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/upxxpq1439907580.jpg","idDrink":"14133"},{"strDrink":"Dirty
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vcyvpq1485083300.jpg","idDrink":"17181"},{"strDrink":"Espresso
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n0sx531504372951.jpg","idDrink":"17212"},{"strDrink":"Flaming
+        Dr. Pepper","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/d30z931503565384.jpg","idDrink":"13202"},{"strDrink":"Freddy
+        Kruger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuppuq1461866798.jpg","idDrink":"14688"},{"strDrink":"French
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/clth721504373134.jpg","idDrink":"17213"},{"strDrink":"Gideon''s
+        Green Dinosaur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/p5r0tr1503564636.jpg","idDrink":"17002"},{"strDrink":"Godchild","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/m5nhtr1504820829.jpg","idDrink":"11422"},{"strDrink":"Godmother","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4889up1504368984.jpg","idDrink":"11424"},{"strDrink":"Greyhound","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/g5upn41513706732.jpg","idDrink":"17252"},{"strDrink":"Harvey
+        Wallbanger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vg4bva1504369725.jpg","idDrink":"11462"},{"strDrink":"Ice
+        Pick #1","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ypsrqp1469091726.jpg","idDrink":"13539"},{"strDrink":"Irish
+        Curdling Cow","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yrhutv1503563730.jpg","idDrink":"16987"},{"strDrink":"Irish
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/swqurw1454512730.jpg","idDrink":"17015"},{"strDrink":"Jello
+        shots","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/l0smzo1504884904.jpg","idDrink":"14956"},{"strDrink":"Jitterbug","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wwqvrq1441245318.jpg","idDrink":"16178"},{"strDrink":"Kamikaze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xa58bb1504373204.jpg","idDrink":"11600"},{"strDrink":"Kool-Aid
+        Shot","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/fegm621503564966.jpg","idDrink":"13190"},{"strDrink":"Kool-Aid
+        Slammer","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/kugu2m1504735473.jpg","idDrink":"14446"},{"strDrink":"Long
+        Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wx7hsg1504370510.jpg","idDrink":"17204"},{"strDrink":"Long
+        Island Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1439906072.jpg","idDrink":"11002"},{"strDrink":"Long
+        vodka","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/9179i01503565212.jpg","idDrink":"13196"},{"strDrink":"Moscow
+        Mule","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3pylqc1504370988.jpg","idDrink":"11009"},{"strDrink":"National
+        Aquarium","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dlw0om1503565021.jpg","idDrink":"13192"},{"strDrink":"Orange
+        Crush","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/zvoics1504885926.jpg","idDrink":"15330"},{"strDrink":"Orange
+        Whip","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttyrxr1454514759.jpg","idDrink":"16995"},{"strDrink":"Oreo
+        Mudslide","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpwwut1468925017.jpg","idDrink":"13499"},{"strDrink":"Pink
+        Panty Pulldowns","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/squsuy1468926657.jpg","idDrink":"13535"},{"strDrink":"Pink
+        Penocha","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/6vigjx1503564007.jpg","idDrink":"16992"},{"strDrink":"Popped
+        cherry","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/sxvrwv1473344825.jpg","idDrink":"13072"},{"strDrink":"Radioactive
+        Long Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","idDrink":"16984"},{"strDrink":"Russian
+        Spring Punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ctt20s1504373488.jpg","idDrink":"17214"},{"strDrink":"San
+        Francisco","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/szmj2d1504889961.jpg","idDrink":"15184"},{"strDrink":"Screaming
+        Orgasm","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/x894cs1504388670.jpg","idDrink":"13625"},{"strDrink":"Screwdriver","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/8xnyke1504352207.jpg","idDrink":"12162"},{"strDrink":"Sea
+        breeze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7rfuks1504371562.jpg","idDrink":"13377"},{"strDrink":"Sex
+        on the Beach","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lijtw51551455287.jpg","idDrink":"12754"},{"strDrink":"Shark
+        Attack","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uv96zr1504793256.jpg","idDrink":"16273"},{"strDrink":"Vesper","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/mtdxpa1504374514.jpg","idDrink":"17218"},{"strDrink":"Victory
+        Collins","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lx0lvs1492976619.jpg","idDrink":"12452"},{"strDrink":"Vodka
+        And Tonic","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lmj2yt1504820500.jpg","idDrink":"12460"},{"strDrink":"Vodka
+        Fizz","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xwxyux1441254243.jpg","idDrink":"16967"},{"strDrink":"Vodka
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyxrqw1439906528.jpg","idDrink":"14167"},{"strDrink":"Vodka
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rpttur1454515129.jpg","idDrink":"15403"},{"strDrink":"White
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsrupw1472405732.jpg","idDrink":"12528"},{"strDrink":"Zipperhead","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/r2qzhu1485620235.jpg","idDrink":"16942"},{"strDrink":"Zorbatini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wtkqgb1485621155.jpg","idDrink":"16963"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:49:00 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=San%20Francisco
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:49:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbbb6cf347feb59ab4feca4cb41df1e631558900140; expires=Mon, 25-May-20
+        19:49:00 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24514ca72c7d9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"15184","strDrink":"San Francisco","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Highball glass","strInstructions":"Take
+        a tall glass and put in a few ice cubes, fill the vodka over it and fill with
+        juice then the \"creme\", to end fill in the grenadine but very carefully
+        at the side of the glass so it will lay down in the bottom. garnish with orange
+        and strawberry.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/szmj2d1504889961.jpg","strIngredient1":"Vodka","strIngredient2":"Creme
+        de Banane","strIngredient3":"Grenadine","strIngredient4":"Orange juice","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"2
+        cl ","strMeasure2":"2 cl ","strMeasure3":"\n","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-08
+        17:59:21"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:49:00 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:49:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbe71aef6d9c5b3309afd8a39af1363491558900140; expires=Mon, 25-May-20
+        19:49:00 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24515dc30c7dd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"strDrink":"''57 Chevy with a White License Plate","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyyvtu1468878544.jpg","idDrink":"14029"},{"strDrink":"155
+        Belmont","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yqvvqs1475667388.jpg","idDrink":"15346"},{"strDrink":"501
+        Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1461867097.jpg","idDrink":"17105"},{"strDrink":"A
+        Gilligan''s Island","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wysqut1461867176.jpg","idDrink":"16943"},{"strDrink":"A
+        midsummernight dream","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ysqvqp1461867292.jpg","idDrink":"15675"},{"strDrink":"A.D.M.
+        (After Dinner Mint)","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ruxuvp1472669600.jpg","idDrink":"14560"},{"strDrink":"Absinthe
+        #2","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uxxtrt1472667197.jpg","idDrink":"12790"},{"strDrink":"Absolutely
+        Fabulous","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/abcpwr1504817734.jpg","idDrink":"17224"},{"strDrink":"Adam
+        Bomb","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpxurs1454513016.jpg","idDrink":"16333"},{"strDrink":"Adam
+        Sunrise","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vtuyvu1472812112.jpg","idDrink":"15567"},{"strDrink":"Addison
+        Special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4vo5651493068493.jpg","idDrink":"14272"},{"strDrink":"After
+        sex","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xrl66i1493068702.jpg","idDrink":"15182"},{"strDrink":"Apricot
+        punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuxxtp1472668667.jpg","idDrink":"15849"},{"strDrink":"Arctic
+        Fish","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttsvwy1472668781.jpg","idDrink":"14622"},{"strDrink":"Arizona
+        Antifreeze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dbtylp1493067262.jpg","idDrink":"16354"},{"strDrink":"Arizona
+        Twister","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ido1j01493068134.jpg","idDrink":"17074"},{"strDrink":"Army
+        special","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/55muhh1493068062.jpg","idDrink":"17066"},{"strDrink":"Atlantic
+        Sun","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/doyxqb1493067556.jpg","idDrink":"13423"},{"strDrink":"Atomic
+        Lokade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n3zfrh1493067412.jpg","idDrink":"13086"},{"strDrink":"Autodaf\u00e9","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7dkf0i1487602928.jpg","idDrink":"12756"},{"strDrink":"Avalon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3k9qic1493068931.jpg","idDrink":"15266"},{"strDrink":"Aztec
+        Punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uqwuyp1454514591.jpg","idDrink":"14364"},{"strDrink":"Belgian
+        Blue","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rttsxw1441245419.jpg","idDrink":"14071"},{"strDrink":"Bellini
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3h9wv51504389379.jpg","idDrink":"16176"},{"strDrink":"Black
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/2k5gbb1504367689.jpg","idDrink":"11102"},{"strDrink":"Bloody
+        Mary","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uyquuu1439906954.jpg","idDrink":"11113"},{"strDrink":"Blue
+        Lagoon","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vak0e51504389504.jpg","idDrink":"11117"},{"strDrink":"Blue
+        Mountain","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsxssp1441209853.jpg","idDrink":"11119"},{"strDrink":"Brain
+        Fart","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rz5aun1504389701.jpg","idDrink":"17120"},{"strDrink":"Bruised
+        Heart","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7if5kq1503564209.jpg","idDrink":"16998"},{"strDrink":"Bubble
+        Gum","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/spuurv1468878783.jpg","idDrink":"14730"},{"strDrink":"Caribbean
+        Orange Liqueur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qwxuwy1472667570.jpg","idDrink":"12796"},{"strDrink":"Cherry
+        Electric Lemonade","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tquyyt1451299548.jpg","idDrink":"17174"},{"strDrink":"Chocolate
+        Black Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yyvywx1472720879.jpg","idDrink":"11243"},{"strDrink":"Cosmopolitan
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/upxxpq1439907580.jpg","idDrink":"14133"},{"strDrink":"Dirty
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vcyvpq1485083300.jpg","idDrink":"17181"},{"strDrink":"Espresso
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n0sx531504372951.jpg","idDrink":"17212"},{"strDrink":"Flaming
+        Dr. Pepper","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/d30z931503565384.jpg","idDrink":"13202"},{"strDrink":"Freddy
+        Kruger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tuppuq1461866798.jpg","idDrink":"14688"},{"strDrink":"French
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/clth721504373134.jpg","idDrink":"17213"},{"strDrink":"Gideon''s
+        Green Dinosaur","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/p5r0tr1503564636.jpg","idDrink":"17002"},{"strDrink":"Godchild","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/m5nhtr1504820829.jpg","idDrink":"11422"},{"strDrink":"Godmother","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4889up1504368984.jpg","idDrink":"11424"},{"strDrink":"Greyhound","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/g5upn41513706732.jpg","idDrink":"17252"},{"strDrink":"Harvey
+        Wallbanger","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vg4bva1504369725.jpg","idDrink":"11462"},{"strDrink":"Ice
+        Pick #1","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ypsrqp1469091726.jpg","idDrink":"13539"},{"strDrink":"Irish
+        Curdling Cow","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yrhutv1503563730.jpg","idDrink":"16987"},{"strDrink":"Irish
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/swqurw1454512730.jpg","idDrink":"17015"},{"strDrink":"Jello
+        shots","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/l0smzo1504884904.jpg","idDrink":"14956"},{"strDrink":"Jitterbug","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wwqvrq1441245318.jpg","idDrink":"16178"},{"strDrink":"Kamikaze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xa58bb1504373204.jpg","idDrink":"11600"},{"strDrink":"Kool-Aid
+        Shot","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/fegm621503564966.jpg","idDrink":"13190"},{"strDrink":"Kool-Aid
+        Slammer","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/kugu2m1504735473.jpg","idDrink":"14446"},{"strDrink":"Long
+        Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wx7hsg1504370510.jpg","idDrink":"17204"},{"strDrink":"Long
+        Island Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1439906072.jpg","idDrink":"11002"},{"strDrink":"Long
+        vodka","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/9179i01503565212.jpg","idDrink":"13196"},{"strDrink":"Moscow
+        Mule","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3pylqc1504370988.jpg","idDrink":"11009"},{"strDrink":"National
+        Aquarium","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dlw0om1503565021.jpg","idDrink":"13192"},{"strDrink":"Orange
+        Crush","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/zvoics1504885926.jpg","idDrink":"15330"},{"strDrink":"Orange
+        Whip","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttyrxr1454514759.jpg","idDrink":"16995"},{"strDrink":"Oreo
+        Mudslide","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpwwut1468925017.jpg","idDrink":"13499"},{"strDrink":"Pink
+        Panty Pulldowns","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/squsuy1468926657.jpg","idDrink":"13535"},{"strDrink":"Pink
+        Penocha","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/6vigjx1503564007.jpg","idDrink":"16992"},{"strDrink":"Popped
+        cherry","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/sxvrwv1473344825.jpg","idDrink":"13072"},{"strDrink":"Radioactive
+        Long Island Iced Tea","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","idDrink":"16984"},{"strDrink":"Russian
+        Spring Punch","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ctt20s1504373488.jpg","idDrink":"17214"},{"strDrink":"San
+        Francisco","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/szmj2d1504889961.jpg","idDrink":"15184"},{"strDrink":"Screaming
+        Orgasm","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/x894cs1504388670.jpg","idDrink":"13625"},{"strDrink":"Screwdriver","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/8xnyke1504352207.jpg","idDrink":"12162"},{"strDrink":"Sea
+        breeze","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/7rfuks1504371562.jpg","idDrink":"13377"},{"strDrink":"Sex
+        on the Beach","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lijtw51551455287.jpg","idDrink":"12754"},{"strDrink":"Shark
+        Attack","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uv96zr1504793256.jpg","idDrink":"16273"},{"strDrink":"Vesper","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/mtdxpa1504374514.jpg","idDrink":"17218"},{"strDrink":"Victory
+        Collins","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lx0lvs1492976619.jpg","idDrink":"12452"},{"strDrink":"Vodka
+        And Tonic","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lmj2yt1504820500.jpg","idDrink":"12460"},{"strDrink":"Vodka
+        Fizz","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xwxyux1441254243.jpg","idDrink":"16967"},{"strDrink":"Vodka
+        Martini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyxrqw1439906528.jpg","idDrink":"14167"},{"strDrink":"Vodka
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rpttur1454515129.jpg","idDrink":"15403"},{"strDrink":"White
+        Russian","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsrupw1472405732.jpg","idDrink":"12528"},{"strDrink":"Zipperhead","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/r2qzhu1485620235.jpg","idDrink":"16942"},{"strDrink":"Zorbatini","strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wtkqgb1485621155.jpg","idDrink":"16963"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:49:00 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Atomic%20Lokade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:49:00 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d657a444aea2fcf3273d10a9a40c67fbc1558900140; expires=Mon, 25-May-20
+        19:49:00 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24516d82dc7a9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"13086","strDrink":"Atomic Lokade","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"In
+        a shaker, place lemonade, vodka, blue Curacao, and triple sec together. Shake
+        with ice and strain into glass. Add sugar to taste","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n3zfrh1493067412.jpg","strIngredient1":"Lemonade","strIngredient2":"Vodka","strIngredient3":"Blue
+        Curacao","strIngredient4":"Triple sec","strIngredient5":"Sugar","strIngredient6":"Ice","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"5
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1\/2 oz
+        ","strMeasure5":"\n","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"
+        ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-04-24
+        21:56:52"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:49:00 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Orange%20Whip
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:49:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcb355390ad28f8ddcdc2d2b63b388ae51558900167; expires=Mon, 25-May-20
+        19:49:27 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd245c17b705003-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16995","strDrink":"Orange Whip","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Other\/Unknown","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins
+        Glass","strInstructions":"Pour ingredients over ice and stir.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttyrxr1454514759.jpg","strIngredient1":"Orange
+        juice","strIngredient2":"Rum","strIngredient3":"Vodka","strIngredient4":"Cream","strIngredient5":"Ice","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"4
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":"1 package
+        ","strMeasure5":"Over ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-02-03
+        15:52:39"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:49:28 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Zipperhead
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:49:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de88ecd1dbd92d90f583e4b81d6dd9c611558900168; expires=Mon, 25-May-20
+        19:49:28 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd245c29c72c7c1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16942","strDrink":"Zipperhead","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Shot","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Whiskey
+        sour glass","strInstructions":"Fill glass with rocks, add straw before putting
+        in liquor. Then add the ingredients in order, trying to keep layered as much
+        as possible (i.e. Chambord on bottom, then Vodka, Then soda on top).","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/r2qzhu1485620235.jpg","strIngredient1":"Chambord
+        raspberry liqueur","strIngredient2":"Vodka","strIngredient3":"Soda water","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        shot ","strMeasure2":"1 shot ","strMeasure3":"Fill with ","strMeasure4":"
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-01-28
+        16:17:15"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:49:28 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=National%20Aquarium
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:49:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1a75a0f599a14085f6fa2edcaa57dbe21558900168; expires=Mon, 25-May-20
+        19:49:28 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd245c47f91c7b5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"13192","strDrink":"National Aquarium","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Pour
+        all ingredients into a shaker of ice. Shake well. Serve on the rocks.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dlw0om1503565021.jpg","strIngredient1":"Rum","strIngredient2":"Vodka","strIngredient3":"Gin","strIngredient4":"Blue
+        Curacao","strIngredient5":"Sour mix","strIngredient6":"Lemon-lime soda","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz ","strMeasure2":"1\/2 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1\/2
+        oz ","strMeasure5":"2 oz ","strMeasure6":"1 splash ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":" ","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-08-24
+        09:57:01"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:49:28 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Harvey%20Wallbanger
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:49:28 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d34967d3df43de89f0f75778b2e692aed1558900168; expires=Mon, 25-May-20
+        19:49:28 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd245c6cee7c7b9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11462","strDrink":"Harvey Wallbanger","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,ContemporaryClassic","strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":"Contemporary Classics","strAlcoholic":"Alcoholic","strGlass":"Collins
+        glass","strInstructions":"Stir the vodka and orange juice with ice in the
+        glass, then float the Galliano on top. Garnish and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vg4bva1504369725.jpg","strIngredient1":"Vodka","strIngredient2":"Galliano","strIngredient3":"Orange
+        juice","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1\/2 oz ","strMeasure3":"4 oz ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        17:28:45"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:49:28 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Arctic%20Fish
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:52:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df599a5cb1ddce69905cd982d8a73f92b1558900356; expires=Mon, 25-May-20
+        19:52:36 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24a5d5973c7c5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14622","strDrink":"Arctic Fish","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Punch
+        \/ Party Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Beer
+        pilsner","strInstructions":"Fill glass with ice and fish, add vodka, grape
+        soda and orange juice. DO NOT STIR!!!!! Serve well chilled.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttsvwy1472668781.jpg","strIngredient1":"Vodka","strIngredient2":"Grape
+        soda","strIngredient3":"Orange juice","strIngredient4":"Ice","strIngredient5":"Candy","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/3
+        part ","strMeasure2":"1\/3 part ","strMeasure3":"1\/3 part ","strMeasure4":"lots
+        ","strMeasure5":"1 dash ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-08-31
+        19:39:41"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:52:37 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Victory%20Collins
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:52:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5c2a1ddd0ebcbbd1f72e045b43d49d691558900357; expires=Mon, 25-May-20
+        19:52:37 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24a5fdbdbc7b1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"12452","strDrink":"Victory Collins","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins glass","strInstructions":"Shake
+        all ingredients (except orange slice) with ice and strain into a collins glass
+        over ice cubes. Add the slice of orange and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/lx0lvs1492976619.jpg","strIngredient1":"Vodka","strIngredient2":"Lemon
+        juice","strIngredient3":"Grape juice","strIngredient4":"Powdered sugar","strIngredient5":"Orange","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"3 oz ","strMeasure3":"3 oz unsweetened ","strMeasure4":"1
+        tsp ","strMeasure5":"1 slice ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-04-23
+        20:43:39"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:52:37 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Irish%20Curdling%20Cow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:52:37 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d48c6610eaa50f755509d461e73303f621558900357; expires=Mon, 25-May-20
+        19:52:37 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24a624a12c7dd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16987","strDrink":"Irish Curdling Cow","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Highball
+        glass","strInstructions":"Pour Irish Cream, Vodka, and Bourbon in a glass.
+        Add some ice and mix in the orange juice.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yrhutv1503563730.jpg","strIngredient1":"Bailey''s
+        irish cream","strIngredient2":"Bourbon","strIngredient3":"Vodka","strIngredient4":"Orange
+        juice","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"3\/4
+        oz ","strMeasure2":"3\/4 oz ","strMeasure3":"3\/4 oz ","strMeasure4":"2-3
+        oz ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-08-24
+        09:35:30"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:52:37 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Arizona%20Twister
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:52:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=def534b26b781340561556fdc292361e51558900357; expires=Mon, 25-May-20
+        19:52:37 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24a643887c7d1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17074","strDrink":"Arizona Twister","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Hurricane
+        glass","strInstructions":"Just mix in the shots of rum, vodka, and tequila.
+        Add splashes of the three juices, heavy on the pineapple. Top off with grenadine.
+        Crushed ice should already be in glass. Top off the glass with a pineapple
+        wedge.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ido1j01493068134.jpg","strIngredient1":"Vodka","strIngredient2":"Malibu
+        rum","strIngredient3":"Gold tequila","strIngredient4":"Orange juice","strIngredient5":"Pineapple
+        juice","strIngredient6":"Cream of coconut","strIngredient7":"Grenadine","strIngredient8":"Ice","strIngredient9":"Pineapple","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        shot ","strMeasure2":"1 shot ","strMeasure3":"1 shot ","strMeasure4":"1 splash
+        ","strMeasure5":"1 splash ","strMeasure6":"1 splash ","strMeasure7":"1 dash
+        ","strMeasure8":"crushed ","strMeasure9":"1 wedge ","strMeasure10":" ","strMeasure11":"
+        ","strMeasure12":" ","strMeasure13":" ","strMeasure14":" ","strMeasure15":"","dateModified":"2017-04-24
+        22:08:55"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:52:38 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Radioactive%20Long%20Island%20Iced%20Tea
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5698237c72bdfd1d67a1c0c238d83d8c1558900442; expires=Mon, 25-May-20
+        19:54:02 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24c769fb4c7bd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16984","strDrink":"Radioactive Long Island Iced
+        Tea","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Pour
+        all ingredients over ice in a very tall glass. Sip cautiously.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","strIngredient1":"Rum","strIngredient2":"Vodka","strIngredient3":"Tequila","strIngredient4":"Gin","strIngredient5":"Triple
+        sec","strIngredient6":"Chambord raspberry liqueur","strIngredient7":"Midori
+        melon liqueur","strIngredient8":"Malibu rum","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":"1 oz ","strMeasure5":"1
+        oz ","strMeasure6":"1 oz ","strMeasure7":"1 oz ","strMeasure8":"1 oz ","strMeasure9":"
+        ","strMeasure10":" ","strMeasure11":" ","strMeasure12":" ","strMeasure13":"
+        ","strMeasure14":"","strMeasure15":"","dateModified":"2017-08-24 09:31:52"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:02 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Arizona%20Antifreeze
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d223b0031e43e0e40728f18d3cb924a581558900459; expires=Mon, 25-May-20
+        19:54:19 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24ce2df89c7cd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16354","strDrink":"Arizona Antifreeze","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Shot","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Shot
+        glass","strInstructions":"Pour all ingredients into shot glass and slam !!!!","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dbtylp1493067262.jpg","strIngredient1":"Vodka","strIngredient2":"Midori
+        melon liqueur","strIngredient3":"Sweet and sour","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/3
+        oz ","strMeasure2":"1\/3 oz ","strMeasure3":"1\/3 oz ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-04-24
+        21:54:22"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:20 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Cherry%20Electric%20Lemonade
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3ea0077934690dbe8f7413e7cd2d2f521558900460; expires=Mon, 25-May-20
+        19:54:20 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24ce4e85fc7b9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17174","strDrink":"Cherry Electric Lemonade","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":null,"strGlass":"Pint
+        glass","strInstructions":"Now stir vigorously and then pour over a large cup
+        of ice. Now drink it with a straw and stir occasionally.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tquyyt1451299548.jpg","strIngredient1":"Gin","strIngredient2":"Tequila","strIngredient3":"Vodka","strIngredient4":"White
+        rum","strIngredient5":"Triple Sec","strIngredient6":"Cherry Grenadine","strIngredient7":"Sweet
+        and sour","strIngredient8":"Club soda","strIngredient9":null,"strIngredient10":null,"strIngredient11":null,"strIngredient12":null,"strIngredient13":null,"strIngredient14":null,"strIngredient15":null,"strMeasure1":"1
+        oz","strMeasure2":"1 oz","strMeasure3":"1 oz","strMeasure4":"1 oz","strMeasure5":"1
+        oz","strMeasure6":"1 oz","strMeasure7":"1 oz","strMeasure8":"3 oz","strMeasure9":"","strMeasure10":null,"strMeasure11":null,"strMeasure12":null,"strMeasure13":null,"strMeasure14":null,"strMeasure15":null,"dateModified":"2015-12-28
+        10:45:48"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:20 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Gideon%27s%20Green%20Dinosaur
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dfeaaa8baa66fcc25134b72737c22c5b21558900460; expires=Mon, 25-May-20
+        19:54:20 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24ce6cea3c7b5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17002","strDrink":"Gideon''s Green Dinosaur","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins glass","strInstructions":"Add
+        all ingredients in collins glass with ice and stir.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/p5r0tr1503564636.jpg","strIngredient1":"Dark
+        rum","strIngredient2":"Vodka","strIngredient3":"Triple sec","strIngredient4":"Tequila","strIngredient5":"Melon
+        liqueur","strIngredient6":"Mountain Dew","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz ","strMeasure2":"1\/2 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1\/2
+        oz ","strMeasure5":"1\/2 oz ","strMeasure6":"Fill with ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":" ","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-08-24
+        09:50:36"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:20 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=%2757%20Chevy%20with%20a%20White%20License%20Plate
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd92abf7aba37314059028da567367d981558900468; expires=Mon, 25-May-20
+        19:54:28 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24d1ac9f3c7b1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14029","strDrink":"''57 Chevy with a White License
+        Plate","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Highball
+        glass","strInstructions":"1. Fill a rocks glass with ice 2.add white creme
+        de cacao and vodka 3.stir","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyyvtu1468878544.jpg","strIngredient1":"Creme
+        de Cacao","strIngredient2":"Vodka","strIngredient3":"","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz white ","strMeasure2":"1 oz ","strMeasure3":" ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-07-18
+        22:49:04"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:29 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Jello%20shots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8e5773db7f648dff448626c127131f461558900469; expires=Mon, 25-May-20
+        19:54:29 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24d1d7c84c7b9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14956","strDrink":"Jello shots","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Shot","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Shot
+        glass","strInstructions":"Boil 3 cups of water then add jello. Mix jello and
+        water until jello is completely disolved. Add the two cups of vodka and mix
+        together. Pour mixture into plastic shot glasses and chill until firm. Then,
+        eat away...","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/l0smzo1504884904.jpg","strIngredient1":"Vodka","strIngredient2":"Jello","strIngredient3":"Water","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"2
+        cups ","strMeasure2":"3 packages ","strMeasure3":"3 cups ","strMeasure4":"
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-08
+        16:35:04"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:29 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Oreo%20Mudslide
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:29 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7b031bf3f657da14b641e3085726c8361558900469; expires=Mon, 25-May-20
+        19:54:29 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24d1fbd7ac7d5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"13499","strDrink":"Oreo Mudslide","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Blend
+        Vodka, Kahlua, Bailey''s, ice-cream and the Oreo well in a blender. Pour into
+        a large frosted glass. Garnish with whipped cream and a cherry.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpwwut1468925017.jpg","strIngredient1":"Vodka","strIngredient2":"Kahlua","strIngredient3":"Bailey''s
+        irish cream","strIngredient4":"Vanilla ice-cream","strIngredient5":"Oreo cookie","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":"2 scoops ","strMeasure5":"1
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":" ","strMeasure10":"
+        ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-07-19
+        11:43:37"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:29 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=155%20Belmont
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:53 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc5c34dbc2a64aaf570e22d35205e1d841558900493; expires=Mon, 25-May-20
+        19:54:53 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24db4fd26c7c5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"15346","strDrink":"155 Belmont","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"White
+        wine glass","strInstructions":"Blend with ice. Serve in a wine glass. Garnish
+        with carrot.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yqvvqs1475667388.jpg","strIngredient1":"Dark
+        rum","strIngredient2":"Light rum","strIngredient3":"Vodka","strIngredient4":"Orange
+        juice","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        shot ","strMeasure2":"2 shots ","strMeasure3":"1 shot ","strMeasure4":"1 shot
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"
+        ","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-10-05
+        12:36:28"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:53 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=155%20Belmont
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df47ef82c493988dd4e81023d05e466b51558900493; expires=Mon, 25-May-20
+        19:54:53 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24db77da2c7b5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"15346","strDrink":"155 Belmont","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"White
+        wine glass","strInstructions":"Blend with ice. Serve in a wine glass. Garnish
+        with carrot.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/yqvvqs1475667388.jpg","strIngredient1":"Dark
+        rum","strIngredient2":"Light rum","strIngredient3":"Vodka","strIngredient4":"Orange
+        juice","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        shot ","strMeasure2":"2 shots ","strMeasure3":"1 shot ","strMeasure4":"1 shot
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"
+        ","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-10-05
+        12:36:28"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:54 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Bloody%20Mary
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5c46001eb77593a6192b0dfcef1cf3501558900494; expires=Mon, 25-May-20
+        19:54:54 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24db9597fc7a9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11113","strDrink":"Bloody Mary","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,ContemporaryClassic","strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":"Contemporary Classics","strAlcoholic":"Alcoholic","strGlass":"Old-fashioned
+        glass","strInstructions":"Stirring gently, pour all ingredients into highball
+        glass. Garnish.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uyquuu1439906954.jpg","strIngredient1":"Vodka","strIngredient2":"Tomato
+        juice","strIngredient3":"Lemon juice","strIngredient4":"Worcestershire sauce","strIngredient5":"Tabasco
+        sauce","strIngredient6":"Lime","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"3 oz ","strMeasure3":"1 dash ","strMeasure4":"1\/2
+        tsp ","strMeasure5":"2-3 drops ","strMeasure6":"1 wedge ","strMeasure7":"
+        ","strMeasure8":" ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"
+        ","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2015-08-18
+        15:09:14"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:54 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Caribbean%20Orange%20Liqueur
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:54:54 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=daa604a43196d6f44cbcc48c58f07d5081558900494; expires=Mon, 25-May-20
+        19:54:54 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24dbb4fa8c7c1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"12796","strDrink":"Caribbean Orange Liqueur","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Homemade
+        Liqueur","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Pare
+        very thinly the bright-colored rind from the oranges (no white). Blot the
+        peel on paper towels to remove any excess oil. Put peel in a 4 cup screw-top
+        jar. Add 2 cups vodka. Close jar. Store in a cool, dark place for 2 days or
+        until the vodka has absorbed the flavor. Remove peel and add remaining vodka.
+        Close jar and add remaining cup of vodka. Close the jar and store in a cool
+        dark place at least 1 month to age.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qwxuwy1472667570.jpg","strIngredient1":"Orange","strIngredient2":"Vodka","strIngredient3":"Sugar","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"3
+        large ","strMeasure2":"3 cups ","strMeasure3":"1 1\/3 cup superfine ","strMeasure4":"
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-08-31
+        19:19:30"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:54:54 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Vodka%20Martini
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:56:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de04a8a8d97c15553acd6405807c912041558900572; expires=Mon, 25-May-20
+        19:56:12 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24fa1e9144ff7-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14167","strDrink":"Vodka Martini","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Cocktail glass","strInstructions":"Shake
+        the vodka and vermouth together with a number of ice cubes, strain into a
+        cocktail glass, add the olive and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyxrqw1439906528.jpg","strIngredient1":"Vodka","strIngredient2":"Dry
+        Vermouth","strIngredient3":"Olive","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"3\/4 oz ","strMeasure3":"1 ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2015-08-18
+        15:02:08"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:56:12 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=501%20Blue
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:56:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de65705e524f84e648c2eb0ea41f3bf711558900572; expires=Mon, 25-May-20
+        19:56:12 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd24fa32ba2c7a9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17105","strDrink":"501 Blue","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Mix
+        equal amounts into a glass with ice.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ywxwqs1461867097.jpg","strIngredient1":"Blue
+        Curacao","strIngredient2":"Blueberry schnapps","strIngredient3":"Vodka","strIngredient4":"Sour
+        mix","strIngredient5":"7-Up","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"\n","strMeasure2":"\n","strMeasure3":"\n","strMeasure4":"\n","strMeasure5":"\n","strMeasure6":"\n","strMeasure7":"\n","strMeasure8":"\n","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-04-28
+        19:11:37"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:56:12 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Army%20special
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:56:45 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d565fed084e878c5f72adb70cde1a86251558900604; expires=Mon, 25-May-20
+        19:56:44 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd2506caf40c7a9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17066","strDrink":"Army special","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Cocktail
+        glass","strInstructions":"Pour Vodka, Gin and lime cordial into glass, and
+        top up with crushed ice. Wait for ice to melt slightly and sip without a straw.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/55muhh1493068062.jpg","strIngredient1":"Vodka","strIngredient2":"Gin","strIngredient3":"Lime
+        juice cordial","strIngredient4":"Ice","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"30
+        ml ","strMeasure2":"30 ml ","strMeasure3":"45 ml ","strMeasure4":"1\/2 glass
+        crushed ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-04-24
+        22:07:42"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:56:45 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Ice%20Pick%20%231
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:58:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d52072ac58f6d1c14360553672e8c24011558900705; expires=Mon, 25-May-20
+        19:58:25 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd252e3c889c7dd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"13539","strDrink":"Ice Pick #1","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Put
+        Vodka in glass fill with iced tea. Stir in lemon to taste.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ypsrqp1469091726.jpg","strIngredient1":"Vodka","strIngredient2":"Iced
+        tea","strIngredient3":"Lemon juice","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"6 oz ","strMeasure3":" to taste\n","strMeasure4":"\n","strMeasure5":"\n","strMeasure6":"\n","strMeasure7":"\n","strMeasure8":"\n","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-07-21
+        10:02:06"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:58:26 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=French%20Martini
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:58:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbd1bde01f75c04670809156f44c8e8da1558900706; expires=Mon, 25-May-20
+        19:58:26 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd252e4ea72c7c5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17213","strDrink":"French Martini","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"NewEra,IBA","strVideo":null,"strCategory":"Cocktail","strIBA":"New
+        Era Drinks","strAlcoholic":"Alcoholic","strGlass":"Cocktail glass","strInstructions":"Pour
+        all ingredients into shaker with ice cubes. Shake well and strain into a chilled
+        cocktail glass. Squeeze oil from lemon peel onto the drink.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/clth721504373134.jpg","strIngredient1":"Vodka","strIngredient2":"Raspberry
+        Liqueur","strIngredient3":"pineapple juice","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":null,"strIngredient9":null,"strIngredient10":null,"strIngredient11":null,"strIngredient12":null,"strIngredient13":null,"strIngredient14":null,"strIngredient15":null,"strMeasure1":"4.5
+        cl","strMeasure2":"1.5 cl","strMeasure3":"1.5 cl","strMeasure4":"","strMeasure5":"","strMeasure6":"","strMeasure7":"","strMeasure8":null,"strMeasure9":null,"strMeasure10":null,"strMeasure11":null,"strMeasure12":null,"strMeasure13":null,"strMeasure14":null,"strMeasure15":null,"dateModified":"2017-09-02
+        18:25:34"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:58:26 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Long%20Island%20Iced%20Tea
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:58:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d94de2b3bdbfbea8dc220e2eedcd3d6d71558900706; expires=Mon, 25-May-20
+        19:58:26 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd252e6094cc7d9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17204","strDrink":"Long Island Iced Tea","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,ContemporaryClassic","strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":"Contemporary Classics","strAlcoholic":"Alcoholic","strGlass":"Highball
+        glass","strInstructions":"Mix all contents in a highball glass and sitr gently.
+        Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wx7hsg1504370510.jpg","strIngredient1":"Vodka","strIngredient2":"Tequila","strIngredient3":"Light
+        rum","strIngredient4":"Gin","strIngredient5":"Coca-Cola","strIngredient6":"Lemon
+        peel","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz ","strMeasure2":"1\/2 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1\/2
+        oz ","strMeasure5":"1 dash ","strMeasure6":"Twist of ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":" ","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        17:41:50"},{"idDrink":"15300","strDrink":"3-Mile Long Island Iced Tea","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Fill
+        14oz glass with ice and alcohol. Fill 2\/3 glass with cola and remainder with
+        sweet & sour. Top with dash of bitters and lemon wedge.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rrtssw1472668972.jpg","strIngredient1":"Gin","strIngredient2":"Light
+        rum","strIngredient3":"Tequila","strIngredient4":"Triple sec","strIngredient5":"Vodka","strIngredient6":"Coca-Cola","strIngredient7":"Sweet
+        and sour","strIngredient8":"Bitters","strIngredient9":"Lemon","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz ","strMeasure2":"1\/2 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1\/2
+        oz ","strMeasure5":"1\/2 oz ","strMeasure6":"\n","strMeasure7":"1-2 dash ","strMeasure8":"1
+        wedge ","strMeasure9":" ","strMeasure10":" ","strMeasure11":" ","strMeasure12":"
+        ","strMeasure13":" ","strMeasure14":"","strMeasure15":"","dateModified":"2016-08-31
+        19:42:52"},{"idDrink":"16984","strDrink":"Radioactive Long Island Iced Tea","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Pour
+        all ingredients over ice in a very tall glass. Sip cautiously.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","strIngredient1":"Rum","strIngredient2":"Vodka","strIngredient3":"Tequila","strIngredient4":"Gin","strIngredient5":"Triple
+        sec","strIngredient6":"Chambord raspberry liqueur","strIngredient7":"Midori
+        melon liqueur","strIngredient8":"Malibu rum","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":"1 oz ","strMeasure5":"1
+        oz ","strMeasure6":"1 oz ","strMeasure7":"1 oz ","strMeasure8":"1 oz ","strMeasure9":"
+        ","strMeasure10":" ","strMeasure11":" ","strMeasure12":" ","strMeasure13":"
+        ","strMeasure14":"","strMeasure15":"","dateModified":"2017-08-24 09:31:52"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:58:26 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Absinthe%20%232
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:59:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4363215e27e5301b7e23d8bfb58083d11558900747; expires=Mon, 25-May-20
+        19:59:07 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd253e7bfbbc7a9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"12790","strDrink":"Absinthe #2","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Homemade
+        Liqueur","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Jar","strInstructions":"Mix
+        together and let sit a few days. Strain through a coffee filter. To serve
+        mix 1 part absinthe to 4 parts water, add ice, enjoy.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uxxtrt1472667197.jpg","strIngredient1":"Vodka","strIngredient2":"Sugar","strIngredient3":"Anise","strIngredient4":"Licorice
+        root","strIngredient5":"Wormwood","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        bottle ","strMeasure2":"50 gr ","strMeasure3":"50 ml pure ","strMeasure4":"1
+        tblsp ","strMeasure5":"1 ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-08-31
+        19:13:17"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:59:07 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Zorbatini
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 19:59:08 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db521ea27ff3c381ca8006317d987d5a41558900747; expires=Mon, 25-May-20
+        19:59:07 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd253ea99c2c7c5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16963","strDrink":"Zorbatini","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Cocktail
+        glass","strInstructions":"Prepare like a Martini. Garnish with a green olive.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wtkqgb1485621155.jpg","strIngredient1":"Vodka","strIngredient2":"Ouzo","strIngredient3":"","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/4 oz Stoli ","strMeasure2":"1\/4 oz ","strMeasure3":" ","strMeasure4":"
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-01-28
+        16:32:35"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 19:59:08 GMT
+recorded_with: VCR 4.0.0

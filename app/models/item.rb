@@ -38,4 +38,12 @@ class Item < ApplicationRecord
     message.join(", ")
   end
 
+  def self.item_popularity(limit = 3, order)
+    Item.joins(:order_items)
+      .select('items.*, sum(order_items.quantity) as total_ordered')
+      .group(:id)
+      .order("total_ordered #{order}")
+      .limit(limit)
+  end
+
 end

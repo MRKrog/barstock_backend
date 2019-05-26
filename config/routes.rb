@@ -15,6 +15,7 @@ Rails.application.routes.draw do
         post '/register', to: 'registration#create'
         post '/login', to: 'login#create'
         get '/account', to: 'account#show'
+        get '/items_popularity', to: 'items_popularity#index'
       end
       namespace :distributors do
         post '/login', to: 'login#create'
