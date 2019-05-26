@@ -20,9 +20,9 @@ describe 'Login API' do
 
     expect(response).to be_successful
     expect(response.status).to eq(200)
-    key = JSON.parse(response.body)
-    expect(key["api_key"]).to eq(@business.api_key)
-
+    result = JSON.parse(response.body)
+    expect(result["api_key"]).to eq(@business.api_key)
+    expect(result["type"]).to eq("Business")
   end
 
   it 'sends back a 401 status if invalid password' do
@@ -60,8 +60,9 @@ describe 'Login API' do
 
     expect(response).to be_successful
     expect(response.status).to eq(200)
-    key = JSON.parse(response.body)
-    expect(key["api_key"]).to eq(@distributor.api_key)
+    result = JSON.parse(response.body)
+    expect(result["api_key"]).to eq(@distributor.api_key)
+    expect(result["type"]).to eq("Distributor")
 
   end
 

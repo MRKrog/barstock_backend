@@ -2313,4 +2313,213 @@ http_interactions:
         22:44:30"}]}'
     http_version: 
   recorded_at: Sun, 26 May 2019 22:00:18 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Vesper
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 22:34:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8fe30b7e9706733d38ebe4570668b8531558910094; expires=Mon, 25-May-20
+        22:34:54 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd3381dbd54c7c1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17218","strDrink":"Vesper","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,NewEra","strVideo":null,"strCategory":"Cocktail","strIBA":"New
+        Era Drinks","strAlcoholic":"Alcoholic","strGlass":"Cocktail glass","strInstructions":"Shake
+        over ice until well chilled, then strain into a deep goblet and garnish with
+        a thin slice of lemon peel.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/mtdxpa1504374514.jpg","strIngredient1":"Gin","strIngredient2":"Vodka","strIngredient3":"Lillet
+        Blanc","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"6
+        cl","strMeasure2":"1.5 cl","strMeasure3":"0.75 cl","strMeasure4":"","strMeasure5":"","strMeasure6":"
+        ","strMeasure7":" ","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        18:48:34"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 22:34:55 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Bellini%20Martini
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 22:34:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d64b27734db1ae7fbae9d160ba96dd59d1558910095; expires=Mon, 25-May-20
+        22:34:55 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd3381fdd94500f-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16176","strDrink":"Bellini Martini","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":"Contemporary Classics","strAlcoholic":"Alcoholic","strGlass":"Cocktail
+        glass","strInstructions":"Add ice cubes to shaker.\r\nAdd vodka.\r\nAdd peach
+        schnapps.\r\nAdd peach nectar.\r\nShake.\r\nStrain into glass.\r\nAdd lemon
+        twist peel.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/3h9wv51504389379.jpg","strIngredient1":"Ice","strIngredient2":"Vodka","strIngredient3":"Peach
+        nectar","strIngredient4":"Peach schnapps","strIngredient5":"Lemon peel","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"8
+        cubes ","strMeasure2":"3 oz ","strMeasure3":"1.5 oz ","strMeasure4":"1.5 oz
+        ","strMeasure5":"1 ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"
+        ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        22:56:19"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 22:34:55 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Kamikaze
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 22:34:55 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbaf54352f7eabea9a349a86c5c97c6c71558910095; expires=Mon, 25-May-20
+        22:34:55 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd33821bce2c7c1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11600","strDrink":"Kamikaze","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,NewEra","strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":"New Era Drinks","strAlcoholic":"Alcoholic","strGlass":"Cocktail
+        glass","strInstructions":"Shake all ingredients together with ice. Strain
+        into glass, garnish and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xa58bb1504373204.jpg","strIngredient1":"Vodka","strIngredient2":"Triple
+        sec","strIngredient3":"Lime juice","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        18:26:44"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 22:34:55 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Pink%20Panty%20Pulldowns
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 22:34:56 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8a11449c6fc781c6ad2a5f74a5ab8dec1558910095; expires=Mon, 25-May-20
+        22:34:55 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd33822dc53c7dd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"13535","strDrink":"Pink Panty Pulldowns","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Shake
+        well","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/squsuy1468926657.jpg","strIngredient1":"Sprite","strIngredient2":"Pink
+        lemonade","strIngredient3":"Vodka","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        L ","strMeasure2":"2 cups ","strMeasure3":"2 cups ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-07-19
+        12:10:57"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 22:34:56 GMT
 recorded_with: VCR 4.0.0

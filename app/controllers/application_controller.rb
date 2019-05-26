@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
 
   def do_authentication(user, password)
     if user.authenticate(password)
-      render json: { api_key: user.api_key }
+      render json: { api_key: user.api_key, type: user.class.name }
     else
       render json: { unauth: 'Incorrect Password' }, status: 401
     end
