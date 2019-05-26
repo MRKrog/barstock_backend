@@ -1752,4 +1752,160 @@ http_interactions:
         18:35:32"}]}'
     http_version: 
   recorded_at: Sun, 26 May 2019 23:12:34 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Oreo%20Mudslide
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 23:25:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d26c981ffa8ea184c2db483e0b41e64711558913144; expires=Mon, 25-May-20
+        23:25:44 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd3828f4af9500f-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"13499","strDrink":"Oreo Mudslide","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Blend
+        Vodka, Kahlua, Bailey''s, ice-cream and the Oreo well in a blender. Pour into
+        a large frosted glass. Garnish with whipped cream and a cherry.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/tpwwut1468925017.jpg","strIngredient1":"Vodka","strIngredient2":"Kahlua","strIngredient3":"Bailey''s
+        irish cream","strIngredient4":"Vanilla ice-cream","strIngredient5":"Oreo cookie","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":"2 scoops ","strMeasure5":"1
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":" ","strMeasure10":"
+        ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-07-19
+        11:43:37"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 23:25:44 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Cosmopolitan%20Martini
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 23:25:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d654220ed0f73e006dac65da9f2a767e71558913144; expires=Mon, 25-May-20
+        23:25:44 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd382907a7f4feb-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14133","strDrink":"Cosmopolitan Martini","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Cocktail
+        Glass","strInstructions":"Pour all ingredients in mixing glass half filled
+        with ice, shake and strain into chilled Martini glass.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/upxxpq1439907580.jpg","strIngredient1":"Cointreau","strIngredient2":"Vodka","strIngredient3":"Lime","strIngredient4":"Cranberry
+        juice","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz ","strMeasure2":"1 oz ","strMeasure3":"Juice of 1\/2 ","strMeasure4":"1
+        splash ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2015-08-18
+        15:19:40"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 23:25:44 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Godmother
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 23:25:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d494b68e3c2dee21f3d2ce9ab03b2c8451558913144; expires=Mon, 25-May-20
+        23:25:44 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd3829189c3c7c1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11424","strDrink":"Godmother","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,ContemporaryClassic","strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Old-fashioned
+        glass","strInstructions":"Pour vodka and amaretto into an old-fashioned glass
+        over ice and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/4889up1504368984.jpg","strIngredient1":"Vodka","strIngredient2":"Amaretto","strIngredient3":"","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"3\/4 oz ","strMeasure3":" ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        17:16:24"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 23:25:44 GMT
 recorded_with: VCR 4.0.0

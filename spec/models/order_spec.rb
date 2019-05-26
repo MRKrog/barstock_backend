@@ -51,6 +51,8 @@ RSpec.describe Order, type: :model do
       expect(data[:items]).to eq("4 #{@item.name}s, 2 #{@item_2.name}s")
       expect(data[:phone_number]).to eq(@business.phone_number)
 
+    end
+
     it '#email' do
       items = [{id: @item.id, quantity: 4, price: 5.8},
               {id: @item_2.id, quantity: 2, price: 20}]
