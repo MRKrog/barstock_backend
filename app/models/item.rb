@@ -38,4 +38,10 @@ class Item < ApplicationRecord
     message.join(", ")
   end
 
+  def self.get_items_for_emails(items)
+    items.map do |item|
+      i = Item.find(item[:id])
+      {id: i.id, name: i.name, quantity: item[:quantity], price: item[:price]}
+    end
+  end
 end

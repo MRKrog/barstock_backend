@@ -20,7 +20,7 @@ class Order < ApplicationRecord
     end
   end
 
-  def message(business, items, total_cost)
+  def message(business, items)
     data = {}
     data[:distributor] = business.distributor
     data[:items] = Item.get_items(items)
@@ -28,8 +28,20 @@ class Order < ApplicationRecord
     data[:name] = business.name
     data[:address] = business.address
     data[:email] = business.email
-    data[:rep_email] = business.representative.email
+    data
+  end
+
+  def email(business, items, total_cost)
+    data = {}
+    data[:items] = Item.get_items_for_emails(items)
+    data[:phone_number] = business.phone_number
+    data[:name] = business.name
+    data[:address] = business.address
+    data[:email] = business.email
+    # data[:rep_email] = business.representative.email
+    data[:rep_email] = ENV['MACKENZIE_EMAIL_FOR_TESTING_THIS_SHOULD_BE_DELETED']
     data[:total_cost] = total_cost
     data
   end
+
 end
