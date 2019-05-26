@@ -1,7 +1,6 @@
 class CocktailService
 
   def find_cocktail(ingredient)
-    binding.pry
     cocktail_name = JSON.parse(response_1(ingredient).body, symbolize_names: true)[:drinks].sample[:strDrink]
     find_recipe(cocktail_name)
   end
