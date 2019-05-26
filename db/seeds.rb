@@ -8,7 +8,7 @@ Distributor.create!(address: '8000 Southpark Terrace, Littleton, CO 80120',
                     )
 
 Representative.create!(name: 'Paul',
-                       email: 'paul@gmail.com',
+                       email: 'mackenziefrey1@gmail.com',
                        phone_number: 7204805263,
                        distributor: Distributor.first
                       )
