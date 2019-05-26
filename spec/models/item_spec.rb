@@ -44,8 +44,6 @@ RSpec.describe Item, type: :model do
     end
     it '.distributor_items' do
 
-
-
       items = Item.distributor_items(@distributor_1.id)
 
       expect(items.count).to eq(2)

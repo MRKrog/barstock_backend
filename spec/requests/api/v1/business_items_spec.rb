@@ -161,5 +161,32 @@ describe 'Business Items API' do
     expect(response.status).to eq(404)
   end
 
+  it 'sends one business item info' do
+    get "/api/v1/business_items/#{@business_item_1.id}", params: {api_key: @business.api_key}
+    expect(response).to be_successful
+    expect(response.status).to eq(200)
+    result = JSON.parse(response.body)
+    expect(result["data"]["attributes"]["id"]).to eq(@business_item_1.id)
+    expect(result["data"]["attributes"]["price_sold"]).to eq(@business_item_1.price_sold)
+    expect(result["data"]["attributes"]["serving_size"]).to eq(@business_item_1.serving_size)
+  end
+
+  it 'sends back 404 if invalid api key with get' do
+    get "/api/v1/business_items/#{@business_item_1.id}", params: {api_key: 'invalid'}
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(404)
+    result = JSON.parse(response.body)
+    expect(result["error"]).to eq("Couldn't find Business")
+  end
+
+  it 'sends back 404 if business item not in DB' do
+    get "/api/v1/business_items/0", params: {api_key: @business.api_key}
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(404)
+    result = JSON.parse(response.body)
+    expect(result["error"]).to eq("Couldn't find BusinessItem with 'id'=0")
+  end
 
 end

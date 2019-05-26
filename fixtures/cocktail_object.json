@@ -1,0 +1,11 @@
+{"data":
+  { "id":"2270",
+    "type":"cocktail",
+    "attributes":
+      { "name": "Owen's Grandmother's Revenge",
+        "ingredients": "Whiskey, Beer, Lemonade, Ice",
+        "recipe": "Pour into shot glass. Put in mouth. Repeat as deemed necessary.",
+        "id": "2270"
+      }
+  }
+}
