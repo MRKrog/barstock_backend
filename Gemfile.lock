@@ -180,6 +180,7 @@ GEM
       nokogiri (>= 1.6, < 2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    vcr (4.0.0)
     webmock (3.5.1)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -212,6 +213,7 @@ DEPENDENCIES
   simplecov
   twilio-ruby
   tzinfo-data
+  vcr
   webmock
 
 RUBY VERSION

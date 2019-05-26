@@ -47,7 +47,7 @@ describe 'Orders API', :type => :request do
       expect(result['data']).to eq([])
     end
 
-    it 'creates an order for a successful request' do
+    it 'creates an order for a successful request', :vcr do
 
       body = {
               "api_key": @business_2.api_key,
