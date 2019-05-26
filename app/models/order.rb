@@ -25,9 +25,6 @@ class Order < ApplicationRecord
     data[:distributor] = business.distributor
     data[:items] = Item.get_items(items)
     data[:phone_number] = business.phone_number
-    data[:name] = business.name
-    data[:address] = business.address
-    data[:email] = business.email
     data
   end
 
@@ -38,10 +35,9 @@ class Order < ApplicationRecord
     data[:name] = business.name
     data[:address] = business.address
     data[:email] = business.email
-    # data[:rep_email] = business.representative.email
-    data[:rep_email] = ENV['MACKENZIE_EMAIL_FOR_TESTING_THIS_SHOULD_BE_DELETED']
+    data[:rep_email] = business.representative.email
+    # data[:rep_email] = ENV['MACKENZIE_EMAIL_FOR_TESTING_THIS_SHOULD_BE_DELETED']
     data[:total_cost] = total_cost
     data
   end
-
 end
