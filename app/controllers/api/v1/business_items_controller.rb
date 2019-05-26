@@ -5,6 +5,12 @@ class Api::V1::BusinessItemsController < ApplicationController
     render json: BusinessItemsSerializer.new(b_items)
   end
 
+  def show
+    business = get_business(api_key_params[:api_key])
+    b_item = BusinessItem.find(bi_params[:id])
+    render json: BusinessItemSerializer.new(b_item)
+  end
+
   def create
     bi = BusinessItem.create_new(bi_params, get_business(api_key_params[:api_key]))
     bi.nil? ? error_message : try_saving(bi)
