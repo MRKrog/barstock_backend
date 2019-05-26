@@ -49,8 +49,24 @@ RSpec.describe Order, type: :model do
       expect(data.keys).to eq([:business, :items, :phone_number])
       expect(data[:business]).to eq(@business.name)
       expect(data[:items]).to eq("4 #{@item.name}s, 2 #{@item_2.name}s")
-      expect(data[:phone_number]).to eq(@rep.phone_number)
+      expect(data[:phone_number]).to eq(@business.phone_number)
 
+    end
+
+    it '#email' do
+      items = [{id: @item.id, quantity: 4, price: 5.8},
+              {id: @item_2.id, quantity: 2, price: 20}]
+
+      data = @order.email(@business, items, @order.total_cost)
+      expect(data[:phone_number]).to eq(@rep.phone_number)
+      expect(data.keys).to eq([:items, :phone_number, :name, :address, :email, :rep_email, :total_cost])
+      expect(data[:items]).to eq([{:id=>@item.id, :name=>@item.name, :price=>5.8, :quantity=>4}, {:id=>@item_2.id, :name=>@item_2.name, :price=>20, :quantity=>2}])
+      expect(data[:phone_number]).to eq(@business.phone_number)
+      expect(data[:name]).to eq(@business.name)
+      expect(data[:address]).to eq(@business.address)
+      expect(data[:email]).to eq(@business.email)
+      expect(data[:rep_email]).to eq(@business.representative.email)
+      expect(data[:total_cost]).to eq(@order.total_cost)
     end
   end
 end

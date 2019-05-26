@@ -13,7 +13,7 @@ class Order < ApplicationRecord
 
   def create_order_items(items, order_id)
     items.each do |item|
-      oi = OrderItem.create!(quantity: item[:quantity],
+      OrderItem.create!(quantity: item[:quantity],
                              price: item[:price],
                              order_id: order_id,
                              item_id: item[:id])
@@ -25,6 +25,18 @@ class Order < ApplicationRecord
     data[:business] = business.name
     data[:items] = Item.get_items(items)
     data[:phone_number] = business.representative.phone_number
+    data
+  end
+
+  def email(business, items, total_cost)
+    data = {}
+    data[:items] = Item.get_items_for_emails(items)
+    data[:phone_number] = business.phone_number
+    data[:name] = business.name
+    data[:address] = business.address
+    data[:email] = business.email
+    data[:rep_email] = business.representative.email
+    data[:total_cost] = total_cost
     data
   end
 end
