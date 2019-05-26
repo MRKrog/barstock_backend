@@ -180,14 +180,18 @@
                                           <tr>
                                             <td style="width:200px;max-width:33.333%;"><img class="max-width" border="0" style="display:block;color:#000000;text-decoration:none;font-family:Helvetica, arial, sans-serif;font-size:16px;max-width:100% !important;width:100%;height:auto !important;" src="{{this.image}}" alt="" width="200"></td>
                                             <td style="width:200px;max-width:33.333%;">
-                                              <div style="text-align: center;">{{this.text}}</div>
+                                              <% @data[:items].each do |item| %>
+                                                <div style="text-align: center;"><%= item[:name] %></div>
+                                                <br></br>
+                                              <% end %>
                                             </td>
                                             <td style="width:200px;max-width:33.333%;">
-                                              <div style="text-align: center;">{{this.price}}</div>
+                                              <% @data[:items].each do |item| %>
+                                                <div style="text-align: center;">$ <%= item[:price] %></div>
+                                                <br></br>
+                                              <% end %>
                                             </td>
                                           </tr>
-
-                                        {{/each}}
 
                                         <tr>
                                           <td style="width:200px;max-width:33.333%;">&nbsp;</td>
