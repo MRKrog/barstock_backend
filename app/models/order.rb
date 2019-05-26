@@ -36,7 +36,6 @@ class Order < ApplicationRecord
     data[:address] = business.address
     data[:email] = business.email
     data[:rep_email] = business.representative.email
-    # data[:rep_email] = ENV['MACKENZIE_EMAIL_FOR_TESTING_THIS_SHOULD_BE_DELETED']
     data[:total_cost] = total_cost
     data
   end
