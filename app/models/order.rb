@@ -20,7 +20,7 @@ class Order < ApplicationRecord
     end
   end
 
-  def message(business, items)
+  def message(business, items, total_cost)
     data = {}
     data[:distributor] = business.distributor
     data[:items] = Item.get_items(items)
@@ -29,6 +29,7 @@ class Order < ApplicationRecord
     data[:address] = business.address
     data[:email] = business.email
     data[:rep_email] = business.representative.email
+    data[:total_cost] = total_cost
     data
   end
 end
