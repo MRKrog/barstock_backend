@@ -45,6 +45,7 @@ group :development, :test do
   gem 'simplecov'
   gem 'awesome_print'
   gem 'pry'
+  gem 'mailcatcher'
 end
 
 group :development do
