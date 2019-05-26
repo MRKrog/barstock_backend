@@ -25,6 +25,10 @@ class Order < ApplicationRecord
     data[:distributor] = business.distributor
     data[:items] = Item.get_items(items)
     data[:phone_number] = business.phone_number
+    data[:name] = business.name
+    data[:address] = business.address
+    data[:email] = business.email
+    data[:rep_email] = business.representative.email
     data
   end
 end
