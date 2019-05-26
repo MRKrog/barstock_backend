@@ -18,6 +18,7 @@ VCR.configure do |config|
   config.filter_sensitive_data('<TWILIO_AUTH_TOKEN>') { ENV['TWILIO_AUTH_TOKEN'] }
   config.filter_sensitive_data('<TWILIO_PHONE_NUMBER>') { ENV['TWILIO_PHONE_NUMBER'] } 
 end
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
