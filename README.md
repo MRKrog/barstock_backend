@@ -69,6 +69,8 @@ $ rails s -e production
 * Postman
 * Circle CI
 * Twilio
+* Mailcatcher
+* [Email template](https://github.com/sendgrid/email-templates/blob/master/dynamic-templates/receipt/receipt.html)
 <!-- INSERT ADDITIONAL TOOLS -->
 
 ## Known Issues
