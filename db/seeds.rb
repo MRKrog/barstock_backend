@@ -18,7 +18,7 @@ Business.create!(distributor: Distributor.first,
                  name: 'The Basement',
                  address: '78295 US Highway 40 Winter Park, CO',
                  email: 'michaelryankrog@gmail.com',
-                 phone_number: 9703637280,
+                 phone_number: 6307154311,
                  password: 'password',
                  api_key: '0yWwUm5CZ8CGR8MhT7FL9w')
 
@@ -42,3 +42,4 @@ puts "Order created: #{Order.count.to_i}"
 puts "Item created: #{Item.count.to_i}"
 puts "OrderItem created: #{OrderItem.count.to_i}"
 puts "BusinessItem created: #{BusinessItem.count.to_i}"
+puts "Business phone_number: #{Business.first.phone_number}"

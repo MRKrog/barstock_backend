@@ -2104,4 +2104,109 @@ http_interactions:
         16:32:35"}]}'
     http_version: 
   recorded_at: Sun, 26 May 2019 19:59:08 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Dirty%20Martini
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 20:48:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d68032c26caf42b8c24fa7b8c010bfcc01558903685; expires=Mon, 25-May-20
+        20:48:05 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd29ba0ebd2c7d1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17181","strDrink":"Dirty Martini","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,NewEra","strVideo":null,"strCategory":"Cocktail","strIBA":"New
+        Era Drinks","strAlcoholic":"Alcoholic","strGlass":"Cocktail glass","strInstructions":"Pour
+        the vodka, dry vermouth and olive brine into a cocktail shaker with a handful
+        of ice and shake well.\r\nRub the rim of a martini glass with the wedge of
+        lemon.\r\nStrain the contents of the cocktail shaker into the glass and add
+        the olive.\r\nA dirty Martini contains a splash of olive brine or olive juice
+        and is typically garnished with an olive.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vcyvpq1485083300.jpg","strIngredient1":"Vodka","strIngredient2":"Dry
+        Vermouth","strIngredient3":"Olive Brine","strIngredient4":"Lemon","strIngredient5":"Olive","strIngredient6":"","strIngredient7":"","strIngredient8":null,"strIngredient9":null,"strIngredient10":null,"strIngredient11":null,"strIngredient12":null,"strIngredient13":null,"strIngredient14":null,"strIngredient15":null,"strMeasure1":"70ml\/2fl
+        oz","strMeasure2":"1 tbsp","strMeasure3":"2 tbsp","strMeasure4":"1 wedge","strMeasure5":"1","strMeasure6":"","strMeasure7":"","strMeasure8":null,"strMeasure9":null,"strMeasure10":null,"strMeasure11":null,"strMeasure12":null,"strMeasure13":null,"strMeasure14":null,"strMeasure15":null,"dateModified":"2017-01-22
+        11:08:20"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 20:48:05 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Blue%20Lagoon
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 20:48:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0c32ceb0640da654f905bd34bc03ff6c1558903685; expires=Mon, 25-May-20
+        20:48:05 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd29ba33aaec7cd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11117","strDrink":"Blue Lagoon","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Highball glass","strInstructions":"Pour
+        vodka and curacao over ice in a highball glass. Fill with lemonade, top with
+        the cherry, and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vak0e51504389504.jpg","strIngredient1":"Vodka","strIngredient2":"Blue
+        Curacao","strIngredient3":"Lemonade","strIngredient4":"Cherry","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"\n","strMeasure4":"\n","strMeasure5":"\n","strMeasure6":"\n","strMeasure7":"\n","strMeasure8":"\n","strMeasure9":"\n","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        22:58:25"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 20:48:05 GMT
 recorded_with: VCR 4.0.0
