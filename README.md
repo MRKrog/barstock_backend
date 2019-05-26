@@ -28,12 +28,7 @@ $ rails db:migrate
 $ rails db:seed
 $ figaro install
 ```
-<!-- Install and run MailCatcher, if you'd like to see test emails without sending real mail
-```
-$ gem install mailcatcher
-$ mailcatcher
-```
-Go to http://localhost:1080/ to see your mail, when you send it -->
+
 
 <!-- INSERT HERE IF WE IMPLEMENT A RAKE TASK FOR CSV UPLOADS. REFERENCE THE RAILS ENGINE README FOR DOCUMENTATION   -->
 
