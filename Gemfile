@@ -29,6 +29,7 @@ gem 'figaro'
 gem 'bcrypt'
 gem 'twilio-ruby'
 gem 'faker'
+gem 'faraday'
 gem 'fast_jsonapi'
 gem 'database_cleaner'
 
@@ -43,7 +44,9 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'simplecov'
   gem 'awesome_print'
+  gem 'webmock'
   gem 'pry'
+  gem 'vcr'
 end
 
 group :development do

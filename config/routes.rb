@@ -8,14 +8,14 @@ Rails.application.routes.draw do
       patch '/items/:id', to: 'items#update'
       patch '/business_items/:id', to: 'business_items#update'
       get '/business_items', to: 'business_items#index'
+      get '/business_items/:id', to: 'business_items#show'
       post '/business_items', to: 'business_items#create'
+      get '/cocktails/:id/', to: 'cocktails#show'
+      post '/login', to: 'login#create'
       namespace :businesses do
         post '/register', to: 'registration#create'
-        post '/login', to: 'login#create'
         get '/account', to: 'account#show'
-      end
-      namespace :distributors do
-        post '/login', to: 'login#create'
+        get '/items_popularity', to: 'items_popularity#index'
       end
     end
   end

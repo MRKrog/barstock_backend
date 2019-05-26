@@ -47,7 +47,7 @@ describe 'Orders API', :type => :request do
       expect(result['data']).to eq([])
     end
 
-    it 'creates an order for a successful request' do
+    it 'creates an order for a successful request', :vcr do
 
       body = {
               "api_key": @business_2.api_key,
@@ -68,6 +68,18 @@ describe 'Orders API', :type => :request do
             }
 
       expect(@business_2.orders.count).to eq(0)
+      stub_request(:post, "https://api.twilio.com/2010-04-01/Accounts/AC0deca6cd8f5a6351529103e882c39841/Messages.json").
+               with(
+                 body: {"Body"=>"Your order to RNDC has been placed. You have ordered the following items: 4 Item 120s, 2 Item 121s", "From"=>"+17203303270", "To"=>"+11286"},
+                 headers: {
+             	  'Accept'=>'application/json',
+             	  'Accept-Charset'=>'utf-8',
+             	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+             	  'Authorization'=>'Basic QUMwZGVjYTZjZDhmNWE2MzUxNTI5MTAzZTg4MmMzOTg0MTpiNTg2NGMxNGQxYTUyYzI3N2VmNjhjMjE4OWM3NThlNQ==',
+             	  'Content-Type'=>'application/x-www-form-urlencoded',
+             	  'User-Agent'=>'twilio-ruby/5.23.0 (ruby/x86_64-darwin17 2.4.1-p111)'
+                 }).
+               to_return(status: 200, body: "", headers: {})
 
       post '/api/v1/orders', params: body
       result = JSON.parse(response.body)['data']

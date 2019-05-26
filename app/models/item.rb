@@ -44,4 +44,12 @@ class Item < ApplicationRecord
       {id: i.id, name: i.name, quantity: item[:quantity], price: item[:price]}
     end
   end
+  
+  def self.item_popularity(limit = 3, order)
+    Item.joins(:order_items)
+      .select('items.*, sum(order_items.quantity) as total_ordered')
+      .group(:id)
+      .order("total_ordered #{order}")
+      .limit(limit)
+  end
 end

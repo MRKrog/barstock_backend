@@ -38,17 +38,30 @@ RSpec.describe Item, type: :model do
                                           password: "other"
                                           )
 
+      @rep = create(:representative, distributor: @distributor_1)
+      @business = create(:business, distributor: @distributor_1, representative: @rep)
       @item_1 = create(:item, distributor: @distributor_1)
       @item_2 = create(:item, distributor: @distributor_1)
+      @items = create_list(:item, 6, distributor: @distributor_1)
+
+      @order = create(:order, business: @business)
+      @order_2 = create(:order, business: @business)
+      @order_item_1 = create(:order_item, order: @order_2, item: @item_1, quantity: 3)
+      @order_item_2 = create(:order_item, order: @order_2, item: @item_2, quantity: 1)
+
+      create(:order_item, order: @order, item: @items[3], quantity: 10)
+      create(:order_item, order: @order, item: @items[1], quantity: 9)
+      create(:order_item, order: @order, item: @items[0], quantity: 8)
+      create(:order_item, order: @order, item: @items[2], quantity: 6)
+      create(:order_item, order: @order, item: @items[5], quantity: 5)
+      create(:order_item, order: @order, item: @items[4], quantity: 4)
       create(:item, distributor: @distributor_2)
     end
     it '.distributor_items' do
 
-
-
       items = Item.distributor_items(@distributor_1.id)
 
-      expect(items.count).to eq(2)
+      expect(items.count).to eq(8)
       expect(items[0]).to be_an_instance_of(Item)
       expect(items[1]).to be_an_instance_of(Item)
       expect(items[0].id).to eq(@item_1.id)
@@ -62,5 +75,14 @@ RSpec.describe Item, type: :model do
       message = Item.get_items(items)
       expect(message).to eq("4 #{@item_1.name}s, 2 #{@item_2.name}s")
     end
+
+    it '.item_popularity' do
+      expect(Item.item_popularity(4, :desc)).to eq([@items[3], @items[1], @items[0], @items[2]])
+      expect(Item.item_popularity(4, :asc)).to eq([@item_2, @item_1, @items[4], @items[5]])
+    end
+
   end
+
+
+
 end
