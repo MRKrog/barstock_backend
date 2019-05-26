@@ -29,7 +29,6 @@ gem 'figaro'
 gem 'bcrypt'
 gem 'twilio-ruby'
 gem 'faker'
-gem 'figaro'
 gem 'fast_jsonapi'
 gem 'database_cleaner'
 
@@ -45,7 +44,6 @@ group :development, :test do
   gem 'simplecov'
   gem 'awesome_print'
   gem 'pry'
-  gem 'mailcatcher'
 end
 
 group :development do
