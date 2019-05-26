@@ -22,9 +22,9 @@ class Order < ApplicationRecord
 
   def message(business, items)
     data = {}
-    data[:distributor] = business.distributor
+    data[:business] = business.name
     data[:items] = Item.get_items(items)
-    data[:phone_number] = business.phone_number
+    data[:phone_number] = business.representative.phone_number
     data
   end
 end

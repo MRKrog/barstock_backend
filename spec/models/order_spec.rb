@@ -46,10 +46,10 @@ RSpec.describe Order, type: :model do
       items = [{id: @item.id, quantity: 4, price: 5.8},
               {id: @item_2.id, quantity: 2, price: 20}]
       data = @order.message(@business, items)
-      expect(data.keys).to eq([:distributor, :items, :phone_number])
-      expect(data[:distributor]).to eq(@distributor)
+      expect(data.keys).to eq([:business, :items, :phone_number])
+      expect(data[:business]).to eq(@business.name)
       expect(data[:items]).to eq("4 #{@item.name}s, 2 #{@item_2.name}s")
-      expect(data[:phone_number]).to eq(@business.phone_number)
+      expect(data[:phone_number]).to eq(@rep.phone_number)
 
     end
   end
