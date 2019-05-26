@@ -26,11 +26,29 @@ $ rails g rspec:install
 $ rails db:create
 $ rails db:migrate
 $ rails db:seed
+$ figaro install
 ```
+<!-- Install and run MailCatcher, if you'd like to see test emails without sending real mail
+```
+$ gem install mailcatcher
+$ mailcatcher
+```
+Go to http://localhost:1080/ to see your mail, when you send it -->
 
 <!-- INSERT HERE IF WE IMPLEMENT A RAKE TASK FOR CSV UPLOADS. REFERENCE THE RAILS ENGINE README FOR DOCUMENTATION   -->
 
+<!--
+Sign Up for the following API keys:
+ -->
 
+<!-- INSERT API KEY STUFF FROM ANOTHER README-->
+
+<!--  
+TWILIO_ACCOUNT_SID: <insert>
+TWILIO_AUTH_TOKEN: <insert>
+TWILIO_PHONE_NUMBER: <insert>
+SENDGRID_PASSWORD: <insert>
+-->
 ### Running Tests
 
 To run the test suite, execute the following command:
@@ -59,6 +77,7 @@ $ rails s -e production
 * Fast JSON API
 * RSpec
 * Faraday
+* Figaro
 <!-- Take Faraday out if we don't actually use it -->
 * Capybara
 * Pry
@@ -70,7 +89,7 @@ $ rails s -e production
 * Circle CI
 * Twilio
 * Mailcatcher
-* [Email template](https://github.com/sendgrid/email-templates/blob/master/dynamic-templates/receipt/receipt.html)
+* [Email Template](https://github.com/sendgrid/email-templates/blob/master/dynamic-templates/receipt/receipt.html)
 <!-- INSERT ADDITIONAL TOOLS -->
 
 ## Known Issues
