@@ -35,6 +35,20 @@ $ rails db:seed
 $ figaro install
 ```
 
+#### Environment Variable Setup:
+
+ Create Accounts With The Following Services:
+* [Twilio](https://www.twilio.com/)
+* [Sendgrid](https://app.sendgrid.com)
+
+Add the following code snippet to the `config/application.yml` file. Make sure to insert the key/secret without the alligator clips ( < > ).
+```
+TWILIO_ACCOUNT_SID: <insert>
+TWILIO_AUTH_TOKEN: <insert>
+TWILIO_PHONE_NUMBER: <insert utilizing the format of '+1720993333'>
+SENDGRID_PASSWORD: <insert>
+```
+
 <!--
 Sign Up for the following API keys:
  -->
