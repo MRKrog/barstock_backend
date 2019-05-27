@@ -26,7 +26,8 @@ describe OrderInfo do
   it 'has attributes' do
     expect(@order_info.id).to eq(@order.id)
     expect(@order_info.items.count).to eq(2)
-    expect(@order_info.items[0]).to eq(@item_1)
+    expect(@order_info.items[0][:id]).to eq(@item_1.id)
+    expect(@order_info.items[0][:quantity]).to eq(@order_item_1.quantity)
     expect(@order_info.total_cost).to eq(@order.total_cost)
     expect(@order_info.total_revenue).to eq(@order.total_revenue)
   end

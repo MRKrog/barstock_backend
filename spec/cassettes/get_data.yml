@@ -1908,4 +1908,319 @@ http_interactions:
         17:16:24"}]}'
     http_version: 
   recorded_at: Sun, 26 May 2019 23:25:44 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=%2757%20Chevy%20with%20a%20White%20License%20Plate
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 23:33:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d5ca541c8807048aa892641362de527751558913598; expires=Mon, 25-May-20
+        23:33:18 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd38da69fc54fd3-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14029","strDrink":"''57 Chevy with a White License
+        Plate","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Highball
+        glass","strInstructions":"1. Fill a rocks glass with ice 2.add white creme
+        de cacao and vodka 3.stir","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyyvtu1468878544.jpg","strIngredient1":"Creme
+        de Cacao","strIngredient2":"Vodka","strIngredient3":"","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz white ","strMeasure2":"1 oz ","strMeasure3":" ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-07-18
+        22:49:04"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 23:33:18 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Vodka%20Martini
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 23:33:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=ddcf6555ad67faae4833e13a85536ca451558913598; expires=Mon, 25-May-20
+        23:33:18 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd38da90847c7d9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14167","strDrink":"Vodka Martini","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Cocktail glass","strInstructions":"Shake
+        the vodka and vermouth together with a number of ice cubes, strain into a
+        cocktail glass, add the olive and serve.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qyxrqw1439906528.jpg","strIngredient1":"Vodka","strIngredient2":"Dry
+        Vermouth","strIngredient3":"Olive","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"3\/4 oz ","strMeasure3":"1 ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2015-08-18
+        15:02:08"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 23:33:19 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Jitterbug
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 23:33:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=daf2baba6af783eb64bdb4e9439159e001558913599; expires=Mon, 25-May-20
+        23:33:19 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd38daafb22c7c9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16178","strDrink":"Jitterbug","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Cocktail
+        Glass","strInstructions":"Wet glass, dip rim in sugar. Then add Ice. Then
+        add everything else. It''s that simple!","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wwqvrq1441245318.jpg","strIngredient1":"Gin","strIngredient2":"Vodka","strIngredient3":"Grenadine","strIngredient4":"Lime
+        juice","strIngredient5":"Sugar","strIngredient6":"Sugar syrup","strIngredient7":"Soda
+        water","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"2
+        jiggers ","strMeasure2":"1 jigger ","strMeasure3":"3 dashes ","strMeasure4":"1
+        shot ","strMeasure5":"Around rim put 1 pinch ","strMeasure6":"3 dashes ","strMeasure7":"Fill
+        to top with ","strMeasure8":" ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"
+        ","strMeasure12":" ","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2015-09-03
+        02:55:18"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 23:33:19 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Blue%20Mountain
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 23:58:24 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da0a6b3a34fac7c9be8471a9d5db181271558915103; expires=Mon, 25-May-20
+        23:58:23 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd3b2668cebc7dd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11119","strDrink":"Blue Mountain","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Old-fashioned
+        glass","strInstructions":"In a shaker half-filled with ice cubes, combine
+        all of the ingredients. Shake well. Strain into an old-fashioned glass alomst
+        filled with ice cubes.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsxssp1441209853.jpg","strIngredient1":"A\u00f1ejo
+        rum","strIngredient2":"Tia maria","strIngredient3":"Vodka","strIngredient4":"Orange
+        juice","strIngredient5":"Lemon juice","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"1\/2 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1
+        oz ","strMeasure5":"1 tsp ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2015-09-02
+        17:04:13"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 23:58:24 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Vodka%20Fizz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 May 2019 23:58:24 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7ef781370ae30c96fe2ec2c464aeefb01558915104; expires=Mon, 25-May-20
+        23:58:24 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd3b2687b6ec7c9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16967","strDrink":"Vodka Fizz","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Other\/Unknown","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"White
+        wine glass","strInstructions":"Blend all ingredients, save nutmeg. Pour into
+        large white wine glass and sprinkle nutmeg on top.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/xwxyux1441254243.jpg","strIngredient1":"Vodka","strIngredient2":"Half-and-half","strIngredient3":"Limeade","strIngredient4":"Ice","strIngredient5":"Nutmeg","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"2
+        oz ","strMeasure2":"2 oz ","strMeasure3":"2 oz ","strMeasure4":"\n","strMeasure5":"\n","strMeasure6":"\n","strMeasure7":"\n","strMeasure8":"\n","strMeasure9":"\n","strMeasure10":"\n","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2015-09-03
+        05:24:03"}]}'
+    http_version: 
+  recorded_at: Sun, 26 May 2019 23:58:24 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Arctic%20Fish
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 27 May 2019 00:00:42 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6c91eb4a2ab0edee5d3e455fad7685681558915242; expires=Tue, 26-May-20
+        00:00:42 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dd3b5ca99635009-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14622","strDrink":"Arctic Fish","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Punch
+        \/ Party Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Beer
+        pilsner","strInstructions":"Fill glass with ice and fish, add vodka, grape
+        soda and orange juice. DO NOT STIR!!!!! Serve well chilled.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ttsvwy1472668781.jpg","strIngredient1":"Vodka","strIngredient2":"Grape
+        soda","strIngredient3":"Orange juice","strIngredient4":"Ice","strIngredient5":"Candy","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/3
+        part ","strMeasure2":"1\/3 part ","strMeasure3":"1\/3 part ","strMeasure4":"lots
+        ","strMeasure5":"1 dash ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-08-31
+        19:39:41"}]}'
+    http_version: 
+  recorded_at: Mon, 27 May 2019 00:00:42 GMT
 recorded_with: VCR 4.0.0
