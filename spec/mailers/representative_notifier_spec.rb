@@ -23,7 +23,7 @@ RSpec.describe RepresentativeNotifierMailer, type: :mailer do
     end
 
     it 'renders the sender email' do
-      expect(@mail.from).to eq(['no-reply@barstock.com'])
+      expect(@mail.from).to eq(['BarStock@barstock.com'])
     end
 
     it 'assigns delivery location' do
