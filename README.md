@@ -1,7 +1,7 @@
 # README
 ## Description
 
-BarStock is a 13-days, four-person project during Mod 4 of 4, for Turing School's Back-End Engineering Program. Our team consists of two Front-End Developers and two Back-End Developers.
+BarStock is a 13-day, four-person project during Mod 4 of 4, for Turing School's Back-End Engineering Program. Our team consists of two Front-End Developers and two Back-End Developers.
 
 Our challenge was to create a web application from idea to inception by integrating our skills as Front-End and Back-End Developers to solve a real-world problem.
 
@@ -13,6 +13,12 @@ BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL 
 
 ## Schema
 ![Alt text](./public/images/schema.png?raw=true "Database Schema")
+
+## Available Endpoints
+All available endpoints have been documented on [Swagger]() <<<<<--------------INERT LINK FOR PUBLISHED ENDPOINTS------------------------
+![Alt text](./public/images/swagger_endpoints.png?raw=true "Endpoint Documentation")
+
+<!-- Add giphy of Front End -->
 
 ## Getting Started
 
@@ -29,12 +35,10 @@ $ rails db:seed
 $ figaro install
 ```
 
-
-<!-- INSERT HERE IF WE IMPLEMENT A RAKE TASK FOR CSV UPLOADS. REFERENCE THE RAILS ENGINE README FOR DOCUMENTATION   -->
-
 <!--
 Sign Up for the following API keys:
  -->
+ <!-- Send grid -->
 
 <!-- INSERT API KEY STUFF FROM ANOTHER README-->
 
@@ -44,12 +48,11 @@ TWILIO_AUTH_TOKEN: <insert>
 TWILIO_PHONE_NUMBER: <insert>
 SENDGRID_PASSWORD: <insert>
 -->
+
 ### Running Tests
 
 To run the test suite, execute the following command:
 `rspec`.
-<!-- add to this section if a background worker is implemented  -->
-
 
 ### Deployment
 
@@ -73,19 +76,25 @@ $ rails s -e production
 * RSpec
 * Faraday
 * Figaro
-<!-- Take Faraday out if we don't actually use it -->
+* Faraday
 * Capybara
 * Pry
 * Shoulda-Matchers
 * Factory Bot
-* Trello
+* Database Cleaner
 * SimpleCov
+* Bcrypt
+* Faker
+* Awesome Print
+* WebMock
+* VCR
+* Trello
 * Postman
 * Circle CI
+* Sendgrid
+* [HTML Email Template](https://github.com/sendgrid/email-templates/blob/master/dynamic-templates/receipt/receipt.html)
 * Twilio
 * Mailcatcher
-* [Email Template](https://github.com/sendgrid/email-templates/blob/master/dynamic-templates/receipt/receipt.html)
-<!-- INSERT ADDITIONAL TOOLS -->
 
 ## Known Issues
 <!-- INSERT KNOWN ISSUES HERE -->
@@ -104,9 +113,9 @@ $ rails s -e production
 2. Create a new issue if applicable, or contribute to an existing issue.
 
 ### Related Links:
-###### * [**_Agile Project Board_**](https://trello.com/b/jD2vXUGS/barstock)
-###### * [**_Project Specifications_**](http://backend.turing.io/module4/projects/cross_pollination/cross_pollination_spec)
-###### * [**_Project Rubric_**](http://backend.turing.io/module4/projects/cross_pollination/cross_pollination_rubric)
+###### [**_Agile Project Board_**](https://trello.com/b/jD2vXUGS/barstock)
+###### [**_Project Specifications_**](http://backend.turing.io/module4/projects/cross_pollination/cross_pollination_spec)
+###### [**_Project Rubric_**](http://backend.turing.io/module4/projects/cross_pollination/cross_pollination_rubric)
 
 ### Authors
 * [Michael Krog](https://github.com/MRKrog)
