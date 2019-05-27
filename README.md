@@ -18,6 +18,9 @@ BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL 
 All available endpoints have been documented on [Swagger]() <<<<<--------------INERT LINK FOR PUBLISHED ENDPOINTS------------------------
 ![Alt text](./public/images/swagger_endpoints.png?raw=true "Endpoint Documentation")
 
+
+![Alt text](./public/images/email_sample.png?raw=true "Order Email")
+
 <!-- Add giphy of Front End -->
 
 ## Getting Started
@@ -48,20 +51,6 @@ TWILIO_AUTH_TOKEN: <insert>
 TWILIO_PHONE_NUMBER: <insert utilizing the format of '+1720993333'>
 SENDGRID_PASSWORD: <insert>
 ```
-
-<!--
-Sign Up for the following API keys:
- -->
- <!-- Send grid -->
-
-<!-- INSERT API KEY STUFF FROM ANOTHER README-->
-
-<!--  
-TWILIO_ACCOUNT_SID: <insert>
-TWILIO_AUTH_TOKEN: <insert>
-TWILIO_PHONE_NUMBER: <insert>
-SENDGRID_PASSWORD: <insert>
--->
 
 ### Running Tests
 
