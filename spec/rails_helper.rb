@@ -16,7 +16,8 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.filter_sensitive_data('<TWILIO_ACCOUNT_SID>') { ENV['TWILIO_ACCOUNT_SID'] }
   config.filter_sensitive_data('<TWILIO_AUTH_TOKEN>') { ENV['TWILIO_AUTH_TOKEN'] }
-  config.filter_sensitive_data('<TWILIO_PHONE_NUMBER>') { ENV['TWILIO_PHONE_NUMBER'] } 
+  config.filter_sensitive_data('<TWILIO_PHONE_NUMBER>') { ENV['TWILIO_PHONE_NUMBER'] }
+  config.filter_sensitive_data('<SENDGRID_PASSWORD>') { ENV['SENDGRID_PASSWORD'] } 
 end
 
 # Add additional requires below this line. Rails is not loaded until this point!

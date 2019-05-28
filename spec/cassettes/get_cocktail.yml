@@ -3250,4 +3250,213 @@ http_interactions:
         18:26:44"}]}'
     http_version: 
   recorded_at: Mon, 27 May 2019 00:00:42 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Shark%20Attack
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 May 2019 21:31:05 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9f7464b9a66550c128137a1e6a8312b41559079065; expires=Wed, 27-May-20
+        21:31:05 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4de35560c96ac7c5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16273","strDrink":"Shark Attack","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Pitcher","strInstructions":"Mix
+        lemonade and water according to instructions on back of can. If the instructions
+        say to add 4 1\/3 cans of water do so. Mix into pitcher. Add 1 1\/2 cup of
+        Vodka (Absolut). Mix well. Pour into glass of crushed ice. Excellent!","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uv96zr1504793256.jpg","strIngredient1":"Lemonade","strIngredient2":"Water","strIngredient3":"Vodka","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        can ","strMeasure2":"3 cans ","strMeasure3":"1 1\/2 cup ","strMeasure4":"
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-07
+        15:07:37"}]}'
+    http_version: 
+  recorded_at: Tue, 28 May 2019 21:31:04 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Blue%20Mountain
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 May 2019 21:31:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8584f26f58707de987bbaed3ab23ad371559079066; expires=Wed, 27-May-20
+        21:31:06 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4de35562fa914fcd-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"11119","strDrink":"Blue Mountain","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Old-fashioned
+        glass","strInstructions":"In a shaker half-filled with ice cubes, combine
+        all of the ingredients. Shake well. Strain into an old-fashioned glass alomst
+        filled with ice cubes.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/vsxssp1441209853.jpg","strIngredient1":"A\u00f1ejo
+        rum","strIngredient2":"Tia maria","strIngredient3":"Vodka","strIngredient4":"Orange
+        juice","strIngredient5":"Lemon juice","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        1\/2 oz ","strMeasure2":"1\/2 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1
+        oz ","strMeasure5":"1 tsp ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2015-09-02
+        17:04:13"}]}'
+    http_version: 
+  recorded_at: Tue, 28 May 2019 21:31:04 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Espresso%20Martini
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 May 2019 21:31:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d7ce296b4bd2e032dbd6ec76f86e283101559079082; expires=Wed, 27-May-20
+        21:31:22 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4de355caae374fe5-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17212","strDrink":"Espresso Martini","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,NewEra","strVideo":null,"strCategory":"Cocktail","strIBA":"New
+        Era Drinks","strAlcoholic":"Alcoholic","strGlass":"Cocktail glass","strInstructions":"Pour
+        ingredients into shaker filled with ice, shake vigorously, and strain into
+        chilled martini glass","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/n0sx531504372951.jpg","strIngredient1":"Vodka","strIngredient2":"Kahlua","strIngredient3":"Sugar
+        syrup","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":null,"strIngredient9":null,"strIngredient10":null,"strIngredient11":null,"strIngredient12":null,"strIngredient13":null,"strIngredient14":null,"strIngredient15":null,"strMeasure1":"5
+        cl","strMeasure2":"1 cl","strMeasure3":"1 dash","strMeasure4":"","strMeasure5":"","strMeasure6":"","strMeasure7":"","strMeasure8":null,"strMeasure9":null,"strMeasure10":null,"strMeasure11":null,"strMeasure12":null,"strMeasure13":null,"strMeasure14":null,"strMeasure15":null,"dateModified":"2017-09-02
+        18:22:31"}]}'
+    http_version: 
+  recorded_at: Tue, 28 May 2019 21:31:21 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Russian%20Spring%20Punch
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 28 May 2019 21:44:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dfc7fbda92ea25a54b505f00ac84735a41559079899; expires=Wed, 27-May-20
+        21:44:59 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4de369bcab7cc7b1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17214","strDrink":"Russian Spring Punch","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,NewEra","strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":"New Era Drinks","strAlcoholic":"Alcoholic","strGlass":"Highball
+        glass","strInstructions":"Pour the ingredients into an highball glass, top
+        with Sparkling wine.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ctt20s1504373488.jpg","strIngredient1":"Vodka","strIngredient2":"Creme
+        de Cassis","strIngredient3":"Sugar Syrup","strIngredient4":"Lemon Juice","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"2.5
+        cl","strMeasure2":"1.5 cl","strMeasure3":"1 cl","strMeasure4":"2.5 cl","strMeasure5":"","strMeasure6":"
+        ","strMeasure7":" ","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        18:31:28"}]}'
+    http_version: 
+  recorded_at: Tue, 28 May 2019 21:44:58 GMT
 recorded_with: VCR 4.0.0
