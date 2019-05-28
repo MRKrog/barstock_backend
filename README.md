@@ -5,9 +5,9 @@ BarStock is a 13-day, four-person project during Mod 4 of 4, for Turing School's
 
 Our challenge was to create a web application from idea to inception by integrating our skills as Front-End and Back-End Developers to solve a real-world problem.
 
-Thus, BarStock was born. BarStock is a web application designed to solve the communication challenges between bar owners and distributors when placing inventory orders. In the bar industry, it is currently common practice to place weekly inventory orders via via text message communication with a distributor representative. Bar owners are not provided with pricing sheets and frequently do not know pricing, nor available inventory until several text message inquiries later. BarStock is intended to alleviate this headache by providing a user interface for bar owners to view distributor inventory, analyze profit margins, and automate text message ordering.
+Thus, BarStock was born. BarStock is a web application designed to solve the communication challenges between bar owners and distributors when placing inventory orders. In the bar industry, it is frequently common practice to place weekly inventory orders via text messages/emails. Bar owners are not provided with pricing sheets, nor available inventory, and often receive incorrect shipments. BarStock is intended to alleviate this headache by providing bar owners with user interface to view distributor inventory, analyze profit margins, and automate text message/email ordering.
 
-BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL database. The [BarStock User Interface](https://github.com/MRKrog/barstock-ui) and BarStock Back-End communicate via API requests/responses.
+BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL database for the [BarStock User Interface](https://github.com/MRKrog/barstock-ui), which communicate back and forth via API requests/responses.
 
 #### [**_Utilizes BarStock Back-End in Production_**](https://barstock-backend.herokuapp.com)
 
@@ -15,13 +15,20 @@ BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL 
 ![Alt text](./public/images/schema.png?raw=true "Database Schema")
 
 ## Available Endpoints
-All available endpoints have been documented on [Swagger]() <<<<<--------------INERT LINK FOR PUBLISHED ENDPOINTS------------------------
+All available endpoints have been documented on [Swagger](https://app.swaggerhub.com/apis-docs/BarStock/BarStockBackEnd/1.0.0).
 ![Alt text](./public/images/swagger_endpoints.png?raw=true "Endpoint Documentation")
 
+<!-- Add giphy of Front End -->
 
+## Representative Notifications of Order
+
+Upon creation of an order, both an email and an email and a text message are sent to the distributor's representative.
+
+### Order Email
 ![Alt text](./public/images/email_sample.png?raw=true "Order Email")
 
-<!-- Add giphy of Front End -->
+### Order Text Message
+![Alt text](./public/images/text_message.jpg?raw=true "Order Text Message")
 
 ## Getting Started
 
@@ -70,11 +77,7 @@ $ rake assets:precompile
 $ rails s -e production
 ```
 
-## Available Endpoints
-<!--  INSERT ENDPOINT DOCUMENTATION HERE -->
-
 ## Tools Utilized:
-
 * Fast JSON API
 * RSpec
 * Faraday
@@ -99,8 +102,8 @@ $ rails s -e production
 * Twilio
 * Mailcatcher
 
-## Known Issues
-<!-- INSERT KNOWN ISSUES HERE -->
+<!--  ## Known Issues
+INSERT KNOWN ISSUES HERE -->
 
 ## How to Contribute
 
@@ -126,9 +129,8 @@ $ rails s -e production
 * [Gabriel Inzurriaga](https://github.com/Inzurriaga)
 * [Mackenzie Frey](https://github.com/Mackenzie-Frey)
 
-
 ### Acknowledgments
+* [David Whitaker](https://github.com/damwhit)
 * [Dione Wilson](https://github.com/dionew1)
 * [Cory Westerfield](https://github.com/corywest)
-* [David Whitaker](https://github.com/damwhit)
 * [Will Mitchell](https://github.com/wvmitchell)
