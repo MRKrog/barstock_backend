@@ -31,7 +31,7 @@ gem 'twilio-ruby'
 gem 'faker'
 gem 'faraday'
 gem 'fast_jsonapi'
-gem 'database_cleaner'
+gem 'sidekiq'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
