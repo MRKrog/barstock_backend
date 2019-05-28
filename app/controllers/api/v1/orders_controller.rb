@@ -12,9 +12,8 @@ class Api::V1::OrdersController < ApplicationController
     order.create_order_items(request_body[:items], order.id)
     message_data = order.message(business, request_body[:items])
     email_data = order.email(business, request_body[:items], request_body[:total_cost])
-    @email_data = email_data
-    TwilioTextMessenger.new.send_order(message_data)
-    RepresentativeNotifierMailer.send_order(email_data).deliver_now
+    TextSenderJob.perform_later(message_data)
+    EmailSenderJob.perform_later(email_data)
     render json: {}, status: 201
   end
 
