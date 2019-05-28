@@ -10,7 +10,8 @@ class Api::V1::OrdersController < ApplicationController
                           business: business)
     order.create_order_items(request_body[:items], order.id)
     fire_senders(order, business)
-    render json: {}, status: 201
+    # render json: {created_at: order.created_at}, status: 201
+    render json: OrderCreatedSerializer.new(order), status: 201
   end
 
   private

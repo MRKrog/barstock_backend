@@ -31,6 +31,7 @@ describe 'Orders API', :type => :request do
       expect(result[0]['id']).to eq(@order_2.id.to_s)
       expect(result[0]['type']).to eq('order')
       expect(result[0]['attributes']['items']).to be_a(Array)
+      expect(result[0]['attributes']['created_at']).to be_a(String)
       expect(result[0]['attributes']['items'].length).to eq(@order_2.items.count)
       expect(result[0]['attributes']['id']).to eq(@order_2.id)
       expect(result[0]['attributes']['total_cost']).to eq(@order_2.total_cost)
@@ -83,7 +84,9 @@ describe 'Orders API', :type => :request do
       result = JSON.parse(response.body)['data']
 
       expect(response.status).to eq(201)
-      expect(result).to eq(nil)
+      expect(result['attributes']['created_at']).to be_a(String)
+      expect(result['attributes']['id']).to be_a(Integer)
+      expect(result['type']).to eq('order_created')
       expect(@business_2.orders.count).to eq(1)
       expect(@business_2.orders[0].total_cost).to eq(body[:total_cost].to_f)
       expect(@business_2.orders[0].items[0].id).to eq(@item_1.id)
