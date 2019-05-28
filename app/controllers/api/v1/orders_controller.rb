@@ -10,15 +10,19 @@ class Api::V1::OrdersController < ApplicationController
                           total_revenue: request_body[:total_revenue],
                           business: business)
     order.create_order_items(request_body[:items], order.id)
-    message_data = order.message(business, request_body[:items])
-    email_data = order.email(business, request_body[:items], request_body[:total_cost])
-    TextSenderJob.perform_later(message_data)
-    EmailSenderJob.perform_later(email_data)
+    fire_senders(order, business)
     render json: {}, status: 201
   end
 
   private
   def request_body
     params.permit(:api_key, :total_cost, :total_revenue, items: [:id, :quantity, :price])
+  end
+
+  def fire_senders(order, business)
+    message_data = order.message(business, request_body[:items])
+    email_data = order.email(business, request_body[:items], request_body[:total_cost])
+    TextSenderJob.perform_later(message_data)
+    EmailSenderJob.perform_later(email_data)
   end
 end
