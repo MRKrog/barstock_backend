@@ -29,7 +29,6 @@ describe OrderInfo do
     expect(@order_info.items[0][:id]).to eq(@item_1.id)
     expect(@order_info.items[0][:quantity]).to eq(@order_item_1.quantity)
     expect(@order_info.total_cost).to eq(@order.total_cost)
-    expect(@order_info.total_revenue).to eq(@order.total_revenue)
   end
 
 end
