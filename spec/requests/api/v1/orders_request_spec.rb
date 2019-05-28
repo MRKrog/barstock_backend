@@ -34,7 +34,6 @@ describe 'Orders API', :type => :request do
       expect(result[0]['attributes']['items'].length).to eq(@order_2.items.count)
       expect(result[0]['attributes']['id']).to eq(@order_2.id)
       expect(result[0]['attributes']['total_cost']).to eq(@order_2.total_cost)
-      expect(result[0]['attributes']['total_revenue']).to eq(@order_2.total_revenue)
     end
 
     it 'sends a message for successful request, but there are no orders in the database' do
@@ -52,7 +51,6 @@ describe 'Orders API', :type => :request do
       body = {
               "api_key": @business_2.api_key,
               "total_cost": "200",
-              "total_revenue": "4",
               "items": [
                 {
                   "id": @item_1.id,
@@ -88,7 +86,6 @@ describe 'Orders API', :type => :request do
       expect(result).to eq(nil)
       expect(@business_2.orders.count).to eq(1)
       expect(@business_2.orders[0].total_cost).to eq(body[:total_cost].to_f)
-      expect(@business_2.orders[0].total_revenue).to eq(body[:total_revenue].to_f)
       expect(@business_2.orders[0].items[0].id).to eq(@item_1.id)
       expect(@business_2.orders[0].items[1].id).to eq(@item_2.id)
       expect(@business_2.orders[0].business_id).to eq(@business_2.id)
@@ -102,7 +99,7 @@ describe 'Orders API', :type => :request do
       expect(@business_2.order_items[1].price).to eq(20.0)
     end
 
-    it 'responds with a 422 status for bad request due to missing total_cost and total_revenue' do
+    it 'responds with a 422 status for bad request due to missing total_cost' do
 
       params = {'api_key': @business.api_key,
                 'items': [{
@@ -121,14 +118,12 @@ describe 'Orders API', :type => :request do
 
       expect(response.status).to eq(422)
       expect(JSON.parse(response.body)['total_cost']).to eq(["can't be blank", "is not a number"])
-      expect(JSON.parse(response.body)['total_revenue']).to eq(["can't be blank", "is not a number"])
     end
 
     it 'responds with a 422 status for bad request due to missing order_item quantity and price' do
 
       params = {'api_key': @business.api_key,
                 'total_cost': '200',
-                'total_revenue': '40',
                 'items': [{
                    'id': "#{@item_1.id}"
                  },
@@ -149,7 +144,6 @@ describe 'Orders API', :type => :request do
     it 'responds with a 404 status' do
       params = {'api_key': 'incorrect_key',
                 'total_cost': '200',
-                'total_revenue': '40',
                 'items': [{
                    'id': "#{@item_1.id}",
                    'quantity': '4',
