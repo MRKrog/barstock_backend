@@ -1,12 +1,14 @@
 class OrderInfo
   attr_reader :id,
               :total_cost,
-              :items
+              :items,
+              :created_at
 
   def initialize(order)
     @id = order.id
     @total_cost = order.total_cost
     @items = get_items(order.order_items)
+    @created_at = order.created_at
   end
 
 
