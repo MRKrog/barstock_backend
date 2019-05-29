@@ -6,7 +6,8 @@ class BusinessItemInfo
               :thumbnail,
               :price_sold,
               :serving_size,
-              :quantity
+              :quantity,
+              :item_id
 
   def initialize(business_item, item)
     @item_name = item.name
@@ -17,6 +18,7 @@ class BusinessItemInfo
     @price_sold = business_item.price_sold
     @serving_size = business_item.serving_size
     @quantity = business_item.quantity
+    @item_id = item.id
   end
 
 end

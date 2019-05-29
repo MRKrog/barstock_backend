@@ -8,6 +8,7 @@ class BusinessItemsSerializer
              :thumbnail,
              :price_sold,
              :serving_size,
-             :quantity
+             :quantity,
+             :item_id
 
 end
