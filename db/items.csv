@@ -9,7 +9,7 @@ distributor_id,name,alc_type,alc_category,price,ounces,unit,thumbnail,quantity
 1,Tincup,liquor,whiskey,23.70,33.80,ounces,https://products2.imgix.drizly.com/ci-tincup-colorado-whiskey-9817e364c7922b59.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Kentucky Deluxe,liquor,whiskey,8.21,33.80,ounces,https://products0.imgix.drizly.com/ci-kentucky-deluxe-bourbon-9715562ac7be0a4e.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,McCormicks Vodka,liquor,vodka,8.21,33.80,ounces,https://products3.imgix.drizly.com/ci-mccormick-vodka-adf483458412d8b9.png?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Svedka,liquor,vodka,"9,99",33.80,ounces,https://products2.imgix.drizly.com/ci-svedka-vodka-78e335e95d637689.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Svedka,liquor,vodka,9.99,33.80,ounces,https://products2.imgix.drizly.com/ci-svedka-vodka-78e335e95d637689.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Deep Eddy,liquor,vodka,16.88,33.80,ounces,https://products1.imgix.drizly.com/ci-deep-eddy-vodka-218a33ff0e28cf2b.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Titos,liquor,vodka,26.80,25.30,ounces,https://products1.imgix.drizly.com/ci-titos-handmade-vodka-35af185a6e862599.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Conquistador,liquor,tequila,26.80,33.80,ounces,https://products2.imgix.drizly.com/default_product_liquor.png?auto=format%2Ccompress&fm=jpeg&q=20,100

@@ -1029,4 +1029,445 @@ http_interactions:
         22:14:53"}]}'
     http_version: 
   recorded_at: Wed, 29 May 2019 20:27:00 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Arizona%20Antifreeze
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 May 2019 23:41:16 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9d2198683c4a66c8852d09c3ea29816a1559173276; expires=Thu, 28-May-20
+        23:41:16 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dec516fb954c7c1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16354","strDrink":"Arizona Antifreeze","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Shot","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Shot
+        glass","strInstructions":"Pour all ingredients into shot glass and slam !!!!","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/dbtylp1493067262.jpg","strIngredient1":"Vodka","strIngredient2":"Midori
+        melon liqueur","strIngredient3":"Sweet and sour","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/3
+        oz ","strMeasure2":"1\/3 oz ","strMeasure3":"1\/3 oz ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-04-24
+        21:54:22"}]}'
+    http_version: 
+  recorded_at: Wed, 29 May 2019 23:41:14 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=A.D.M.%20(After%20Dinner%20Mint)
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 May 2019 23:41:16 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6f42177a1236fb7dedda2df51e448bcb1559173276; expires=Thu, 28-May-20
+        23:41:16 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dec5171f97cc7d1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14560","strDrink":"A.D.M. (After Dinner Mint)","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Cocktail","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Irish
+        coffee cup","strInstructions":"shake vigorously","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/ruxuvp1472669600.jpg","strIngredient1":"White
+        Creme de Menthe","strIngredient2":"Southern Comfort","strIngredient3":"Vodka","strIngredient4":"Hot
+        chocolate","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz ","strMeasure2":"3\/4 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"Fill
+        with ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-08-31
+        19:53:20"}]}'
+    http_version: 
+  recorded_at: Wed, 29 May 2019 23:41:14 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Aztec%20Punch
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 May 2019 23:41:17 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dfcb5800813c870bdfad204c1930f14f91559173276; expires=Thu, 28-May-20
+        23:41:16 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dec5173ec7bc7b9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14364","strDrink":"Aztec Punch","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Punch
+        \/ Party Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Punch
+        bowl","strInstructions":"Mix all ingredients in a pitcher. Mix thoroughly
+        and pour into whatever is available, the bigger the better! This drink packs
+        a big punch, so don''t over do it.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/uqwuyp1454514591.jpg","strIngredient1":"Lemonade","strIngredient2":"Vodka","strIngredient3":"Rum","strIngredient4":"Ginger
+        ale","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        can ","strMeasure2":"5 oz ","strMeasure3":"7 oz ","strMeasure4":"About 1 bottle
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"
+        ","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-02-03
+        15:49:51"}]}'
+    http_version: 
+  recorded_at: Wed, 29 May 2019 23:41:15 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Jello%20shots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 May 2019 23:41:17 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d18ec409a0f87b40df064d523e4f8c93b1559173277; expires=Thu, 28-May-20
+        23:41:17 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dec51767f7dc7b1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14956","strDrink":"Jello shots","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Shot","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Shot
+        glass","strInstructions":"Boil 3 cups of water then add jello. Mix jello and
+        water until jello is completely disolved. Add the two cups of vodka and mix
+        together. Pour mixture into plastic shot glasses and chill until firm. Then,
+        eat away...","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/l0smzo1504884904.jpg","strIngredient1":"Vodka","strIngredient2":"Jello","strIngredient3":"Water","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"2
+        cups ","strMeasure2":"3 packages ","strMeasure3":"3 cups ","strMeasure4":"
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-08
+        16:35:04"}]}'
+    http_version: 
+  recorded_at: Wed, 29 May 2019 23:41:15 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Kool-Aid%20Slammer
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 May 2019 23:42:14 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0bc90e3d9cc5561333694c13dbf28a211559173334; expires=Thu, 28-May-20
+        23:42:14 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dec52dca83fc7b1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"14446","strDrink":"Kool-Aid Slammer","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Shot","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Shot
+        glass","strInstructions":"Fill half the shot glass with the kool-aid first.
+        Then put a paper towel over the top of the glass and slowly pour in the vodka.
+        If you do it right, you should be able to see that the two liquids are separated,
+        with the vodka on top. Now slam it! The last thing you''ll taste is the kool-aid.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/kugu2m1504735473.jpg","strIngredient1":"Kool-Aid","strIngredient2":"Vodka","strIngredient3":"","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz Grape ","strMeasure2":"1\/2 oz ","strMeasure3":" ","strMeasure4":" ","strMeasure5":"
+        ","strMeasure6":" ","strMeasure7":" ","strMeasure8":"","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-06
+        23:04:33"}]}'
+    http_version: 
+  recorded_at: Wed, 29 May 2019 23:42:12 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Long%20Island%20Iced%20Tea
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 May 2019 23:42:15 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0bc90e3d9cc5561333694c13dbf28a211559173334; expires=Thu, 28-May-20
+        23:42:14 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dec52decbe1c7b1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"17204","strDrink":"Long Island Iced Tea","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":"IBA,ContemporaryClassic","strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":"Contemporary Classics","strAlcoholic":"Alcoholic","strGlass":"Highball
+        glass","strInstructions":"Mix all contents in a highball glass and sitr gently.
+        Add dash of Coca-Cola for the coloring and garnish with lemon or lime twist.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/wx7hsg1504370510.jpg","strIngredient1":"Vodka","strIngredient2":"Tequila","strIngredient3":"Light
+        rum","strIngredient4":"Gin","strIngredient5":"Coca-Cola","strIngredient6":"Lemon
+        peel","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz ","strMeasure2":"1\/2 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1\/2
+        oz ","strMeasure5":"1 dash ","strMeasure6":"Twist of ","strMeasure7":" ","strMeasure8":"
+        ","strMeasure9":" ","strMeasure10":" ","strMeasure11":" ","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2017-09-02
+        17:41:50"},{"idDrink":"15300","strDrink":"3-Mile Long Island Iced Tea","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Fill
+        14oz glass with ice and alcohol. Fill 2\/3 glass with cola and remainder with
+        sweet & sour. Top with dash of bitters and lemon wedge.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rrtssw1472668972.jpg","strIngredient1":"Gin","strIngredient2":"Light
+        rum","strIngredient3":"Tequila","strIngredient4":"Triple sec","strIngredient5":"Vodka","strIngredient6":"Coca-Cola","strIngredient7":"Sweet
+        and sour","strIngredient8":"Bitters","strIngredient9":"Lemon","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1\/2
+        oz ","strMeasure2":"1\/2 oz ","strMeasure3":"1\/2 oz ","strMeasure4":"1\/2
+        oz ","strMeasure5":"1\/2 oz ","strMeasure6":"\n","strMeasure7":"1-2 dash ","strMeasure8":"1
+        wedge ","strMeasure9":" ","strMeasure10":" ","strMeasure11":" ","strMeasure12":"
+        ","strMeasure13":" ","strMeasure14":"","strMeasure15":"","dateModified":"2016-08-31
+        19:42:52"},{"idDrink":"16984","strDrink":"Radioactive Long Island Iced Tea","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Pour
+        all ingredients over ice in a very tall glass. Sip cautiously.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","strIngredient1":"Rum","strIngredient2":"Vodka","strIngredient3":"Tequila","strIngredient4":"Gin","strIngredient5":"Triple
+        sec","strIngredient6":"Chambord raspberry liqueur","strIngredient7":"Midori
+        melon liqueur","strIngredient8":"Malibu rum","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":"1 oz ","strMeasure5":"1
+        oz ","strMeasure6":"1 oz ","strMeasure7":"1 oz ","strMeasure8":"1 oz ","strMeasure9":"
+        ","strMeasure10":" ","strMeasure11":" ","strMeasure12":" ","strMeasure13":"
+        ","strMeasure14":"","strMeasure15":"","dateModified":"2017-08-24 09:31:52"}]}'
+    http_version: 
+  recorded_at: Wed, 29 May 2019 23:42:13 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Caribbean%20Orange%20Liqueur
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 May 2019 23:42:15 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d74fbf195d0cb813e366ed7e9fd30dcd41559173335; expires=Thu, 28-May-20
+        23:42:15 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dec52e0bda0c7d9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"12796","strDrink":"Caribbean Orange Liqueur","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Homemade
+        Liqueur","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Pare
+        very thinly the bright-colored rind from the oranges (no white). Blot the
+        peel on paper towels to remove any excess oil. Put peel in a 4 cup screw-top
+        jar. Add 2 cups vodka. Close jar. Store in a cool, dark place for 2 days or
+        until the vodka has absorbed the flavor. Remove peel and add remaining vodka.
+        Close jar and add remaining cup of vodka. Close the jar and store in a cool
+        dark place at least 1 month to age.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/qwxuwy1472667570.jpg","strIngredient1":"Orange","strIngredient2":"Vodka","strIngredient3":"Sugar","strIngredient4":"","strIngredient5":"","strIngredient6":"","strIngredient7":"","strIngredient8":"","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"3
+        large ","strMeasure2":"3 cups ","strMeasure3":"1 1\/3 cup superfine ","strMeasure4":"
+        ","strMeasure5":" ","strMeasure6":" ","strMeasure7":" ","strMeasure8":" ","strMeasure9":"","strMeasure10":"","strMeasure11":"","strMeasure12":"","strMeasure13":"","strMeasure14":"","strMeasure15":"","dateModified":"2016-08-31
+        19:19:30"}]}'
+    http_version: 
+  recorded_at: Wed, 29 May 2019 23:42:13 GMT
+- request:
+    method: get
+    uri: https://www.thecocktaildb.com/api/json/v1/1/search.php?s=Radioactive%20Long%20Island%20Iced%20Tea
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 29 May 2019 23:42:15 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d17f943e2fb4f1596e763e793de3fcdfd1559173335; expires=Thu, 28-May-20
+        23:42:15 GMT; path=/; domain=.thecocktaildb.com; HttpOnly; Secure
+      X-Powered-By:
+      - ASP.NET
+      - PHP/7.0.9
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 4dec52e2983dc7c1-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"drinks":[{"idDrink":"16984","strDrink":"Radioactive Long Island Iced
+        Tea","strDrinkAlternate":null,"strDrinkES":null,"strDrinkDE":null,"strDrinkFR":null,"strDrinkZH-HANS":null,"strDrinkZH-HANT":null,"strTags":null,"strVideo":null,"strCategory":"Ordinary
+        Drink","strIBA":null,"strAlcoholic":"Alcoholic","strGlass":"Collins Glass","strInstructions":"Pour
+        all ingredients over ice in a very tall glass. Sip cautiously.","strInstructionsES":null,"strInstructionsDE":null,"strInstructionsFR":null,"strInstructionsZH-HANS":null,"strInstructionsZH-HANT":null,"strDrinkThumb":"https:\/\/www.thecocktaildb.com\/images\/media\/drink\/rdvqmh1503563512.jpg","strIngredient1":"Rum","strIngredient2":"Vodka","strIngredient3":"Tequila","strIngredient4":"Gin","strIngredient5":"Triple
+        sec","strIngredient6":"Chambord raspberry liqueur","strIngredient7":"Midori
+        melon liqueur","strIngredient8":"Malibu rum","strIngredient9":"","strIngredient10":"","strIngredient11":"","strIngredient12":"","strIngredient13":"","strIngredient14":"","strIngredient15":"","strMeasure1":"1
+        oz ","strMeasure2":"1 oz ","strMeasure3":"1 oz ","strMeasure4":"1 oz ","strMeasure5":"1
+        oz ","strMeasure6":"1 oz ","strMeasure7":"1 oz ","strMeasure8":"1 oz ","strMeasure9":"
+        ","strMeasure10":" ","strMeasure11":" ","strMeasure12":" ","strMeasure13":"
+        ","strMeasure14":"","strMeasure15":"","dateModified":"2017-08-24 09:31:52"}]}'
+    http_version: 
+  recorded_at: Wed, 29 May 2019 23:42:13 GMT
 recorded_with: VCR 5.0.0
