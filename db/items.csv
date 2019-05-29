@@ -9,7 +9,7 @@ distributor_id,name,alc_type,alc_category,price,ounces,unit,thumbnail,quantity
 1,Tincup,liquor,whiskey,23.70,33.80,ounces,https://products2.imgix.drizly.com/ci-tincup-colorado-whiskey-9817e364c7922b59.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Kentucky Deluxe,liquor,whiskey,8.21,33.80,ounces,https://products0.imgix.drizly.com/ci-kentucky-deluxe-bourbon-9715562ac7be0a4e.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,McCormicks Vodka,liquor,vodka,8.21,33.80,ounces,https://products3.imgix.drizly.com/ci-mccormick-vodka-adf483458412d8b9.png?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Svedka,liquor,vodka,9.99,33.80,ounces,https://products2.imgix.drizly.com/ci-svedka-vodka-78e335e95d637689.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Svedka,liquor,vodka,"9,99",33.80,ounces,https://products2.imgix.drizly.com/ci-svedka-vodka-78e335e95d637689.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Deep Eddy,liquor,vodka,16.88,33.80,ounces,https://products1.imgix.drizly.com/ci-deep-eddy-vodka-218a33ff0e28cf2b.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Titos,liquor,vodka,26.80,25.30,ounces,https://products1.imgix.drizly.com/ci-titos-handmade-vodka-35af185a6e862599.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Conquistador,liquor,tequila,26.80,33.80,ounces,https://products2.imgix.drizly.com/default_product_liquor.png?auto=format%2Ccompress&fm=jpeg&q=20,100
@@ -35,7 +35,6 @@ distributor_id,name,alc_type,alc_category,price,ounces,unit,thumbnail,quantity
 1,Cigar City Brewing Guayabera Citra,beer,indian pale ale,33.85,288,case,https://products0.imgix.drizly.com/ci-cigar-city-guayabera-citra-pale-ale-2cdd9afed95e0a5c.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Cigar City Brewing Jai Alai ,beer,indian pale ale,33.85,288,case,https://products1.imgix.drizly.com/ci-cigar-city-jai-alai-ipa-05d2612d6a0fc207.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Oskar Blues Pinner,beer,indian pale ale,27.01,288,case,https://products2.imgix.drizly.com/ci-oskar-blues-pinner-throwback-ipa-2f6a9be86b42e5ad.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Cigar City Brewing Maduro Brown Ale,beer,Brown Ale,27.01,288,case,https://products0.imgix.drizly.com/ci-cigar-city-maduro-brown-ale-364743b6cf9d511d.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Lagunitas IPA,beer,indian pale ale,32.12,288,case,https://products0.imgix.drizly.com/ci-lagunitas-ipa-394199b9f8ab7840.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Oskar Blues Dales,beer,indian pale ale,28.02,288,case,https://products0.imgix.drizly.com/ci-oskar-blues-dales-pale-ale-e4b17bc3cab9d60d.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,10 Barrel Cucumber,beer,sour,32.12,288,case,https://products0.imgix.drizly.com/ci-10-barrel-cucumber-sour-crush-4014d5cc2309042f.png?auto=format%2Ccompress&fm=jpeg&q=20,100
@@ -45,48 +44,45 @@ distributor_id,name,alc_type,alc_category,price,ounces,unit,thumbnail,quantity
 1,Miller High Life,beer,lager,21.00,288,case,https://products0.imgix.drizly.com/ci-miller-high-life-1c0b560ccca972a0.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Smith & Forge Hard Cider,beer,cider,33.45,288,case,https://products2.imgix.drizly.com/ci-smith-forge-hard-cider-051fa3bbac40818d.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Redds Peach Ale,beer,cider,27.50,288,case,https://products2.imgix.drizly.com/ci-redds-peach-ale-7326845b66a4eb90.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Leinenkugel's Grapefruit Shandy,beer,shandy,31.55,288,case,https://products2.imgix.drizly.com/ci-leinenkugels-grapefruit-shandy-9f038ab0fac2ebf6.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Hamm's Beer,beer,lager,10.50,288,case,https://products0.imgix.drizly.com/ci-hamms-beer-4488330720032501.png?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Olde English 800,beer,malt,26.10,288,case,https://products2.imgix.drizly.com/ci-olde-english-800-6b4f52485be4e0de.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Pilsner Urquell,beer,pilsner,29.30,288,case,https://products3.imgix.drizly.com/ci-pilsner-urquell-e37781ccf71907c1.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Keystone Light,beer,lager,21.00,288,case,https://products3.imgix.drizly.com/ci-keystone-light-87d403e4c2802934.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Blue Moon Belgian White,beer,Wheat Ale,31.55,288,case,https://products2.imgix.drizly.com/ci-blue-moon-belgian-white-ee35696c26860416.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Sierra Nevada Pale Ale,beer,Pale Ale,29.00,288,case,https://products2.imgix.drizly.com/ci-sierra-nevada-pale-ale-066075c55039b684.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Sierra Nevada Pale Ale,beer,indian pale ale,29.00,288,case,https://products2.imgix.drizly.com/ci-sierra-nevada-pale-ale-066075c55039b684.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Sierra Nevada Torpedo Extra ,beer,indian pale ale,29.00,288,case,https://products2.imgix.drizly.com/ci-sierra-nevada-torpedo-extra-ipa-f009993b82b0151d.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Sierra Nevada Otra Vez,beer,Gose,29.00,288,case,https://products2.imgix.drizly.com/ci-sierra-nevada-otra-vez-gose-9c7f336a24361566.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Sierra Nevada Hazy Little Thing,beer,indian pale ale,29.00,288,case,https://products1.imgix.drizly.com/ci-sierra-nevada-hazy-ipa-9dad589f37cd1dae.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Amstel Light,beer,lager,26.40,288,case,https://products0.imgix.drizly.com/ci-amstel-light-dc95d49b49c545d9.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Tecate,beer,lager,43605,288,case,https://products3.imgix.drizly.com/ci-tecate-0bb9e1fdb575127b.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,DOS XX,beer,lager,24.25,288,case,https://products1.imgix.drizly.com/ci-dos-equis-lager-47ccc594ec8ef07a.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Carta Blanca,beer,lager,21.85,288,case,https://products1.imgix.drizly.com/ci-carta-blanca-82f2b5c443a3e2ca.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Molson Ice,beer,Pale Lager,25.85,288,case,https://products1.imgix.drizly.com/ci-molson-ice-4b58f2cf13aeaf8f.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Molson Ice,beer,Lager,25.85,288,case,https://products1.imgix.drizly.com/ci-molson-ice-4b58f2cf13aeaf8f.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Molson Golden,beer,lager,21.85,288,case,https://products1.imgix.drizly.com/ci-molson-golden-211e801f801ae908.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Molson Canadian,beer,lager,25.85,288,case,https://products1.imgix.drizly.com/ci-molson-canadian-c8a7a4bf83563d02.png?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Bohemia Clasica,beer,Pale Lager,21.85,288,case,https://products0.imgix.drizly.com/ci-bohemia-clasica-51af27a2fdf50f28.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Kirin Ichiban,beer,Pale Lager,43768,288,case,https://products1.imgix.drizly.com/ci-kirin-ichiban-77c8ec3d62a67397.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Asahi Super Dry,beer,Pale Lager,27.50,288,case,https://products0.imgix.drizly.com/ci-asahi-super-dry-2df6a32e8c3d350a.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Anchor Steam Beer,beer,malt,31.50,288,case,https://products2.imgix.drizly.com/ci-anchor-steam-beer-84d019b23eecfe2c.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Bohemia Clasica,beer,Lager,21.85,288,case,https://products0.imgix.drizly.com/ci-bohemia-clasica-51af27a2fdf50f28.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Kirin Ichiban,beer,Lager,43768,288,case,https://products1.imgix.drizly.com/ci-kirin-ichiban-77c8ec3d62a67397.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Asahi Super Dry,beer,Lager,27.50,288,case,https://products0.imgix.drizly.com/ci-asahi-super-dry-2df6a32e8c3d350a.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Anchor Steam Beer,beer,lager,31.50,288,case,https://products2.imgix.drizly.com/ci-anchor-steam-beer-84d019b23eecfe2c.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Foster's Lager,beer,lager,23.80,288,case,https://products2.imgix.drizly.com/ci-fosters-lager-e0beb054880a82ce.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Beck's,beer,lager,31.95,288,case,https://products1.imgix.drizly.com/ci-becks-pilsner-b8863a77b59bfc58.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Rolling Rock Extra Pale,beer,lager,43608,288,case,https://products1.imgix.drizly.com/ci-rolling-rock-pale-lager-fc659be18bc3bc2d.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Modelo Negra,beer,lager,29.2,288,case,https://products3.imgix.drizly.com/ci-negra-modelo-5e9fde4dff726bf8.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Corona Extra,beer,lager,20.75,288,case,https://products2.imgix.drizly.com/ci-corona-extra-2b48031ca2c738b1.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Victoria,beer,lager,29.25,288,case,https://products2.imgix.drizly.com/ci-victoria-a53eb0d2b40bfed4.png?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Pacifico Clara,beer,Pale Lager,29.25,288,case,https://products0.imgix.drizly.com/ci-pacifico-clara-c4083c054131f5c0.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Pacifico Clara,beer,Lager,29.25,288,case,https://products0.imgix.drizly.com/ci-pacifico-clara-c4083c054131f5c0.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,St. Pauli Girl Lager,beer,lager,31.95,288,case,https://products1.imgix.drizly.com/ci-st-pauli-girl-lager-47e86b137e736ec5.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Tsingtao,beer,lager,43523,288,case,https://products2.imgix.drizly.com/ci-tsingtao-42c4e4345d0ea5d3.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Peroni,beer,lager,28.00,288,case,https://products2.imgix.drizly.com/ci-peroni-a95ce9560336cd57.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Sol,beer,lager,27.75,288,case,https://products0.imgix.drizly.com/ci-sol-38ef589616395a5c.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Boulder Beer Shake Chocolate Porter,beer,porter,27.00,288,case,https://products0.imgix.drizly.com/ci-boulder-beer-shake-chocolate-porter-fb43ba821fe9cf64.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Boulder Beer Hazed Hoppy Session,beer,American Pale ale,27.50,288,case,https://products1.imgix.drizly.com/ci-boulder-beer-hazed-hoppy-session-ale-7a7a1b39db66d42f.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Boddingtons Pub Ale,beer,English Pale Ale,41.40,288,case,https://products1.imgix.drizly.com/ci-boddingtons-pub-ale-f17f87db77b04fe9.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Leffe Blonde,beer,Blonde Ale,31.40,288,case,https://products0.imgix.drizly.com/ci-leffe-blonde-ale-53a2a7dbf16fa299.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Boulder Beer Shake Chocolate Porter,beer,stout,27.00,288,case,https://products0.imgix.drizly.com/ci-boulder-beer-shake-chocolate-porter-fb43ba821fe9cf64.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Boulder Beer Hazed Hoppy Session,beer,indian pale ale,27.50,288,case,https://products1.imgix.drizly.com/ci-boulder-beer-hazed-hoppy-session-ale-7a7a1b39db66d42f.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Boddingtons Pub Ale,beer,indian pale ale,41.40,288,case,https://products1.imgix.drizly.com/ci-boddingtons-pub-ale-f17f87db77b04fe9.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Leffe Blonde,beer,wheat Ale,31.40,288,case,https://products0.imgix.drizly.com/ci-leffe-blonde-ale-53a2a7dbf16fa299.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Sapporo Reserve,beer,lager,28.00,288,case,https://products0.imgix.drizly.com/ci-sapporo-reserve-19d46f104de93de0.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Samuel Adams Rebel,beer,indian pale ale,28.00,288,case,https://products3.imgix.drizly.com/ci-samuel-adams-rebel-ipa-8416efbcffa83657.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Hoegaarden White,beer,Wheat Ale,31.40,288,case,https://products3.imgix.drizly.com/ci-hoegaarden-white-588d5972fcae82ce.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Oskar Blues Mama's Little Yella Pils,beer,pilsner,14.00,288,case,https://products3.imgix.drizly.com/ci-oskar-blues-mamas-little-yella-pils-074e96c715d836b6.png?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Big Sky Moose Drool,beer,brown ale,28.00,288,case,https://products3.imgix.drizly.com/ci-big-sky-moose-drool-brown-ale-2cc8214577727cec.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Breckenridge Brewery Nitro Vanilla,beer,porter,47.95,288,case,https://products0.imgix.drizly.com/ci-breckenridge-brewery-nitro-vanilla-porter-ff7d7658e87492fb.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Big Sky Moose Drool,beer,wheat ale,28.00,288,case,https://products3.imgix.drizly.com/ci-big-sky-moose-drool-brown-ale-2cc8214577727cec.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Breckenridge Brewery Nitro Vanilla,beer,stout,47.95,288,case,https://products0.imgix.drizly.com/ci-breckenridge-brewery-nitro-vanilla-porter-ff7d7658e87492fb.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Breckenridge Brewery Avalanche,beer,red ale,26.00,288,case,https://products2.imgix.drizly.com/ci-breckenridge-brewery-avalanche-amber-ale-cc5edf7bf836927e.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Breckenridge Brewery Agave,beer,Wheat Ale,28.00,288,case,https://products2.imgix.drizly.com/ci-breckenridge-brewery-agave-wheat-260f63c8e175d9a7.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Singha,beer,lager,28.01,288,case,https://products2.imgix.drizly.com/ci-singha-f466df6ecd0b00fb.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
@@ -94,15 +90,12 @@ distributor_id,name,alc_type,alc_category,price,ounces,unit,thumbnail,quantity
 1,Strongbow  Gold,beer,cider,32.30,288,case,https://products2.imgix.drizly.com/ci-strongbow-gold-apple-f54e949143c15d37.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Prost Kölsch,beer,lager,29.50,288,case,https://products1.imgix.drizly.com/ci-prost-kolsch-5bd67bed4870b763.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Prost Weissbier,beer,Wheat Ale,29.50,288,case,https://products2.imgix.drizly.com/ci-prost-weissbier-2867e170f59f05de.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Newcastle,beer,brown ale,29.50,288,case,https://products3.imgix.drizly.com/ci-newcastle-brown-ale-8aa08d24e3cd9a2b.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Newcastle,beer,wheat ale,29.50,288,case,https://products3.imgix.drizly.com/ci-newcastle-brown-ale-8aa08d24e3cd9a2b.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Alaskan Husky,beer,indian pale ale,29.15,288,case,https://products3.imgix.drizly.com/ci-alaskan-husky-ipa-27b047be516cf584.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,GUINNESS BLONDE,beer,lager,31.40,288,case,https://products0.imgix.drizly.com/ci-guinness-blonde-american-lager-ea12726be1c5b567.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Guinness Extra Stout,beer,stour,31.40,288,case,https://products1.imgix.drizly.com/ci-guinness-extra-stout-2abc388ce9c3bb61.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,harp,beer,lager,31.40,288,case,https://products1.imgix.drizly.com/ci-harp-lager-b24db2d6be80d0b9.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Smithwick's Irish,beer,red ale,31.40,288,case,https://products1.imgix.drizly.com/ci-smithwicks-ale-f81d886267fccb83.png?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Red Stripe,beer,pale lager,26.00,288,case,https://products2.imgix.drizly.com/ci-red-stripe-1841b16b4ded3852.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Kaliber Non-Alcoholic,beer,Non-Alcoholic,22.00,288,case,https://products0.imgix.drizly.com/ci-kaliber-non-alcoholic-0df5f01fddc8dd48.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
-1,Henry Weinhard's Root Beer,beer,root beer,17.99,288,case,https://products1.imgix.drizly.com/ci-henry-weinhards-root-beer-9a15b789f2bea56c.png?auto=format%2Ccompress&fm=jpeg&q=20,100
+1,Red Stripe,beer,lager,26.00,288,case,https://products2.imgix.drizly.com/ci-red-stripe-1841b16b4ded3852.jpeg?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Bell's Two Hearted,beer,indian pale ale,30.95,288,case,https://products3.imgix.drizly.com/ci-bells-two-hearted-ale-dda2a2d076f9d136.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Bell's Lager Of The Lakes,beer,lager,27.95,288,case,https://products2.imgix.drizly.com/ci-bells-lager-of-the-lakes-80ab24c170a0c252.png?auto=format%2Ccompress&fm=jpeg&q=20,100
 1,Bell's Kalamazoo Stout,beer,stout,32.95,288,case,https://products3.imgix.drizly.com/ci-bells-kalamazoo-stout-f78375d950dd389c.png?auto=format%2Ccompress&fm=jpeg&q=20,100
