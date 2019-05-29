@@ -38,6 +38,7 @@ class Api::V1::BusinessItemsController < ApplicationController
 
   def try_saving(bi)
     bi.save!
-    render json: BusinessItemSerializer.new(bi), status: 201
+    bi = BusinessItem.get_item(bi)
+    render json: BusinessItemsSerializer.new(bi), status: 201
   end
 end

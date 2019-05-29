@@ -17,6 +17,10 @@ class BusinessItem < ApplicationRecord
     end
   end
 
+  def self.get_item(bi)
+    BusinessItemInfo.new(bi, bi.item)
+  end
+
   def self.does_not_exist?(item_id)
     BusinessItem.find_by(item_id: item_id).nil?
   end
