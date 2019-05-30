@@ -48,10 +48,6 @@ oi_2 = OrderItem.create!(order: order_1,
                          item_id: 19,
                          quantity: 1,
                          price: 7.87)
-oi_2 = OrderItem.create!(order: order_1,
-                         item_id: 19,
-                         quantity: 1,
-                         price: 7.87)
 oi_3 = OrderItem.create!(order: order_1,
                          item_id: 22,
                          quantity: 1,
