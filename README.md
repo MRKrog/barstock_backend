@@ -3,7 +3,7 @@
 
 BarStock is a 13-day, four-person project during Mod 4 of 4, for Turing School's Back-End Engineering Program. Our team consists of two Front-End Developers and two Back-End Developers.
 
-Our challenge was to create a web application from idea to inception by integrating our skills as Front-End and Back-End Developers to solve a real-world problem.
+Our challenge was to create a native application from idea to inception by integrating our skills as Front-End and Back-End Developers to solve a real-world problem.
 
 Thus, BarStock was born. BarStock is a web application designed to solve the communication challenges between bar owners and distributors when placing inventory orders. In the bar industry, it is frequently common practice to place weekly inventory orders via text messages/emails. Bar owners are not provided with pricing sheets, nor available inventory, and often receive incorrect shipments. BarStock is intended to alleviate this headache by providing bar owners with user interface to view distributor inventory, analyze profit margins, and automate text message/email ordering.
 
@@ -16,7 +16,7 @@ BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL 
 
 ## Available Endpoints
 All available endpoints have been documented on [Swagger](https://app.swaggerhub.com/apis-docs/BarStock/BarStockBackEnd/1.0.0).
-![Alt text](./public/images/swagger_endpoints.png?raw=true "Endpoint Documentation")
+![Alt text](./public/images/Swagger_Giphy.gif?raw=true "Endpoint Documentation")
 
 <!-- Add giphy of Front End -->
 
@@ -25,7 +25,7 @@ All available endpoints have been documented on [Swagger](https://app.swaggerhub
 Upon creation of an order, both an email and an email and a text message are sent to the distributor's representative.
 
 ### Order Email
-![Alt text](./public/images/email_sample.png?raw=true "Order Email")
+![Alt text](./public/images/email.gif?raw=true "Order Email")
 
 ### Order Text Message
 ![Alt text](./public/images/text_message.jpg?raw=true "Order Text Message")
