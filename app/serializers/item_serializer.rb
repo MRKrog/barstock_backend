@@ -7,5 +7,6 @@ class ItemSerializer
               :quantity,
               :ounces,
               :unit,
-              :thumbnail
+              :thumbnail,
+              :id
 end
