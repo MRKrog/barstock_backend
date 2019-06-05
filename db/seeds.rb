@@ -39,7 +39,7 @@ order_1 = Order.create!(business: business,
                         created_at: "2018-09-21 00:52:33")
 order_2 = Order.create!(business: business,
                         total_cost: 117.2,
-                        created_at: "2018-1-15 00:52:33")
+                        created_at: "2019-1-15 00:52:33")
 oi_1 = OrderItem.create!(order: order_1,
                          item_id: 2,
                          quantity: 1,
