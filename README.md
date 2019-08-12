@@ -9,10 +9,15 @@ Thus, BarStock was born. BarStock is a web application designed to solve the com
 
 BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL database for the [BarStock User Interface](https://github.com/MRKrog/barstock-ui), which communicate back and forth via API requests/responses.
 
-#### [**_Utilizes BarStock Back-End in Production_**](https://barstock-backend.herokuapp.com)
+Login Screen             |  Selecting Inventory
+:-------------------------:|:-------------------------:
+<img src="/public/images/user_interface_gifs/login.gif" alt="Login Screen">  |  <img src="/public/images/user_interface_gifs/inventoryItems.gif" alt="Selecting Inventory">
+**View Margin/Profits**             |  **Place Order**
+<img src="/public/images/user_interface_gifs/editInventory.gif" alt="View Margin Profits">  |  <img src="/public/images/user_interface_gifs/placeOrder.gif" alt="Place Order">
+**Account Information**             |  **Reorder**
+<img src="/public/images/user_interface_gifs/accountInfo.gif" alt="Account Information">  |  <img src="/public/images/user_interface_gifs/reorder.gif" alt="Reorder">
 
-## User Interface
-![Alt text](./public/images/barstock_giphy.gif?raw=true "User Interface")
+#### [**_Utilizes BarStock Back-End in Production_**](https://barstock-backend.herokuapp.com)
 
 ## Schema
 ![Alt text](./public/images/schema.png?raw=true "Database Schema")
@@ -62,8 +67,10 @@ SENDGRID_PASSWORD: <insert>
 
 ### Running Tests
 
-To run the test suite, execute the following command:
-`rspec`.
+To run the test suite, execute the following:
+`redis-server`.
+Keep the redis server running and open a new terminal tab. Execute the following:
+`bundle exec rspec`.
 
 ### Deployment
 
@@ -99,6 +106,7 @@ $ rails s -e production
 * Postman
 * Circle CI
 * Sendgrid
+* Redis
 * [HTML Email Template](https://github.com/sendgrid/email-templates/blob/master/dynamic-templates/receipt/receipt.html)
 * Twilio
 * Mailcatcher
