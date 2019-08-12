@@ -11,14 +11,15 @@ BarStock Back-End utilizes Ruby on Rails, RSpec, ActiveRecord, and a PostgreSQL 
 
 #### [**_Utilizes BarStock Back-End in Production_**](https://barstock-backend.herokuapp.com)
 
+## User Interface
+![Alt text](./public/images/barstock_giphy.gif?raw=true "User Interface")
+
 ## Schema
 ![Alt text](./public/images/schema.png?raw=true "Database Schema")
 
 ## Available Endpoints
 All available endpoints have been documented on [Swagger](https://app.swaggerhub.com/apis-docs/BarStock/BarStockBackEnd/1.0.0).
 ![Alt text](./public/images/Swagger_Giphy.gif?raw=true "Endpoint Documentation")
-
-<!-- Add giphy of Front End -->
 
 ## Representative Notifications of Order
 
